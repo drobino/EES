@@ -1,0 +1,2549 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <!-- Responsive Design -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- SEO -->
+    <meta name="description"
+          content="Elitech Engineering Services provides data center operations support including facility monitoring, critical infrastructure maintenance, uptime assurance and technical operations management.">
+
+    <meta name="keywords"
+          content="Elitech Engineering Services, data center operations, critical infrastructure, facility monitoring, uptime, colocation, Ghana">
+
+    <meta name="author" content="Elitech Engineering Services">
+
+    <title>Data Center Operations | Elitech Engineering Services</title>
+
+
+    <!-- FAVICON -->
+    <link rel="icon" type="image/svg+xml"
+          href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='20' fill='%23071f35'/%3E%3Cpath d='M25 20h50v12H39v15h30v12H39v21h36v12H25z' fill='%2300b8d4'/%3E%3C/svg%3E">
+
+    <style>
+
+        /* =========================================================
+           1. GLOBAL VARIABLES
+        ========================================================= */
+
+        :root {
+            --navy: #071f35;
+            --navy-light: #0c304d;
+
+            --blue: #087ea4;
+            --cyan: #00b8d4;
+            --teal: #008c95;
+
+            --gold: #e2b857;
+
+            --white: #ffffff;
+            --off-white: #f7fafc;
+            --light-blue: #edf7fa;
+
+            --dark: #152536;
+            --text: #44515c;
+            --muted: #71808d;
+
+            --border: #dce6eb;
+
+            --shadow-sm: 0 5px 20px rgba(7, 31, 53, 0.07);
+            --shadow-md: 0 12px 35px rgba(7, 31, 53, 0.11);
+            --shadow-lg: 0 20px 55px rgba(7, 31, 53, 0.15);
+
+            --radius: 12px;
+            --radius-lg: 20px;
+
+            --max-width: 1200px;
+        }
+
+
+        /* =========================================================
+           2. RESET
+        ========================================================= */
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background: var(--white);
+            color: var(--text);
+            line-height: 1.7;
+        }
+
+        img {
+            width: 100%;
+            display: block;
+        }
+
+        a {
+            color: inherit;
+            text-decoration: none;
+        }
+
+        button,
+        a {
+            -webkit-tap-highlight-color: transparent;
+        }
+
+
+        /* =========================================================
+           3. ACCESSIBILITY
+        ========================================================= */
+
+        .skip-link {
+            position: absolute;
+            left: -9999px;
+            top: 10px;
+            z-index: 9999;
+            background: var(--cyan);
+            color: var(--navy);
+            padding: 12px 18px;
+            font-weight: 700;
+            border-radius: 5px;
+        }
+
+        .skip-link:focus {
+            left: 10px;
+        }
+
+        :focus-visible {
+            outline: 3px solid var(--gold);
+            outline-offset: 3px;
+        }
+
+
+        /* =========================================================
+           4. TOP CONTACT BAR
+        ========================================================= */
+
+        .top-bar {
+            background: var(--navy);
+            color: rgba(255,255,255,0.85);
+            font-size: 13px;
+        }
+
+        .top-bar-container {
+            max-width: var(--max-width);
+            margin: auto;
+            min-height: 42px;
+            padding: 0 25px;
+
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            gap: 20px;
+        }
+
+        .top-left,
+        .top-right {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .top-bar span {
+            display: inline-flex;
+            align-items: center;
+            gap: 7px;
+        }
+
+
+        /* =========================================================
+           5. NAVIGATION
+        ========================================================= */
+
+        .navbar {
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+
+            background: rgba(255,255,255,0.97);
+            backdrop-filter: blur(10px);
+
+            border-bottom: 1px solid var(--border);
+        }
+
+        .nav-container {
+            max-width: var(--max-width);
+            margin: auto;
+            padding: 0 25px;
+
+            height: 82px;
+
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+
+        /* LOGO */
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .logo-symbol {
+            width: 45px;
+            height: 45px;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            background: var(--navy);
+            color: var(--cyan);
+
+            border-radius: 9px;
+
+            font-size: 27px;
+            font-weight: 900;
+        }
+
+        .logo-text strong {
+            display: block;
+            color: var(--navy);
+            font-size: 17px;
+            letter-spacing: 0.5px;
+        }
+
+        .logo-text span {
+            display: block;
+            color: var(--blue);
+            font-size: 10px;
+            font-weight: 700;
+            letter-spacing: 1.5px;
+        }
+
+
+        /* NAV LINKS */
+
+        .nav-links {
+            list-style: none;
+
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+
+        .nav-links a {
+            padding: 11px 14px;
+
+            color: var(--dark);
+
+            font-size: 14px;
+            font-weight: 600;
+
+            border-radius: 7px;
+
+            transition: 0.25s ease;
+        }
+
+        .nav-links a:hover,
+        .nav-links a.active {
+            color: var(--blue);
+            background: var(--light-blue);
+        }
+
+        .nav-cta {
+            background: var(--blue) !important;
+            color: var(--white) !important;
+            padding: 12px 18px !important;
+        }
+
+        .nav-cta:hover {
+            background: var(--navy) !important;
+        }
+
+
+        /* MOBILE BUTTON */
+
+        .menu-btn {
+            display: none;
+
+            width: 44px;
+            height: 44px;
+
+            border: 1px solid var(--border);
+            background: var(--white);
+
+            border-radius: 8px;
+
+            cursor: pointer;
+
+            font-size: 24px;
+            color: var(--navy);
+        }
+
+
+        /* =========================================================
+           6. HERO
+        ========================================================= */
+
+        .hero {
+            min-height: 560px;
+
+            display: flex;
+            align-items: center;
+
+            position: relative;
+
+            background:
+                linear-gradient(
+                    90deg,
+                    rgba(7,31,53,0.95) 0%,
+                    rgba(7,31,53,0.82) 48%,
+                    rgba(7,31,53,0.35) 100%
+                ),
+                url("https://images.unsplash.com/photo-1581094794329-c8112a89af12?auto=format&fit=crop&w=1800&q=85")
+                center/cover no-repeat;
+        }
+
+        .hero-container {
+            max-width: var(--max-width);
+            width: 100%;
+            margin: auto;
+            padding: 80px 25px;
+        }
+
+        .hero-content {
+            max-width: 720px;
+            color: var(--white);
+        }
+
+        .eyebrow {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+
+            margin-bottom: 18px;
+
+            color: var(--cyan);
+
+            font-size: 13px;
+            font-weight: 800;
+
+            letter-spacing: 2px;
+            text-transform: uppercase;
+        }
+
+        .eyebrow::before {
+            content: "";
+            width: 38px;
+            height: 2px;
+            background: var(--cyan);
+        }
+
+        .hero h1 {
+            font-size: clamp(38px, 5vw, 68px);
+            line-height: 1.08;
+
+            margin-bottom: 22px;
+            letter-spacing: -1.5px;
+        }
+
+        .hero h1 span {
+            color: var(--cyan);
+        }
+
+        .hero p {
+            max-width: 650px;
+
+            color: rgba(255,255,255,0.85);
+
+            font-size: 18px;
+            line-height: 1.8;
+
+            margin-bottom: 30px;
+        }
+
+        .hero-buttons {
+            display: flex;
+            gap: 13px;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+
+            min-height: 50px;
+            padding: 0 22px;
+
+            border-radius: 7px;
+
+            font-size: 14px;
+            font-weight: 700;
+
+            transition: 0.25s ease;
+        }
+
+        .btn-primary {
+            background: var(--cyan);
+            color: var(--navy);
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            background: var(--white);
+        }
+
+        .btn-outline {
+            border: 1px solid rgba(255,255,255,0.55);
+            color: var(--white);
+        }
+
+        .btn-outline:hover {
+            background: var(--white);
+            color: var(--navy);
+        }
+
+
+        /* =========================================================
+           7. SECTION GENERAL
+        ========================================================= */
+
+        .section {
+            padding: 90px 25px;
+        }
+
+        .section-light {
+            background: var(--off-white);
+        }
+
+        .container {
+            max-width: var(--max-width);
+            margin: auto;
+        }
+
+        .section-heading {
+            max-width: 720px;
+            margin-bottom: 50px;
+        }
+
+        .section-heading.center {
+            text-align: center;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .section-label {
+            color: var(--blue);
+
+            font-size: 12px;
+            font-weight: 800;
+
+            letter-spacing: 2px;
+            text-transform: uppercase;
+
+            margin-bottom: 10px;
+        }
+
+        .section-heading h2 {
+            color: var(--navy);
+
+            font-size: clamp(30px, 4vw, 44px);
+            line-height: 1.2;
+
+            margin-bottom: 16px;
+        }
+
+        .section-heading p {
+            color: var(--muted);
+            font-size: 16px;
+        }
+
+
+        /* =========================================================
+           8. INTRODUCTION
+        ========================================================= */
+
+        .intro-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+
+            gap: 60px;
+
+            align-items: center;
+        }
+
+        .intro-image {
+            min-height: 450px;
+
+            border-radius: var(--radius-lg);
+
+            overflow: hidden;
+
+            box-shadow: var(--shadow-lg);
+        }
+
+        .intro-image img {
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .intro-content h2 {
+            color: var(--navy);
+
+            font-size: 38px;
+            line-height: 1.25;
+
+            margin-bottom: 20px;
+        }
+
+        .intro-content p {
+            margin-bottom: 18px;
+            color: var(--text);
+        }
+
+        .feature-list {
+            list-style: none;
+            margin: 25px 0;
+        }
+
+        .feature-list li {
+            position: relative;
+
+            padding: 12px 0 12px 32px;
+
+            border-bottom: 1px solid var(--border);
+        }
+
+        .feature-list li::before {
+            content: "✓";
+
+            position: absolute;
+            left: 0;
+            top: 12px;
+
+            width: 21px;
+            height: 21px;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            border-radius: 50%;
+
+            background: var(--light-blue);
+            color: var(--blue);
+
+            font-size: 12px;
+            font-weight: 900;
+        }
+
+
+        /* =========================================================
+           9. SERVICE OVERVIEW CARDS
+        ========================================================= */
+
+        .service-grid {
+            display: grid;
+
+            grid-template-columns: repeat(4, 1fr);
+
+            gap: 20px;
+        }
+
+        .service-card {
+            background: var(--white);
+
+            padding: 30px 24px;
+
+            border: 1px solid var(--border);
+
+            border-radius: var(--radius);
+
+            box-shadow: var(--shadow-sm);
+
+            transition: 0.3s ease;
+        }
+
+        .service-card:hover {
+            transform: translateY(-7px);
+            box-shadow: var(--shadow-md);
+            border-color: var(--cyan);
+        }
+
+        .service-number {
+            color: var(--cyan);
+
+            font-size: 13px;
+            font-weight: 900;
+
+            letter-spacing: 1px;
+
+            margin-bottom: 20px;
+        }
+
+        .service-icon {
+            width: 58px;
+            height: 58px;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            background: var(--light-blue);
+            color: var(--blue);
+
+            border-radius: 12px;
+
+            font-size: 24px;
+
+            margin-bottom: 22px;
+        }
+
+        .service-card h3 {
+            color: var(--navy);
+
+            font-size: 19px;
+
+            margin-bottom: 12px;
+        }
+
+        .service-card p {
+            color: var(--muted);
+            font-size: 14px;
+        }
+
+
+        /* =========================================================
+           10. DETAILED SERVICES
+        ========================================================= */
+
+        .detail-section {
+            border-top: 1px solid var(--border);
+        }
+
+        .detail-grid {
+            display: grid;
+
+            grid-template-columns: 0.8fr 1.2fr;
+
+            gap: 60px;
+
+            align-items: start;
+        }
+
+        .detail-number {
+            color: var(--cyan);
+
+            font-size: 15px;
+            font-weight: 900;
+
+            letter-spacing: 2px;
+
+            margin-bottom: 12px;
+        }
+
+        .detail-title h2 {
+            color: var(--navy);
+
+            font-size: 35px;
+            line-height: 1.2;
+
+            margin-bottom: 16px;
+        }
+
+        .detail-title p {
+            color: var(--muted);
+        }
+
+        .detail-content {
+            display: grid;
+
+            grid-template-columns: 1fr 1fr;
+
+            gap: 15px;
+        }
+
+        .detail-item {
+            background: var(--off-white);
+
+            border: 1px solid var(--border);
+
+            padding: 22px;
+
+            border-radius: 10px;
+
+            transition: 0.25s ease;
+        }
+
+        .detail-item:hover {
+            background: var(--light-blue);
+            border-color: #b9e4ea;
+        }
+
+        .detail-item h3 {
+            color: var(--navy);
+
+            font-size: 16px;
+
+            margin-bottom: 7px;
+        }
+
+        .detail-item p {
+            color: var(--muted);
+            font-size: 13px;
+        }
+
+
+        /* =========================================================
+           11. ENGINEERING CAPABILITY
+        ========================================================= */
+
+        .capability {
+            background: var(--navy);
+            color: var(--white);
+        }
+
+        .capability .section-heading h2 {
+            color: var(--white);
+        }
+
+        .capability .section-heading p {
+            color: rgba(255,255,255,0.7);
+        }
+
+        .capability-grid {
+            display: grid;
+
+            grid-template-columns: repeat(3, 1fr);
+
+            gap: 20px;
+        }
+
+        .capability-card {
+            padding: 30px;
+
+            background: rgba(255,255,255,0.05);
+
+            border: 1px solid rgba(255,255,255,0.12);
+
+            border-radius: 14px;
+
+            transition: 0.3s ease;
+        }
+
+        .capability-card:hover {
+            background: rgba(255,255,255,0.09);
+            transform: translateY(-5px);
+        }
+
+        .capability-card strong {
+            display: block;
+
+            color: var(--cyan);
+
+            font-size: 30px;
+
+            margin-bottom: 10px;
+        }
+
+        .capability-card h3 {
+            font-size: 18px;
+            margin-bottom: 8px;
+        }
+
+        .capability-card p {
+            color: rgba(255,255,255,0.65);
+            font-size: 14px;
+        }
+
+
+        /* =========================================================
+           12. PROCESS
+        ========================================================= */
+
+        .process-grid {
+            display: grid;
+
+            grid-template-columns: repeat(4, 1fr);
+
+            gap: 20px;
+
+            counter-reset: process;
+        }
+
+        .process-card {
+            position: relative;
+
+            padding: 30px 25px;
+
+            background: var(--white);
+
+            border: 1px solid var(--border);
+
+            border-radius: var(--radius);
+
+            box-shadow: var(--shadow-sm);
+        }
+
+        .process-card::before {
+            counter-increment: process;
+
+            content: "0" counter(process);
+
+            display: block;
+
+            color: var(--cyan);
+
+            font-size: 14px;
+            font-weight: 900;
+
+            margin-bottom: 25px;
+        }
+
+        .process-card h3 {
+            color: var(--navy);
+
+            margin-bottom: 10px;
+        }
+
+        .process-card p {
+            color: var(--muted);
+            font-size: 14px;
+        }
+
+
+        /* =========================================================
+           13. CTA
+        ========================================================= */
+
+        .cta {
+            padding: 80px 25px;
+
+            background:
+                linear-gradient(
+                    135deg,
+                    var(--navy),
+                    var(--navy-light)
+                );
+
+            color: var(--white);
+        }
+
+        .cta-container {
+            max-width: var(--max-width);
+            margin: auto;
+
+            display: flex;
+
+            align-items: center;
+            justify-content: space-between;
+
+            gap: 40px;
+        }
+
+        .cta h2 {
+            font-size: clamp(28px, 4vw, 42px);
+            margin-bottom: 10px;
+        }
+
+        .cta p {
+            max-width: 650px;
+            color: rgba(255,255,255,0.7);
+        }
+
+
+        /* =========================================================
+           14. FOOTER
+        ========================================================= */
+
+        footer {
+            background: #041522;
+            color: rgba(255,255,255,0.7);
+
+            padding: 65px 25px 25px;
+        }
+
+        .footer-grid {
+            max-width: var(--max-width);
+            margin: auto;
+
+            display: grid;
+
+            grid-template-columns: 1.5fr 1fr 1fr 1fr;
+
+            gap: 45px;
+        }
+
+        .footer-brand h3 {
+            color: var(--white);
+
+            font-size: 20px;
+
+            margin-bottom: 12px;
+        }
+
+        .footer-brand p {
+            max-width: 350px;
+
+            font-size: 14px;
+            line-height: 1.8;
+        }
+
+        footer h4 {
+            color: var(--white);
+            margin-bottom: 18px;
+        }
+
+        .footer-links {
+            list-style: none;
+        }
+
+        .footer-links li {
+            margin-bottom: 10px;
+        }
+
+        .footer-links a {
+            font-size: 14px;
+            transition: 0.2s ease;
+        }
+
+        .footer-links a:hover {
+            color: var(--cyan);
+        }
+
+        .footer-bottom {
+            max-width: var(--max-width);
+
+            margin: 50px auto 0;
+
+            padding-top: 20px;
+
+            border-top: 1px solid rgba(255,255,255,0.1);
+
+            display: flex;
+            justify-content: space-between;
+
+            gap: 20px;
+
+            font-size: 12px;
+        }
+
+
+        /* =========================================================
+           15. RESPONSIVE DESIGN
+        ========================================================= */
+
+        @media (max-width: 1050px) {
+
+            .nav-links {
+                gap: 0;
+            }
+
+            .nav-links a {
+                padding: 10px 9px;
+                font-size: 13px;
+            }
+
+            .service-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .process-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .footer-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+
+        @media (max-width: 760px) {
+
+            .top-bar-container {
+                justify-content: center;
+                padding: 8px 20px;
+            }
+
+            .top-right {
+                display: none;
+            }
+
+            .nav-container {
+                height: 70px;
+            }
+
+            .menu-btn {
+                display: block;
+            }
+
+            .nav-links {
+                position: absolute;
+
+                top: 70px;
+                left: 0;
+                right: 0;
+
+                background: var(--white);
+
+                border-bottom: 1px solid var(--border);
+
+                box-shadow: var(--shadow-md);
+
+                display: none;
+
+                flex-direction: column;
+
+                align-items: stretch;
+
+                padding: 15px 20px;
+            }
+
+            .nav-links.open {
+                display: flex;
+            }
+
+            .nav-links a {
+                display: block;
+                padding: 13px 15px;
+            }
+
+            .hero {
+                min-height: 620px;
+            }
+
+            .hero-container {
+                padding: 70px 20px;
+            }
+
+            .section {
+                padding: 70px 20px;
+            }
+
+            .intro-grid,
+            .detail-grid {
+                grid-template-columns: 1fr;
+
+                gap: 35px;
+            }
+
+            .intro-image {
+                min-height: 350px;
+            }
+
+            .detail-content {
+                grid-template-columns: 1fr;
+            }
+
+            .capability-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .cta-container {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+        }
+
+
+        @media (max-width: 500px) {
+
+            .logo-text strong {
+                font-size: 14px;
+            }
+
+            .logo-text span {
+                font-size: 8px;
+            }
+
+            .logo-symbol {
+                width: 40px;
+                height: 40px;
+            }
+
+            .hero h1 {
+                font-size: 38px;
+            }
+
+            .hero p {
+                font-size: 16px;
+            }
+
+            .service-grid,
+            .process-grid,
+            .footer-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .hero-buttons {
+                flex-direction: column;
+                align-items: stretch;
+            }
+
+            .btn {
+                width: 100%;
+            }
+
+            .footer-bottom {
+                flex-direction: column;
+            }
+        }
+
+    </style>
+    <style>
+
+        /* SERVICES DROPDOWN */
+
+        .nav-dropdown {
+            position: relative;
+        }
+
+        .dropdown-toggle {
+            display: inline-flex;
+            align-items: center;
+            gap: 4px;
+
+            padding: 11px 14px;
+
+            color: var(--dark);
+
+            font-size: 14px;
+            font-weight: 600;
+
+            border-radius: 7px;
+
+            cursor: pointer;
+
+            transition: 0.25s ease;
+        }
+
+        .dropdown-toggle:hover,
+        .dropdown-toggle.active {
+            color: var(--blue);
+            background: var(--light-blue);
+        }
+
+        .dropdown-arrow {
+            font-size: 10px;
+            transition: transform 0.2s ease;
+        }
+
+        .nav-dropdown.open .dropdown-arrow,
+        .nav-dropdown:hover .dropdown-arrow {
+            transform: rotate(180deg);
+        }
+
+        .dropdown-menu {
+            position: absolute;
+            top: 100%;
+            left: 0;
+
+            min-width: 230px;
+
+            margin-top: 6px;
+
+            background: var(--white);
+
+            border: 1px solid var(--border);
+            border-radius: 12px;
+
+            box-shadow: var(--shadow-md);
+
+            padding: 8px;
+
+            opacity: 0;
+            visibility: hidden;
+            transform: translateY(8px);
+
+            transition: 0.2s ease;
+
+            z-index: 1001;
+        }
+
+        .nav-dropdown:hover .dropdown-menu,
+        .nav-dropdown.open .dropdown-menu {
+            opacity: 1;
+            visibility: visible;
+            transform: translateY(0);
+        }
+
+        .dropdown-menu a {
+            display: block;
+
+            padding: 10px 12px;
+
+            border-radius: 8px;
+
+            font-size: 14px;
+            font-weight: 600;
+
+            color: var(--dark);
+
+            white-space: nowrap;
+        }
+
+        .dropdown-menu a:hover,
+        .dropdown-menu a.active {
+            background: var(--light-blue);
+            color: var(--blue);
+        }
+
+        @media (max-width: 760px) {
+
+            .dropdown-toggle {
+                display: flex;
+                justify-content: space-between;
+                padding: 13px 15px;
+            }
+
+            .dropdown-menu {
+                position: static;
+
+                display: none;
+
+                opacity: 1;
+                visibility: visible;
+                transform: none;
+
+                margin-top: 4px;
+
+                box-shadow: none;
+                border: none;
+
+                background: var(--off-white);
+
+                padding: 4px 4px 4px 15px;
+            }
+
+            .nav-dropdown.open .dropdown-menu {
+                display: block;
+            }
+        }
+
+    </style>
+
+</head>
+
+
+
+<body>
+
+    <!-- ACCESSIBILITY -->
+    <a href="#main-content" class="skip-link">
+        Skip to main content
+    </a>
+
+
+    <!-- =========================================================
+         TOP BAR
+    ========================================================== -->
+
+    <div class="top-bar">
+
+        <div class="top-bar-container">
+
+            <div class="top-left">
+
+                <span>📍 Opeikuma, Kasoa, Central Region, Ghana</span>
+
+            </div>
+
+            <div class="top-right">
+
+                <span>☎ 0243 608 533</span>
+
+                <span>✉ elitecengineers@gmail.com</span>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- =========================================================
+         NAVIGATION
+    ========================================================== -->
+
+    <nav class="navbar" aria-label="Main navigation">
+
+        <div class="nav-container">
+
+            <a href="index.html" class="logo" aria-label="Elitech Engineering Services Home">
+
+                <div class="logo-symbol">
+                    E
+                </div>
+
+                <div class="logo-text">
+
+                    <strong>ELITECH</strong>
+
+                    <span>ENGINEERING SERVICES</span>
+
+                </div>
+
+            </a>
+
+
+            <button
+                class="menu-btn"
+                id="menuBtn"
+                aria-label="Open navigation menu"
+                aria-expanded="false"
+                aria-controls="navLinks">
+
+                ☰
+
+            </button>
+
+
+            <ul class="nav-links" id="navLinks">
+
+                <li>
+                    <a href="index.html">Home</a>
+                </li>
+
+                <li>
+                    <a href="about.html">About</a>
+                </li>
+
+                <li class="nav-dropdown">
+                    <span class="dropdown-toggle active">
+                        Services
+                        <span class="dropdown-arrow">▾</span>
+                    </span>
+
+                    <div class="dropdown-menu">
+                        <a href="engineering.html">
+                            Engineering
+                        </a>
+                        <a href="data-center-operations.html" class="active">
+                            Data Center Operations
+                        </a>
+                    </div>
+                </li>
+
+                <li>
+                    <a href="ohse.html">
+                        OHSE
+                    </a>
+                </li>
+
+                <li>
+                    <a href="power-quality.html">
+                        Power Quality
+                    </a>
+                </li>
+
+                <li>
+                    <a href="contact.html" class="nav-cta">
+                        Contact Us
+                    </a>
+                </li>
+
+            </ul>
+
+        </div>
+
+    </nav>
+
+
+    <!-- =========================================================
+         MAIN
+    ========================================================== -->
+
+    <main id="main-content">
+
+
+        <!-- =====================================================
+             HERO
+        ====================================================== -->
+
+        <section class="hero">
+
+            <div class="hero-container">
+
+                <div class="hero-content">
+
+                    <div class="eyebrow">
+                        Data Center Solutions
+                    </div>
+
+                    <h1>
+                        Data Center Operations
+                        <span>Built for Uptime.</span>
+                    </h1>
+
+                    <p>
+                        Dependable data center operations support covering
+                        critical infrastructure monitoring, preventive
+                        maintenance and technical operations management
+                        for facilities that cannot afford downtime.
+                    </p>
+
+                    <div class="hero-buttons">
+
+                        <a href="#services" class="btn btn-primary">
+                            Explore Our Services
+                        </a>
+
+                        <a href="contact.html" class="btn btn-outline">
+                            Request a Consultation
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =====================================================
+             INTRODUCTION
+        ====================================================== -->
+
+        <section class="section">
+
+            <div class="container">
+
+                <div class="intro-grid">
+
+                    <div class="intro-image">
+
+                        <img
+                            src="https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=1000&q=85"
+                            alt="Data center server racks in a controlled facility"
+                            loading="lazy">
+
+                    </div>
+
+
+                    <div class="intro-content">
+
+                        <div class="section-label">
+                            Our Data Center Expertise
+                        </div>
+
+                        <h2>
+                            Operational reliability for
+                            critical facilities.
+                        </h2>
+
+                        <p>
+                            Elitech Engineering Services supports data
+                            center and server room facilities with
+                            technical operations, monitoring and
+                            maintenance services built around uptime,
+                            safety and performance.
+                        </p>
+
+                        <p>
+                            Our team combines electrical, mechanical and
+                            IT infrastructure expertise to keep critical
+                            facilities running reliably around the clock.
+                        </p>
+
+                        <ul class="feature-list">
+
+                            <li>
+                                24/7 facility monitoring and alerting
+                            </li>
+
+                            <li>
+                                Power infrastructure and UPS management
+                            </li>
+
+                            <li>
+                                Precision cooling and thermal management
+                            </li>
+
+                            <li>
+                                Preventive and corrective maintenance
+                            </li>
+
+                            <li>
+                                IT and network infrastructure support
+                            </li>
+
+                            <li>
+                                Access control and physical security oversight
+                            </li>
+
+                        </ul>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =====================================================
+             SERVICE OVERVIEW
+        ====================================================== -->
+
+        <section class="section section-light" id="services">
+
+            <div class="container">
+
+                <div class="section-heading center">
+
+                    <div class="section-label">
+                        What We Do
+                    </div>
+
+                    <h2>
+                        Data Center Services
+                    </h2>
+
+                    <p>
+                        A focused portfolio of technical operations
+                        services designed to keep data center and
+                        server room facilities running reliably
+                        around the clock.
+                    </p>
+
+                </div>
+
+
+                <div class="service-grid">
+
+
+                    <article class="service-card">
+
+                        <div class="service-number">
+                            01
+                        </div>
+
+                        <div class="service-icon">
+                            🖥
+                        </div>
+
+                        <h3>
+                            Facility Monitoring
+                        </h3>
+
+                        <p>
+                            24/7 monitoring of power, cooling and
+                            environmental conditions to catch issues
+                            before they affect uptime.
+                        </p>
+
+                    </article>
+
+
+                    <article class="service-card">
+
+                        <div class="service-number">
+                            02
+                        </div>
+
+                        <div class="service-icon">
+                            ⚡
+                        </div>
+
+                        <h3>
+                            Critical Power Management
+                        </h3>
+
+                        <p>
+                            UPS, generator and switchgear management to
+                            keep power delivery to racks reliable and
+                            protected.
+                        </p>
+
+                    </article>
+
+
+                    <article class="service-card">
+
+                        <div class="service-number">
+                            03
+                        </div>
+
+                        <div class="service-icon">
+                            ❄
+                        </div>
+
+                        <h3>
+                            Precision Cooling
+                        </h3>
+
+                        <p>
+                            CRAC/CRAH and airflow management to maintain
+                            safe operating temperatures for server
+                            equipment.
+                        </p>
+
+                    </article>
+
+
+                    <article class="service-card">
+
+                        <div class="service-number">
+                            04
+                        </div>
+
+                        <div class="service-icon">
+                            🛠
+                        </div>
+
+                        <h3>
+                            Preventive Maintenance
+                        </h3>
+
+                        <p>
+                            Scheduled inspection and servicing of
+                            electrical, mechanical and cooling systems
+                            to reduce unplanned downtime.
+                        </p>
+
+                    </article>
+
+
+                    <article class="service-card">
+
+                        <div class="service-number">
+                            05
+                        </div>
+
+                        <div class="service-icon">
+                            🌐
+                        </div>
+
+                        <h3>
+                            Network & IT Support
+                        </h3>
+
+                        <p>
+                            Structured cabling, LAN/WAN and network
+                            infrastructure support for connected
+                            facilities.
+                        </p>
+
+                    </article>
+
+
+                    <article class="service-card">
+
+                        <div class="service-number">
+                            06
+                        </div>
+
+                        <div class="service-icon">
+                            🔒
+                        </div>
+
+                        <h3>
+                            Access & Security
+                        </h3>
+
+                        <p>
+                            Access control, surveillance and physical
+                            security oversight for restricted facility
+                            areas.
+                        </p>
+
+                    </article>
+
+
+                    <article class="service-card">
+
+                        <div class="service-number">
+                            07
+                        </div>
+
+                        <div class="service-icon">
+                            📋
+                        </div>
+
+                        <h3>
+                            Capacity Planning
+                        </h3>
+
+                        <p>
+                            Assessment of power, cooling and space
+                            capacity to support current and future
+                            facility needs.
+                        </p>
+
+                    </article>
+
+
+                    <article class="service-card">
+
+                        <div class="service-number">
+                            08
+                        </div>
+
+                        <div class="service-icon">
+                            🚨
+                        </div>
+
+                        <h3>
+                            Incident Response
+                        </h3>
+
+                        <p>
+                            Rapid diagnosis and response to operational
+                            incidents to minimize impact and restore
+                            normal service quickly.
+                        </p>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =====================================================
+             POWER SYSTEMS
+        ====================================================== -->
+
+        <section class="section detail-section">
+
+            <div class="container">
+
+                <div class="detail-grid">
+
+                    <div class="detail-title">
+
+                        <div class="detail-number">
+                            01 / MONITORING & POWER
+                        </div>
+
+                        <h2>
+                            Always-on visibility
+                            and power reliability.
+                        </h2>
+
+                        <p>
+                            Reliable data center operations start with
+                            continuous visibility and dependable power.
+                            Our approach combines monitoring, protection
+                            and rapid response to keep facilities running.
+                        </p>
+
+                    </div>
+
+
+                    <div class="detail-content">
+
+                        <div class="detail-item">
+                            <h3>Facility Monitoring</h3>
+                            <p>
+                                Continuous tracking of power, temperature
+                                and environmental conditions across
+                                the facility.
+                            </p>
+                        </div>
+
+                        <div class="detail-item">
+                            <h3>Electrical Protection</h3>
+                            <p>
+                                Protection and reliability engineering
+                                for electrical distribution systems.
+                            </p>
+                        </div>
+
+                        <div class="detail-item">
+                            <h3>Critical Power</h3>
+                            <p>
+                                UPS and generator management supporting
+                                continuity for essential systems.
+                            </p>
+                        </div>
+
+                        <div class="detail-item">
+                            <h3>Alerting & Response</h3>
+                            <p>
+                                Real-time alerts and rapid response to
+                                keep incidents from becoming outages.
+                            </p>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =====================================================
+             COOLING / MAINTENANCE
+        ====================================================== -->
+
+        <section class="section section-light detail-section">
+
+            <div class="container">
+
+                <div class="detail-grid">
+
+                    <div class="detail-title">
+
+                        <div class="detail-number">
+                            02 / COOLING & MAINTENANCE
+                        </div>
+
+                        <h2>
+                            Keeping equipment
+                            running cool.
+                        </h2>
+
+                        <p>
+                            Thermal management and preventive maintenance
+                            protect equipment lifespan and reduce the
+                            risk of unplanned downtime.
+                        </p>
+
+                    </div>
+
+
+                    <div class="detail-content">
+
+                        <div class="detail-item">
+                            <h3>Precision Cooling</h3>
+                            <p>
+                                CRAC/CRAH and airflow management for
+                                stable operating temperatures.
+                            </p>
+                        </div>
+
+                        <div class="detail-item">
+                            <h3>Preventive Maintenance</h3>
+                            <p>
+                                Scheduled servicing that identifies
+                                issues before they cause failures.
+                            </p>
+                        </div>
+
+                        <div class="detail-item">
+                            <h3>Capacity Planning</h3>
+                            <p>
+                                Assessing power, cooling and space
+                                capacity for current and future needs.
+                            </p>
+                        </div>
+
+                        <div class="detail-item">
+                            <h3>Equipment Servicing</h3>
+                            <p>
+                                Hands-on maintenance for cooling and
+                                mechanical infrastructure.
+                            </p>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =====================================================
+             NETWORK / SECURITY
+        ====================================================== -->
+
+        <section class="section detail-section">
+
+            <div class="container">
+
+                <div class="detail-grid">
+
+                    <div class="detail-title">
+
+                        <div class="detail-number">
+                            03 / NETWORK & SECURITY
+                        </div>
+
+                        <h2>
+                            Connected and
+                            protected facilities.
+                        </h2>
+
+                        <p>
+                            We support the network and physical security
+                            layers that keep data center facilities
+                            connected, monitored and access-controlled.
+                        </p>
+
+                    </div>
+
+
+                    <div class="detail-content">
+
+                        <div class="detail-item">
+                            <h3>Network Infrastructure</h3>
+                            <p>
+                                Structured cabling and LAN/WAN support
+                                for connected facility operations.
+                            </p>
+                        </div>
+
+                        <div class="detail-item">
+                            <h3>Access Control</h3>
+                            <p>
+                                Controlled entry systems for restricted
+                                and sensitive facility areas.
+                            </p>
+                        </div>
+
+                        <div class="detail-item">
+                            <h3>Surveillance</h3>
+                            <p>
+                                Video monitoring supporting visibility
+                                and facility security.
+                            </p>
+                        </div>
+
+                        <div class="detail-item">
+                            <h3>Ongoing Support</h3>
+                            <p>
+                                Continued technical assistance for
+                                network and security infrastructure.
+                            </p>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =====================================================
+             HVAC
+        ====================================================== -->
+
+        <section class="section section-light detail-section">
+
+            <div class="container">
+
+                <div class="detail-grid">
+
+                    <div class="detail-title">
+
+                        <div class="detail-number">
+                            04 / REPORTING & SLAS
+                        </div>
+
+                        <h2>
+                            Transparent, measurable
+                            performance.
+                        </h2>
+
+                        <p>
+                            Clear reporting and defined service levels
+                            give facility owners confidence in how their
+                            infrastructure is performing.
+                        </p>
+
+                    </div>
+
+
+                    <div class="detail-content">
+
+                        <div class="detail-item">
+                            <h3>Uptime Reporting</h3>
+                            <p>
+                                Regular reporting on facility uptime and
+                                system performance.
+                            </p>
+                        </div>
+
+                        <div class="detail-item">
+                            <h3>Service Level Agreements</h3>
+                            <p>
+                                Defined response times and service
+                                commitments for critical facilities.
+                            </p>
+                        </div>
+
+                        <div class="detail-item">
+                            <h3>Maintenance Logs</h3>
+                            <p>
+                                Documented maintenance history for
+                                accountability and audit readiness.
+                            </p>
+                        </div>
+
+                        <div class="detail-item">
+                            <h3>Performance Reviews</h3>
+                            <p>
+                                Periodic reviews to identify improvements
+                                in reliability and efficiency.
+                            </p>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =====================================================
+             INCIDENT MANAGEMENT
+        ====================================================== -->
+
+        <section class="section detail-section">
+
+            <div class="container">
+
+                <div class="detail-grid">
+
+                    <div class="detail-title">
+
+                        <div class="detail-number">
+                            05 / INCIDENT MANAGEMENT
+                        </div>
+
+                        <h2>
+                            Fast response when
+                            it matters most.
+                        </h2>
+
+                        <p>
+                            When issues arise, a clear response process
+                            minimizes downtime and protects critical
+                            operations.
+                        </p>
+
+                    </div>
+
+
+                    <div class="detail-content">
+
+                        <div class="detail-item">
+                            <h3>Rapid Diagnosis</h3>
+                            <p>
+                                Quick identification of root causes
+                                behind operational incidents.
+                            </p>
+                        </div>
+
+                        <div class="detail-item">
+                            <h3>Escalation Procedures</h3>
+                            <p>
+                                Defined escalation paths for issues
+                                requiring specialist attention.
+                            </p>
+                        </div>
+
+                        <div class="detail-item">
+                            <h3>On-Site Response</h3>
+                            <p>
+                                Technical teams ready to respond on-site
+                                when remote resolution isn't enough.
+                            </p>
+                        </div>
+
+                        <div class="detail-item">
+                            <h3>Post-Incident Review</h3>
+                            <p>
+                                Review and follow-up to prevent recurring
+                                operational issues.
+                            </p>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =====================================================
+             PREVENTIVE MAINTENANCE
+        ====================================================== -->
+
+        <section class="section capability">
+
+            <div class="container">
+
+                <div class="section-heading">
+
+                    <div class="section-label">
+                        Reliability by Design
+                    </div>
+
+                    <h2>
+                        Operations discipline
+                        that protects uptime.
+                    </h2>
+
+                    <p>
+                        Effective data center operations go beyond
+                        reacting to problems. It is about identifying
+                        risks early, protecting assets and maintaining
+                        continuous, reliable operation.
+                    </p>
+
+                </div>
+
+
+                <div class="capability-grid">
+
+                    <div class="capability-card">
+
+                        <strong>01</strong>
+
+                        <h3>
+                            Inspect
+                        </h3>
+
+                        <p>
+                            Identify equipment conditions, abnormalities
+                            and potential operational risks.
+                        </p>
+
+                    </div>
+
+
+                    <div class="capability-card">
+
+                        <strong>02</strong>
+
+                        <h3>
+                            Maintain
+                        </h3>
+
+                        <p>
+                            Execute planned maintenance activities to
+                            preserve system performance.
+                        </p>
+
+                    </div>
+
+
+                    <div class="capability-card">
+
+                        <strong>03</strong>
+
+                        <h3>
+                            Improve
+                        </h3>
+
+                        <p>
+                            Use engineering observations to improve
+                            reliability and operational performance.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =====================================================
+             SERVICE DELIVERY PROCESS
+        ====================================================== -->
+
+        <section class="section section-light">
+
+            <div class="container">
+
+                <div class="section-heading center">
+
+                    <div class="section-label">
+                        Our Approach
+                    </div>
+
+                    <h2>
+                        From assessment to reliable operations.
+                    </h2>
+
+                    <p>
+                        Our approach is structured around understanding
+                        the facility's requirements, delivering practical
+                        operational support and sustaining long-term
+                        performance.
+                    </p>
+
+                </div>
+
+
+                <div class="process-grid">
+
+                    <div class="process-card">
+
+                        <h3>
+                            Understand
+                        </h3>
+
+                        <p>
+                            We begin by understanding the facility,
+                            operational requirements and uptime
+                            expectations.
+                        </p>
+
+                    </div>
+
+
+                    <div class="process-card">
+
+                        <h3>
+                            Assess
+                        </h3>
+
+                        <p>
+                            We assess power, cooling, network and
+                            security infrastructure conditions.
+                        </p>
+
+                    </div>
+
+
+                    <div class="process-card">
+
+                        <h3>
+                            Deliver
+                        </h3>
+
+                        <p>
+                            We implement monitoring and maintenance
+                            practices with an emphasis on reliability
+                            and safety.
+                        </p>
+
+                    </div>
+
+
+                    <div class="process-card">
+
+                        <h3>
+                            Support
+                        </h3>
+
+                        <p>
+                            We provide ongoing operational and
+                            maintenance support to sustain performance.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =====================================================
+             CTA
+        ====================================================== -->
+
+        <section class="cta">
+
+            <div class="cta-container">
+
+                <div>
+
+                    <h2>
+                        Need dependable data center operations support?
+                    </h2>
+
+                    <p>
+                        Talk to Elitech Engineering Services about
+                        monitoring, maintenance and operational support
+                        for your data center or server room facility.
+                    </p>
+
+                </div>
+
+
+                <a href="contact.html" class="btn btn-primary">
+                    Talk to Our Team
+                </a>
+
+            </div>
+
+        </section>
+
+
+    </main>
+
+
+    <!-- =========================================================
+         FOOTER
+    ========================================================== -->
+
+    <footer>
+
+        <div class="footer-grid">
+
+
+            <div class="footer-brand">
+
+                <h3>
+                    Elitech Engineering Services
+                </h3>
+
+                <p>
+                    Professional electrical, mechanical and IT
+                    infrastructure engineering services focused on
+                    quality, safety, reliability and customer value.
+                </p>
+
+            </div>
+
+
+            <div>
+
+                <h4>
+                    Company
+                </h4>
+
+                <ul class="footer-links">
+
+                    <li>
+                        <a href="index.html">Home</a>
+                    </li>
+
+                    <li>
+                        <a href="about.html">About Us</a>
+                    </li>
+
+                    <li>
+                        <a href="engineering.html">
+                            Engineering
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="data-center-operations.html">
+                            Data Center Operations
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="ohse.html">
+                            OHSE
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="power-quality.html">
+                            Power Quality
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="contact.html">
+                            Contact Us
+                        </a>
+                    </li>
+
+                </ul>
+
+            </div>
+
+
+            <div>
+
+                <h4>
+                    Services
+                </h4>
+
+                <ul class="footer-links">
+
+                    <li>
+                        <a href="#services">
+                            Facility Monitoring
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#services">
+                            Critical Power
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#services">
+                            Precision Cooling
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#services">
+                            Network & Security
+                        </a>
+                    </li>
+
+                </ul>
+
+            </div>
+
+
+            <div>
+
+                <h4>
+                    Contact
+                </h4>
+
+                <ul class="footer-links">
+
+                    <li>
+                        Opeikuma, Kasoa
+                    </li>
+
+                    <li>
+                        Central Region, Ghana
+                    </li>
+
+                    <li>
+                        0243 608 533
+                    </li>
+
+                    <li>
+                        elitecengineers@gmail.com
+                    </li>
+
+                </ul>
+
+            </div>
+
+        </div>
+
+
+        <div class="footer-bottom">
+
+            <span>
+                © 2026 Elitech Engineering Services.
+                All Rights Reserved.
+            </span>
+
+            <span>
+                Engineering • Infrastructure • Reliability
+            </span>
+
+        </div>
+
+    </footer>
+
+
+    <!-- =========================================================
+         MOBILE NAVIGATION JAVASCRIPT
+    ========================================================== -->
+
+    <script>
+
+        const menuBtn = document.getElementById("menuBtn");
+        const navLinks = document.getElementById("navLinks");
+
+        menuBtn.addEventListener("click", function () {
+
+            navLinks.classList.toggle("open");
+
+            const isOpen =
+                navLinks.classList.contains("open");
+
+            menuBtn.setAttribute(
+                "aria-expanded",
+                isOpen
+            );
+
+            menuBtn.setAttribute(
+                "aria-label",
+                isOpen
+                    ? "Close navigation menu"
+                    : "Open navigation menu"
+            );
+
+            menuBtn.textContent =
+                isOpen ? "✕" : "☰";
+
+        });
+
+
+        /* Close menu after selecting a link */
+
+        document.querySelectorAll(".nav-links a")
+            .forEach(function (link) {
+
+                link.addEventListener("click", function () {
+
+                    navLinks.classList.remove("open");
+
+                    menuBtn.setAttribute(
+                        "aria-expanded",
+                        "false"
+                    );
+
+                    menuBtn.setAttribute(
+                        "aria-label",
+                        "Open navigation menu"
+                    );
+
+                    menuBtn.textContent = "☰";
+
+                });
+
+            });
+
+    </script>
+
+    <script>
+
+        /* SERVICES DROPDOWN TOGGLE */
+
+        document.querySelectorAll(".dropdown-toggle")
+            .forEach(function (toggle) {
+
+                toggle.addEventListener("click", function (e) {
+
+                    e.stopPropagation();
+
+                    const parent = toggle.closest(".nav-dropdown");
+
+                    parent.classList.toggle("open");
+
+                });
+
+            });
+
+        document.addEventListener("click", function () {
+
+            document.querySelectorAll(".nav-dropdown.open")
+                .forEach(function (d) {
+                    d.classList.remove("open");
+                });
+
+        });
+
+    </script>
+
+</body>
+
+</html>

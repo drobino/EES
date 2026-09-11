@@ -1,0 +1,2588 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <!-- Responsive Design -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- SEO -->
+    <meta name="description"
+          content="Elitech Engineering Services provides professional electrical, mechanical, IT infrastructure and OHSE engineering services in Ghana.">
+
+    <meta name="keywords"
+          content="Elitech Engineering Services, EES Ghana, electrical engineering, power quality, energy audit, generator, UPS, solar PV, CRAC, LAN, WAN, OHSE">
+
+    <meta name="author" content="Elitech Engineering Services">
+
+    <!-- Browser Tab Title -->
+    <title>
+	      Elitech Engineering Services | Engineering Excellence
+	</title>
+
+    <!-- Favicon -->
+    <link rel="icon"
+          href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='18' fill='%23071F35'/%3E%3Cpath d='M18 25h64v12H31v8h43v11H31v9h51v12H18z' fill='white'/%3E%3Cpath d='M60 15l-12 34h13L39 85l8-30H34z' fill='%2300B8D4'/%3E%3C/svg%3E">
+
+    <style>
+
+        /* =========================================================
+           GLOBAL VARIABLES
+        ========================================================= */
+
+        :root {
+            --navy: #071f35;
+            --navy-light: #0c304d;
+            --blue: #087ea4;
+            --cyan: #00b8d4;
+            --teal: #008c95;
+            --gold: #e2b857;
+            --white: #ffffff;
+            --off-white: #f5f8fa;
+            --light-blue: #eaf6fa;
+            --dark: #17232d;
+            --gray: #667784;
+            --border: #dce6eb;
+
+            --shadow-sm:
+                0 4px 15px rgba(7, 31, 53, 0.08);
+
+            --shadow-md:
+                0 12px 35px rgba(7, 31, 53, 0.12);
+
+            --shadow-lg:
+                0 20px 55px rgba(7, 31, 53, 0.18);
+
+            --radius-sm: 8px;
+            --radius-md: 16px;
+            --radius-lg: 26px;
+
+            --container: 1200px;
+
+            --transition:
+                all 0.3s ease;
+        }
+
+
+        /* =========================================================
+           RESET
+        ========================================================= */
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family:
+                "Segoe UI",
+                Arial,
+                Helvetica,
+                sans-serif;
+
+            color: var(--dark);
+            background: var(--white);
+            line-height: 1.7;
+            overflow-x: hidden;
+        }
+
+        img {
+            max-width: 100%;
+            display: block;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        button {
+            font: inherit;
+        }
+
+        .container {
+            width: min(92%, var(--container));
+            margin: auto;
+        }
+
+
+        /* =========================================================
+           ACCESSIBILITY
+        ========================================================= */
+
+        .skip-link {
+            position: absolute;
+            top: -100px;
+            left: 20px;
+            background: var(--cyan);
+            color: var(--navy);
+            padding: 12px 20px;
+            font-weight: 700;
+            z-index: 9999;
+            border-radius: 0 0 8px 8px;
+        }
+
+        .skip-link:focus {
+            top: 0;
+        }
+
+        :focus-visible {
+            outline: 3px solid var(--gold);
+            outline-offset: 4px;
+        }
+
+
+        /* =========================================================
+           TOP INFORMATION BAR
+        ========================================================= */
+
+        .top-bar {
+            background: var(--navy);
+            color: rgba(255,255,255,0.88);
+            font-size: 0.85rem;
+        }
+
+        .top-bar-inner {
+            min-height: 40px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .top-contact {
+            display: flex;
+            gap: 24px;
+            flex-wrap: wrap;
+        }
+
+        .top-contact span {
+            display: inline-flex;
+            align-items: center;
+            gap: 7px;
+        }
+
+        .top-highlight {
+            color: var(--cyan);
+            font-weight: 700;
+        }
+
+
+        /* =========================================================
+           NAVIGATION
+        ========================================================= */
+
+        .navbar {
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            background: rgba(255,255,255,0.97);
+            backdrop-filter: blur(12px);
+            border-bottom: 1px solid rgba(7,31,53,0.08);
+        }
+
+        .nav-inner {
+            height: 82px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 30px;
+        }
+
+
+        /* LOGO */
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            min-width: max-content;
+        }
+
+        .logo-mark {
+            width: 47px;
+            height: 47px;
+            border-radius: 11px;
+            background:
+                linear-gradient(
+                    135deg,
+                    var(--navy),
+                    var(--blue)
+                );
+
+            display: grid;
+            place-items: center;
+
+            color: var(--white);
+            font-size: 1.35rem;
+            font-weight: 900;
+
+            box-shadow:
+                0 7px 18px rgba(7,31,53,0.18);
+
+            position: relative;
+            overflow: hidden;
+        }
+
+        .logo-mark::after {
+            content: "";
+            position: absolute;
+            width: 40px;
+            height: 5px;
+            background: var(--cyan);
+            transform: rotate(-45deg);
+            bottom: 8px;
+            left: 5px;
+        }
+
+        .logo-text {
+            display: flex;
+            flex-direction: column;
+            line-height: 1.1;
+        }
+
+        .logo-text strong {
+            font-size: 1.15rem;
+            letter-spacing: 1px;
+            color: var(--navy);
+        }
+
+        .logo-text span {
+            font-size: 0.68rem;
+            letter-spacing: 1.6px;
+            color: var(--blue);
+            font-weight: 700;
+            text-transform: uppercase;
+        }
+
+
+        /* NAVIGATION LINKS */
+
+        .nav-links {
+            display: flex;
+            align-items: center;
+            gap: 28px;
+            list-style: none;
+        }
+
+        .nav-links a {
+            color: var(--dark);
+            font-size: 0.92rem;
+            font-weight: 600;
+            position: relative;
+            padding: 8px 0;
+            transition: var(--transition);
+        }
+
+        .nav-links a::after {
+            content: "";
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 0;
+            height: 2px;
+            background: var(--cyan);
+            transition: var(--transition);
+        }
+
+        .nav-links a:hover {
+            color: var(--blue);
+        }
+
+        .nav-links a:hover::after {
+            width: 100%;
+        }
+
+
+        /* NAVIGATION CTA */
+
+        .nav-cta {
+            background:
+                linear-gradient(
+                    135deg,
+                    var(--blue),
+                    var(--teal)
+                );
+
+            color: var(--white) !important;
+            padding: 11px 20px !important;
+            border-radius: 8px;
+            box-shadow: var(--shadow-sm);
+        }
+
+        .nav-cta::after {
+            display: none;
+        }
+
+        .nav-cta:hover {
+            transform: translateY(-2px);
+            box-shadow: var(--shadow-md);
+            color: var(--white) !important;
+        }
+
+
+        /* MOBILE MENU BUTTON */
+
+        .menu-toggle {
+            display: none;
+            width: 44px;
+            height: 44px;
+            border: none;
+            background: var(--light-blue);
+            color: var(--navy);
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 1.4rem;
+        }
+
+
+        /* =========================================================
+           HERO SECTION
+        ========================================================= */
+
+        .hero {
+            min-height: 690px;
+            position: relative;
+            display: flex;
+            align-items: center;
+
+            background:
+                linear-gradient(
+                    90deg,
+                    rgba(4,24,41,0.96) 0%,
+                    rgba(4,31,51,0.88) 42%,
+                    rgba(4,31,51,0.52) 75%,
+                    rgba(4,31,51,0.35) 100%
+                ),
+                url("pictures/background-home.jpg")
+                center/cover no-repeat;
+
+            color: var(--white);
+        }
+
+        .hero-content {
+            max-width: 760px;
+            padding: 100px 0;
+        }
+
+        .hero-label {
+            display: inline-flex;
+            align-items: center;
+            gap: 9px;
+
+            color: var(--cyan);
+            font-size: 0.82rem;
+            font-weight: 800;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+
+            margin-bottom: 20px;
+        }
+
+        .hero-label::before {
+            content: "";
+            width: 35px;
+            height: 2px;
+            background: var(--cyan);
+        }
+
+        .hero h1 {
+            font-size: clamp(2.8rem, 6vw, 5.2rem);
+            line-height: 1.04;
+            letter-spacing: -2px;
+            margin-bottom: 25px;
+        }
+
+        .hero h1 span {
+            color: var(--cyan);
+        }
+
+        .hero p {
+            max-width: 680px;
+            color: rgba(255,255,255,0.86);
+            font-size: 1.08rem;
+            line-height: 1.8;
+            margin-bottom: 36px;
+        }
+
+
+        /* HERO BUTTONS */
+
+        .hero-buttons {
+            display: flex;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 9px;
+
+            padding: 14px 24px;
+            border-radius: 8px;
+
+            font-weight: 700;
+            font-size: 0.92rem;
+
+            transition: var(--transition);
+        }
+
+        .btn-primary {
+            background: var(--cyan);
+            color: var(--navy);
+            box-shadow:
+                0 10px 25px rgba(0,184,212,0.25);
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-3px);
+            background: var(--white);
+            box-shadow: var(--shadow-md);
+        }
+
+        .btn-outline {
+            color: var(--white);
+            border: 1px solid rgba(255,255,255,0.45);
+            background: rgba(255,255,255,0.06);
+        }
+
+        .btn-outline:hover {
+            background: var(--white);
+            color: var(--navy);
+            transform: translateY(-3px);
+        }
+
+
+        /* HERO STATS */
+
+        .hero-stats {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+
+            background: rgba(7,31,53,0.92);
+            backdrop-filter: blur(10px);
+        }
+
+        .stats-grid {
+            display: grid;
+            grid-template-columns:
+                repeat(4, 1fr);
+        }
+
+        .stat {
+            padding: 23px 25px;
+            border-right:
+                1px solid rgba(255,255,255,0.1);
+        }
+
+        .stat:last-child {
+            border-right: none;
+        }
+
+        .stat strong {
+            display: block;
+            font-size: 1.45rem;
+            color: var(--white);
+        }
+
+        .stat span {
+            color: rgba(255,255,255,0.65);
+            font-size: 0.78rem;
+        }
+
+
+        /* =========================================================
+           SECTION GENERAL
+        ========================================================= */
+
+        .section {
+            padding: 100px 0;
+        }
+
+        .section-light {
+            background: var(--off-white);
+        }
+
+        .section-heading {
+            max-width: 700px;
+            margin-bottom: 55px;
+        }
+
+        .eyebrow {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+
+            color: var(--blue);
+            font-size: 0.78rem;
+            font-weight: 800;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+
+            margin-bottom: 14px;
+        }
+
+        .eyebrow::before {
+            content: "";
+            width: 30px;
+            height: 2px;
+            background: var(--cyan);
+        }
+
+        .section-heading h2 {
+            font-size: clamp(2rem, 4vw, 3.2rem);
+            line-height: 1.15;
+            color: var(--navy);
+            margin-bottom: 16px;
+        }
+
+        .section-heading h2 span {
+            color: var(--blue);
+        }
+
+        .section-heading p {
+            color: var(--gray);
+            font-size: 1rem;
+        }
+
+
+        /* =========================================================
+           INTRODUCTION
+        ========================================================= */
+
+        .intro-grid {
+            display: grid;
+            grid-template-columns: 1.05fr 0.95fr;
+            gap: 70px;
+            align-items: center;
+        }
+
+        .intro-image {
+            min-height: 500px;
+            border-radius: var(--radius-lg);
+
+            background:
+                linear-gradient(
+                    135deg,
+                    rgba(0,140,149,0.15),
+                    rgba(7,31,53,0.05)
+                ),
+                url("pictures/engineering-solution.png")
+                center/cover no-repeat;
+
+            position: relative;
+            box-shadow: var(--shadow-lg);
+        }
+
+        .experience-card {
+            position: absolute;
+            bottom: -25px;
+            right: -25px;
+
+            background: var(--white);
+            padding: 25px;
+            border-radius: var(--radius-md);
+
+            box-shadow: var(--shadow-md);
+
+            border-left: 4px solid var(--cyan);
+        }
+
+        .experience-card strong {
+            display: block;
+            font-size: 2.2rem;
+            line-height: 1;
+            color: var(--blue);
+        }
+
+        .experience-card span {
+            font-size: 0.82rem;
+            color: var(--gray);
+        }
+
+        .intro-content h3 {
+            font-size: 1.7rem;
+            color: var(--navy);
+            margin-bottom: 18px;
+        }
+
+        .intro-content p {
+            color: var(--gray);
+            margin-bottom: 20px;
+        }
+
+        .check-list {
+            list-style: none;
+            margin: 25px 0;
+        }
+
+        .check-list li {
+            display: flex;
+            gap: 12px;
+            margin-bottom: 13px;
+            color: var(--dark);
+            font-weight: 500;
+        }
+
+        .check-list li::before {
+            content: "✓";
+            width: 23px;
+            height: 23px;
+            min-width: 23px;
+
+            display: grid;
+            place-items: center;
+
+            background: var(--light-blue);
+            color: var(--blue);
+            border-radius: 50%;
+
+            font-weight: 900;
+            font-size: 0.75rem;
+        }
+
+
+        /* =========================================================
+           SERVICES
+        ========================================================= */
+
+        .services-grid {
+            display: grid;
+            grid-template-columns:
+                repeat(3, 1fr);
+            gap: 22px;
+        }
+
+        .service-card {
+            background: var(--white);
+            border: 1px solid var(--border);
+            padding: 32px;
+            border-radius: var(--radius-md);
+
+            transition: var(--transition);
+
+            position: relative;
+            overflow: hidden;
+        }
+
+        .service-card::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+
+            width: 100%;
+            height: 4px;
+
+            background:
+                linear-gradient(
+                    90deg,
+                    var(--blue),
+                    var(--cyan)
+                );
+
+            transform: scaleX(0);
+            transform-origin: left;
+
+            transition: var(--transition);
+        }
+
+        .service-card:hover {
+            transform: translateY(-7px);
+            box-shadow: var(--shadow-md);
+            border-color: transparent;
+        }
+
+        .service-card:hover::before {
+            transform: scaleX(1);
+        }
+
+        .service-image {
+            width: 100%;
+            height: 170px;
+
+            border-radius: var(--radius-md);
+            overflow: hidden;
+
+            margin-bottom: 22px;
+        }
+
+        .service-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+            transition: var(--transition);
+        }
+
+        .service-card:hover .service-image img {
+            transform: scale(1.06);
+        }
+
+        .service-icon {
+            width: 58px;
+            height: 58px;
+
+            display: grid;
+            place-items: center;
+
+            background:
+                linear-gradient(
+                    135deg,
+                    var(--light-blue),
+                    #f0fbfd
+                );
+
+            color: var(--blue);
+            border-radius: 13px;
+
+            font-size: 1.5rem;
+            margin-bottom: 22px;
+        }
+
+        .service-card h3 {
+            color: var(--navy);
+            font-size: 1.18rem;
+            margin-bottom: 10px;
+        }
+
+        .service-card p {
+            color: var(--gray);
+            font-size: 0.9rem;
+            margin-bottom: 20px;
+        }
+
+        .service-link {
+            color: var(--blue);
+            font-size: 0.82rem;
+            font-weight: 800;
+            text-transform: uppercase;
+            letter-spacing: 0.7px;
+        }
+
+        .service-link:hover {
+            color: var(--teal);
+        }
+
+
+        /* =========================================================
+           POWER QUALITY FEATURE
+        ========================================================= */
+
+        .power-section {
+            background:
+                linear-gradient(
+                    135deg,
+                    var(--navy),
+                    var(--navy-light)
+                );
+
+            color: var(--white);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .power-section::before {
+            content: "";
+            position: absolute;
+            width: 500px;
+            height: 500px;
+            border-radius: 50%;
+
+            background:
+                radial-gradient(
+                    circle,
+                    rgba(0,184,212,0.18),
+                    transparent 65%
+                );
+
+            top: -200px;
+            right: -150px;
+        }
+
+        .power-grid {
+            display: grid;
+            grid-template-columns:
+                1fr 1fr;
+
+            gap: 70px;
+            align-items: center;
+        }
+
+        .power-content .eyebrow {
+            color: var(--cyan);
+        }
+
+        .power-content h2 {
+            font-size: clamp(2rem, 4vw, 3.1rem);
+            line-height: 1.15;
+            margin-bottom: 20px;
+        }
+
+        .power-content h2 span {
+            color: var(--cyan);
+        }
+
+        .power-content > p {
+            color: rgba(255,255,255,0.7);
+            margin-bottom: 30px;
+        }
+
+        .power-points {
+            display: grid;
+            grid-template-columns:
+                repeat(2, 1fr);
+
+            gap: 15px;
+        }
+
+        .power-point {
+            padding: 20px;
+            border:
+                1px solid rgba(255,255,255,0.1);
+
+            border-radius: 12px;
+            background:
+                rgba(255,255,255,0.04);
+        }
+
+        .power-point strong {
+            display: block;
+            color: var(--white);
+            margin-bottom: 5px;
+        }
+
+        .power-point span {
+            color: rgba(255,255,255,0.6);
+            font-size: 0.8rem;
+        }
+
+        .power-image {
+            min-height: 470px;
+            border-radius: var(--radius-lg);
+
+            background:
+                linear-gradient(
+                    rgba(7,31,53,0.18),
+                    rgba(7,31,53,0.18)
+                ),
+                url("https://images.unsplash.com/photo-1473341304170-971dccb5ac1e?auto=format&fit=crop&w=1200&q=85")
+                center/cover no-repeat;
+
+            box-shadow: var(--shadow-lg);
+        }
+
+
+        /* =========================================================
+           WHY CHOOSE US
+        ========================================================= */
+
+        .why-grid {
+            display: grid;
+            grid-template-columns:
+                repeat(3, 1fr);
+
+            gap: 22px;
+        }
+
+        .why-card {
+            padding: 30px;
+            background: var(--white);
+            border-radius: var(--radius-md);
+            border: 1px solid var(--border);
+        }
+
+        .why-number {
+            color: var(--cyan);
+            font-size: 0.78rem;
+            font-weight: 900;
+            letter-spacing: 1px;
+        }
+
+        .why-card h3 {
+            margin: 14px 0 10px;
+            color: var(--navy);
+        }
+
+        .why-card p {
+            color: var(--gray);
+            font-size: 0.9rem;
+        }
+
+
+        /* =========================================================
+           MISSION / VISION
+        ========================================================= */
+
+        .mv-grid {
+            display: grid;
+            grid-template-columns:
+                repeat(2, 1fr);
+
+            gap: 25px;
+        }
+
+        .mv-card {
+            padding: 40px;
+            border-radius: var(--radius-md);
+
+            background:
+                linear-gradient(
+                    135deg,
+                    #edf9fb,
+                    #ffffff
+                );
+
+            border: 1px solid #d7eef2;
+        }
+
+        .mv-card.dark {
+            background:
+                linear-gradient(
+                    135deg,
+                    var(--navy),
+                    var(--navy-light)
+                );
+
+            color: var(--white);
+            border: none;
+        }
+
+        .mv-icon {
+            font-size: 2rem;
+            margin-bottom: 20px;
+        }
+
+        .mv-card h3 {
+            font-size: 1.5rem;
+            margin-bottom: 12px;
+            color: var(--navy);
+        }
+
+        .mv-card.dark h3 {
+            color: var(--white);
+        }
+
+        .mv-card p {
+            color: var(--gray);
+        }
+
+        .mv-card.dark p {
+            color: rgba(255,255,255,0.68);
+        }
+
+
+        /* =========================================================
+           CTA
+        ========================================================= */
+
+        .cta-section {
+            padding: 85px 0;
+        }
+
+        .cta-box {
+            padding: 65px;
+            border-radius: var(--radius-lg);
+
+            background:
+                linear-gradient(
+                    120deg,
+                    var(--navy),
+                    var(--blue)
+                );
+
+            color: var(--white);
+
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 40px;
+
+            position: relative;
+            overflow: hidden;
+        }
+
+        .cta-box::after {
+            content: "";
+            position: absolute;
+            width: 300px;
+            height: 300px;
+
+            border-radius: 50%;
+
+            border:
+                1px solid rgba(255,255,255,0.12);
+
+            right: -100px;
+            top: -100px;
+        }
+
+        .cta-content {
+            max-width: 700px;
+            position: relative;
+            z-index: 1;
+        }
+
+        .cta-content h2 {
+            font-size: clamp(2rem, 4vw, 3rem);
+            line-height: 1.15;
+            margin-bottom: 15px;
+        }
+
+        .cta-content p {
+            color: rgba(255,255,255,0.72);
+        }
+
+        .cta-button {
+            position: relative;
+            z-index: 2;
+            min-width: 170px;
+        }
+
+
+        /* =========================================================
+           FOOTER
+        ========================================================= */
+
+        footer {
+            background: #041725;
+            color: var(--white);
+        }
+
+        .footer-main {
+            padding: 70px 0 45px;
+
+            display: grid;
+            grid-template-columns:
+                1.4fr 1fr 1fr 1.2fr;
+
+            gap: 50px;
+        }
+
+        .footer-brand p {
+            color: rgba(255,255,255,0.6);
+            font-size: 0.88rem;
+            max-width: 350px;
+            margin-top: 20px;
+        }
+
+        .footer-heading {
+            font-size: 0.85rem;
+            text-transform: uppercase;
+            letter-spacing: 1.3px;
+            color: var(--cyan);
+            margin-bottom: 20px;
+        }
+
+        .footer-links {
+            list-style: none;
+        }
+
+        .footer-links li {
+            margin-bottom: 10px;
+        }
+
+        .footer-links a {
+            color: rgba(255,255,255,0.62);
+            font-size: 0.88rem;
+            transition: var(--transition);
+        }
+
+        .footer-links a:hover {
+            color: var(--white);
+            padding-left: 4px;
+        }
+
+        .footer-contact p {
+            color: rgba(255,255,255,0.62);
+            font-size: 0.88rem;
+            margin-bottom: 12px;
+        }
+
+        .footer-bottom {
+            border-top:
+                1px solid rgba(255,255,255,0.08);
+
+            padding: 20px 0;
+
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 20px;
+
+            color: rgba(255,255,255,0.45);
+            font-size: 0.75rem;
+        }
+
+
+        /* =========================================================
+           RESPONSIVE DESIGN — TABLET
+        ========================================================= */
+
+        @media (max-width: 1000px) {
+
+            .nav-links {
+                gap: 16px;
+            }
+
+            .intro-grid,
+            .power-grid {
+                grid-template-columns: 1fr;
+                gap: 45px;
+            }
+
+            .intro-image {
+                min-height: 420px;
+            }
+
+            .services-grid {
+                grid-template-columns:
+                    repeat(2, 1fr);
+            }
+
+            .why-grid {
+                grid-template-columns:
+                    repeat(2, 1fr);
+            }
+
+            .footer-main {
+                grid-template-columns:
+                    repeat(2, 1fr);
+            }
+
+        }
+
+
+        /* =========================================================
+           RESPONSIVE DESIGN — MOBILE
+        ========================================================= */
+
+        @media (max-width: 760px) {
+
+            .top-bar {
+                display: none;
+            }
+
+            .nav-inner {
+                height: 72px;
+            }
+
+            .menu-toggle {
+                display: grid;
+                place-items: center;
+            }
+
+            .nav-links {
+                position: absolute;
+                top: 72px;
+                left: 0;
+                right: 0;
+
+                display: none;
+                flex-direction: column;
+                align-items: stretch;
+
+                background: var(--white);
+
+                padding: 20px;
+
+                box-shadow: var(--shadow-md);
+
+                border-top:
+                    1px solid var(--border);
+            }
+
+            .nav-links.active {
+                display: flex;
+            }
+
+            .nav-links a {
+                padding: 12px;
+                border-radius: 7px;
+            }
+
+            .nav-links a:hover {
+                background: var(--light-blue);
+            }
+
+            .nav-links a::after {
+                display: none;
+            }
+
+            .nav-cta {
+                text-align: center;
+            }
+
+            .hero {
+                min-height: 720px;
+                align-items: flex-start;
+            }
+
+            .hero-content {
+                padding: 85px 0 150px;
+            }
+
+            .hero h1 {
+                letter-spacing: -1px;
+            }
+
+            .hero p {
+                font-size: 0.95rem;
+            }
+
+            .stats-grid {
+                grid-template-columns:
+                    repeat(2, 1fr);
+            }
+
+            .stat {
+                padding: 15px;
+            }
+
+            .stat:nth-child(2) {
+                border-right: none;
+            }
+
+            .stat:nth-child(-n+2) {
+                border-bottom:
+                    1px solid rgba(255,255,255,0.1);
+            }
+
+            .section {
+                padding: 75px 0;
+            }
+
+            .services-grid,
+            .why-grid,
+            .mv-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .power-points {
+                grid-template-columns: 1fr;
+            }
+
+            .experience-card {
+                right: 15px;
+                bottom: -20px;
+            }
+
+            .cta-box {
+                padding: 40px 28px;
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            .footer-main {
+                grid-template-columns: 1fr;
+                gap: 35px;
+            }
+
+            .footer-bottom {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+        }
+
+
+        /* =========================================================
+           REDUCED MOTION
+        ========================================================= */
+
+        @media (prefers-reduced-motion: reduce) {
+
+            html {
+                scroll-behavior: auto;
+            }
+
+            *,
+            *::before,
+            *::after {
+                animation-duration: 0.01ms !important;
+                animation-iteration-count: 1 !important;
+                transition-duration: 0.01ms !important;
+            }
+        }
+
+    </style>
+    <style>
+
+        /* SERVICES DROPDOWN */
+
+        .nav-dropdown {
+            position: relative;
+        }
+
+        .dropdown-toggle {
+            display: inline-flex;
+            align-items: center;
+            gap: 4px;
+
+            padding: 11px 14px;
+
+            color: var(--dark);
+
+            font-size: 14px;
+            font-weight: 600;
+
+            border-radius: 7px;
+
+            cursor: pointer;
+
+            transition: 0.25s ease;
+        }
+
+        .dropdown-toggle:hover,
+        .dropdown-toggle.active {
+            color: var(--blue);
+            background: var(--light-blue);
+        }
+
+        .dropdown-arrow {
+            font-size: 10px;
+            transition: transform 0.2s ease;
+        }
+
+        .nav-dropdown.open .dropdown-arrow,
+        .nav-dropdown:hover .dropdown-arrow {
+            transform: rotate(180deg);
+        }
+
+        .dropdown-menu {
+            position: absolute;
+            top: 100%;
+            left: 0;
+
+            min-width: 230px;
+
+            margin-top: 6px;
+
+            background: var(--white);
+
+            border: 1px solid var(--border);
+            border-radius: 12px;
+
+            box-shadow: var(--shadow-md);
+
+            padding: 8px;
+
+            opacity: 0;
+            visibility: hidden;
+            transform: translateY(8px);
+
+            transition: 0.2s ease;
+
+            z-index: 1001;
+        }
+
+        .nav-dropdown:hover .dropdown-menu,
+        .nav-dropdown.open .dropdown-menu {
+            opacity: 1;
+            visibility: visible;
+            transform: translateY(0);
+        }
+
+        .dropdown-menu a {
+            display: block;
+
+            padding: 10px 12px;
+
+            border-radius: 8px;
+
+            font-size: 14px;
+            font-weight: 600;
+
+            color: var(--dark);
+
+            white-space: nowrap;
+        }
+
+        .dropdown-menu a:hover,
+        .dropdown-menu a.active {
+            background: var(--light-blue);
+            color: var(--blue);
+        }
+
+        @media (max-width: 760px) {
+
+            .dropdown-toggle {
+                display: flex;
+                justify-content: space-between;
+                padding: 13px 15px;
+            }
+
+            .dropdown-menu {
+                position: static;
+
+                display: none;
+
+                opacity: 1;
+                visibility: visible;
+                transform: none;
+
+                margin-top: 4px;
+
+                box-shadow: none;
+                border: none;
+
+                background: var(--off-white);
+
+                padding: 4px 4px 4px 15px;
+            }
+
+            .nav-dropdown.open .dropdown-menu {
+                display: block;
+            }
+        }
+
+    </style>
+
+</head>
+
+
+
+<body>
+
+    <!-- =========================================================
+         ACCESSIBILITY
+    ========================================================= -->
+
+    <a href="#main-content" class="skip-link">
+        Skip to main content
+    </a>
+
+
+    <!-- =========================================================
+         TOP BAR
+    ========================================================= -->
+
+    <div class="top-bar">
+
+        <div class="container top-bar-inner">
+
+            <div class="top-contact">
+
+                <span>
+                    📍 Opeikuma, Kasoa, Central Region
+                </span>
+
+                <span>
+                    ☎ 0243 608 533
+                </span>
+
+                <span>
+                    ✉ elitecengineers@gmail.com
+                </span>
+
+            </div>
+
+            <span class="top-highlight">
+                Engineering • Infrastructure • Safety
+            </span>
+
+        </div>
+
+    </div>
+
+
+    <!-- =========================================================
+         NAVIGATION
+    ========================================================= -->
+
+    <header class="navbar">
+
+        <div class="container nav-inner">
+
+            <a href="index.html" class="logo" aria-label="Elitech Engineering Services Home">
+
+                <div class="logo-mark">
+                    E
+                </div>
+
+                <div class="logo-text">
+                    <strong>ELITECH</strong>
+                    <span>Engineering Services</span>
+                </div>
+
+            </a>
+
+
+            <button
+                class="menu-toggle"
+                id="menuToggle"
+                aria-label="Open navigation menu"
+                aria-expanded="false">
+
+                ☰
+
+            </button>
+
+
+            <nav aria-label="Main navigation">
+
+                <ul class="nav-links" id="navLinks">
+
+                    <li>
+                        <a href="index.html">
+                            Home
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="about.html">
+                            About
+                        </a>
+                    </li>
+
+                    <li class="nav-dropdown">
+                        <span class="dropdown-toggle">
+                            Services
+                            <span class="dropdown-arrow">▾</span>
+                        </span>
+
+                        <div class="dropdown-menu">
+                            <a href="engineering.html">
+                                Engineering
+                            </a>
+                            <a href="data-center-operations.html">
+                                Data Center Operations
+                            </a>
+                        </div>
+                    </li>
+
+                    <li>
+                        <a href="ohse.html">
+                            OHSE
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="power-quality.html">
+                            Power Quality
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="contact.html" class="nav-cta">
+                            Contact Us
+                        </a>
+                    </li>
+
+                </ul>
+
+            </nav>
+
+        </div>
+
+    </header>
+
+
+    <!-- =========================================================
+         MAIN
+    ========================================================= -->
+
+    <main id="main-content">
+
+
+        <!-- =====================================================
+             HERO
+        ====================================================== -->
+
+        <section class="hero">
+
+            <div class="container">
+
+                <div class="hero-content">
+
+                    <!-- <div class="hero-label">
+                        Engineering Excellence Since 2014
+                    </div> -->
+
+                    <h1>
+                        Powering
+                        <span>Reliable</span>
+                        Infrastructure.
+                    </h1>
+
+                    <p>
+                        Elitech Engineering Services delivers professional
+                        electrical, mechanical, IT infrastructure and
+                        occupational health, safety and environmental
+                        engineering services designed around reliability,
+                        efficiency and safety.
+                    </p>
+
+                    <div class="hero-buttons">
+
+                        <a href="engineering.html"
+                           class="btn btn-primary">
+                            Explore Our Services
+                            →
+                        </a>
+
+                        <a href="contact.html"
+                           class="btn btn-outline">
+                            Talk to Our Engineers
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- HERO STATS -->
+
+            <div class="hero-stats">
+
+                <div class="container stats-grid">
+
+                    <div class="stat">
+                        <strong>2014</strong>
+                        <span>Established</span>
+                    </div>
+
+                    <div class="stat">
+                        <strong>18+</strong>
+                        <span>Years of Leadership Experience</span>
+                    </div>
+
+                    <div class="stat">
+                        <strong>4</strong>
+                        <span>Core Service Areas</span>
+                    </div>
+
+                    <div class="stat">
+                        <strong>2035</strong>
+                        <span>West Africa Leadership Goal</span>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =====================================================
+             WHO WE ARE
+        ====================================================== -->
+
+        <section class="section">
+
+            <div class="container intro-grid">
+
+                <div class="intro-image"
+                     role="img"
+                     aria-label="Engineering professional working with electrical infrastructure">
+
+                    <div class="experience-card">
+
+                        <strong>2014</strong>
+
+                        <span>
+                            Founded & Incorporated
+                        </span>
+
+                    </div>
+
+                </div>
+
+
+                <div class="intro-content">
+
+                    <div class="eyebrow">
+                        Who We Are
+                    </div>
+
+                    <h2>
+                        Engineering solutions
+                        <span>built around reliability.</span>
+                    </h2>
+
+                    <h3>
+                        Technical expertise for critical infrastructure.
+                    </h3>
+
+                    <p>
+                        Elitech Engineering Services was founded and
+                        incorporated in August 2014 as an Electrical,
+                        Mechanical and IT Infrastructure engineering services
+                        company.
+                    </p>
+
+                    <p>
+                        We provide technical solutions that help
+                        organizations improve the reliability, efficiency
+                        and safety of their facilities and infrastructure.
+                    </p>
+
+                    <ul class="check-list">
+
+                        <li>
+                            Quality-focused engineering services
+                        </li>
+
+                        <li>
+                            Safety-driven technical engineering
+                        </li>
+
+                        <li>
+                            Professional and efficient service delivery
+                        </li>
+
+                        <li>
+                            Solutions focused on customer value
+                        </li>
+
+                    </ul>
+
+                    <a href="about.html"
+                       class="btn btn-primary">
+                        Discover EES
+                        →
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =====================================================
+             SERVICES
+        ====================================================== -->
+
+        <section class="section section-light">
+
+            <div class="container">
+
+                <div class="section-heading">
+
+                    <div class="eyebrow">
+                        What We Do
+                    </div>
+
+                    <h2>
+                        Engineering services
+                        <span>that perform.</span>
+                    </h2>
+
+                    <p>
+                        From electrical power systems to cooling,
+                        networking and surveillance infrastructure,
+                        our services are designed to keep your
+                        operations reliable and efficient.
+                    </p>
+
+                </div>
+
+
+                <div class="services-grid">
+
+
+                    <!-- SERVICE 1 -->
+
+                    <article class="service-card">
+
+                        <div class="service-image">
+                            <img src="pictures/electrical-power-quality.jpeg"
+                                 alt="Electrical Power Quality">
+                        </div>
+
+                        <div class="service-icon">
+                            ⚡
+                        </div>
+
+                        <h3>
+                            Electrical Power Quality
+                        </h3>
+
+                        <p>
+                            Power quality analysis and electrical
+                            system assessments to improve reliability,
+                            stability and efficiency.
+                        </p>
+
+                        <a href="pictures/power-quality.html"
+                           class="service-link">
+                            Learn More →
+                        </a>
+
+                    </article>
+
+
+                    <!-- SERVICE 2 -->
+
+                    <article class="service-card">
+
+                        <div class="service-image">
+                            <img src="pictures/power-system-energy.png"
+                                 alt="Power Systems & Energy">
+                        </div>
+
+                        <div class="service-icon">
+                            🔋
+                        </div>
+
+                        <h3>
+                            Power Systems & Energy
+                        </h3>
+
+                        <p>
+                            Power systems assessment, energy audits
+                            and strategies for reducing energy losses
+                            and improving efficiency.
+                        </p>
+
+                        <a href="engineering.html"
+                           class="service-link">
+                            Explore Service →
+                        </a>
+
+                    </article>
+
+
+                    <!-- SERVICE 3 -->
+
+                    <article class="service-card">
+
+                        <div class="service-image">
+                            <img src="pictures/generator-ups-avr.png"
+                                 alt="Generators, UPS & AVR">
+                        </div>
+
+                        <div class="service-icon">
+                            🔧
+                        </div>
+
+                        <h3>
+                            Generators, UPS & AVR
+                        </h3>
+
+                        <p>
+                            Installation, servicing and technical
+                            engineering for generators, UPS systems and
+                            automatic voltage regulation equipment.
+                        </p>
+
+                        <a href="engineering.html"
+                           class="service-link">
+                            Explore Service →
+                        </a>
+
+                    </article>
+
+
+                    <!-- SERVICE 4 -->
+
+                    <article class="service-card">
+
+                        <div class="service-image">
+                            <img src="pictures/solar-inverter-system.jpg"
+                                 alt="Solar PV & Inverters">
+                        </div>
+
+                        <div class="service-icon">
+                            ☀️
+                        </div>
+
+                        <h3>
+                            Solar PV & Inverters
+                        </h3>
+
+                        <p>
+                            Renewable energy solutions including
+                            inverter and solar photovoltaic installation
+                            and servicing.
+                        </p>
+
+                        <a href="engineering.html"
+                           class="service-link">
+                            Explore Service →
+                        </a>
+
+                    </article>
+
+
+                    <!-- SERVICE 5 -->
+
+                    <article class="service-card">
+
+                        <div class="service-image">
+                            <img src="pictures/cooling-infrastructure.jpg"
+                                 alt="Cooling Infrastructure">
+                        </div>
+
+                        <div class="service-icon">
+                            ❄️
+                        </div>
+
+                        <h3>
+                            Cooling Infrastructure
+                        </h3>
+
+                        <p>
+                            CRAC, AHU and air-conditioning installation
+                            and servicing for environments requiring
+                            dependable thermal management.
+                        </p>
+
+                        <a href="engineering.html"
+                           class="service-link">
+                            Explore Service →
+                        </a>
+
+                    </article>
+
+
+                    <!-- SERVICE 6 -->
+
+                    <article class="service-card">
+
+                        <div class="service-image">
+                            <img src="pictures/it-security-infrastructure.png"
+                                 alt="IT & Security Infrastructure">
+                        </div>
+
+                        <div class="service-icon">
+                            🌐
+                        </div>
+
+                        <h3>
+                            IT & Security Infrastructure
+                        </h3>
+
+                        <p>
+                            LAN, WAN and security surveillance solutions
+                            that engineering connected and protected
+                            facilities.
+                        </p>
+
+                        <a href="engineering.html"
+                           class="service-link">
+                            Explore Service →
+                        </a>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =====================================================
+             POWER QUALITY FEATURE
+        ====================================================== -->
+
+        <section class="section power-section">
+
+            <div class="container power-grid">
+
+                <div class="power-content">
+
+                    <div class="eyebrow">
+                        Power Quality
+                    </div>
+
+                    <h2>
+                        You need more than
+                        <span>electricity.</span>
+                    </h2>
+
+                    <p>
+                        You need a stable, reliable and efficient
+                        electrical power system. EES can help analyze
+                        your facility and identify opportunities to
+                        improve power quality, safety and efficiency.
+                    </p>
+
+
+                    <div class="power-points">
+
+                        <div class="power-point">
+
+                            <strong>
+                                Voltage Stability
+                            </strong>
+
+                            <span>
+                                Protect equipment from damaging
+                                voltage conditions.
+                            </span>
+
+                        </div>
+
+
+                        <div class="power-point">
+
+                            <strong>
+                                Power Quality
+                            </strong>
+
+                            <span>
+                                Identify harmonics, sags, swells
+                                and transients.
+                            </span>
+
+                        </div>
+
+
+                        <div class="power-point">
+
+                            <strong>
+                                Thermal Scanning
+                            </strong>
+
+                            <span>
+                                Detect excessive heat in cables
+                                and electrical equipment.
+                            </span>
+
+                        </div>
+
+
+                        <div class="power-point">
+
+                            <strong>
+                                Energy Efficiency
+                            </strong>
+
+                            <span>
+                                Identify opportunities to reduce
+                                energy losses and costs.
+                            </span>
+
+                        </div>
+
+                    </div>
+
+                    <br>
+
+                    <a href="power-quality.html"
+                       class="btn btn-primary">
+                        Analyze Your Power System
+                        →
+                    </a>
+
+                </div>
+
+
+                <div class="power-image"
+                     role="img"
+                     aria-label="Electrical power infrastructure">
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =====================================================
+             WHY CHOOSE EES
+        ====================================================== -->
+
+        <section class="section section-light">
+
+            <div class="container">
+
+                <div class="section-heading">
+
+                    <div class="eyebrow">
+                        Why EES
+                    </div>
+
+                    <h2>
+                        Built on
+                        <span>trust and excellence.</span>
+                    </h2>
+
+                    <p>
+                        Our approach is centered on professional
+                        service delivery, safety, efficiency and
+                        measurable customer value.
+                    </p>
+
+                </div>
+
+
+                <div class="why-grid">
+
+
+                    <article class="why-card">
+
+                        <span class="why-number">
+                            01 / PROFESSIONALISM
+                        </span>
+
+                        <h3>
+                            Professional Service
+                        </h3>
+
+                        <p>
+                            We prioritize promptness, professionalism
+                            and efficiency in our technical service
+                            delivery.
+                        </p>
+
+                    </article>
+
+
+                    <article class="why-card">
+
+                        <span class="why-number">
+                            02 / SAFETY
+                        </span>
+
+                        <h3>
+                            Safety First
+                        </h3>
+
+                        <p>
+                            The safety of your people, equipment and
+                            facility remains a core priority in our
+                            work.
+                        </p>
+
+                    </article>
+
+
+                    <article class="why-card">
+
+                        <span class="why-number">
+                            03 / VALUE
+                        </span>
+
+                        <h3>
+                            Customer Value
+                        </h3>
+
+                        <p>
+                            Our services are designed to enhance
+                            performance while delivering excellent
+                            returns on your investment.
+                        </p>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =====================================================
+             MISSION / VISION
+        ====================================================== -->
+
+        <section class="section">
+
+            <div class="container">
+
+                <div class="section-heading">
+
+                    <div class="eyebrow">
+                        Our Direction
+                    </div>
+
+                    <h2>
+                        Where we are
+                        <span>going.</span>
+                    </h2>
+
+                </div>
+
+
+                <div class="mv-grid">
+
+
+                    <article class="mv-card">
+
+                        <div class="mv-icon">
+                            🎯
+                        </div>
+
+                        <h3>
+                            Our Mission
+                        </h3>
+
+                        <p>
+                            Our mission is to deliver exceptional
+                            engineering services that meet the highest
+                            standards of quality and safety while
+                            ensuring clients receive maximum value
+                            for their investment and fostering
+                            long-term partnerships built on trust
+                            and excellence.
+                        </p>
+
+                    </article>
+
+
+                    <article class="mv-card dark">
+
+                        <div class="mv-icon">
+                            🌍
+                        </div>
+
+                        <h3>
+                            Our Vision
+                        </h3>
+
+                        <p>
+                            Our goal is to establish leadership as
+                            a service provider in West Africa by
+                            2035.
+                        </p>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =====================================================
+             CALL TO ACTION
+        ====================================================== -->
+
+        <section class="cta-section">
+
+            <div class="container">
+
+                <div class="cta-box">
+
+                    <div class="cta-content">
+
+                        <h2>
+                            Let's build safer,
+                            smarter infrastructure.
+                        </h2>
+
+                        <p>
+                            Talk to Elitech Engineering Services about
+                            your electrical, mechanical, IT infrastructure
+                            or OHSE requirements.
+                        </p>
+
+                    </div>
+
+                    <a href="contact.html"
+                       class="btn btn-primary cta-button">
+
+                        Contact EES
+                        →
+
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- =========================================================
+         FOOTER
+    ========================================================= -->
+
+    <footer>
+
+        <div class="container footer-main">
+
+
+            <!-- BRAND -->
+
+            <div class="footer-brand">
+
+                <a href="index.html" class="logo">
+
+                    <div class="logo-mark">
+                        E
+                    </div>
+
+                    <div class="logo-text">
+
+                        <strong style="color:white;">
+                            ELITECH
+                        </strong>
+
+                        <span style="color:#00b8d4;">
+                            Engineering Services
+                        </span>
+
+                    </div>
+
+                </a>
+
+                <p>
+                    Electrical, Mechanical and IT Infrastructure
+                    engineering services committed to quality, safety,
+                    efficiency and customer value.
+                </p>
+
+            </div>
+
+
+            <!-- QUICK LINKS -->
+
+            <div>
+
+                <h3 class="footer-heading">
+                    Company
+                </h3>
+
+                <ul class="footer-links">
+
+                    <li>
+                        <a href="index.html">
+                            Home
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="about.html">
+                            About Us
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="engineering.html">
+                            Engineering Services
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="data-center-operations.html">
+                            Data Center Operations
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="ohse.html">
+                            OHSE Services
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="power-quality.html">
+                            Power Quality
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="contact.html">
+                            Contact Us
+                        </a>
+                    </li>
+
+                </ul>
+
+            </div>
+
+
+            <!-- SERVICES -->
+
+            <div>
+
+                <h3 class="footer-heading">
+                    Services
+                </h3>
+
+                <ul class="footer-links">
+
+                    <li>
+                        <a href="engineering.html">
+                            Generators
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="engineering.html">
+                            UPS & AVR
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="engineering.html">
+                            Solar PV
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="engineering.html">
+                            HVAC / CRAC / AHU
+                        </a>
+                    </li>
+
+                </ul>
+
+            </div>
+
+
+            <!-- CONTACT -->
+
+            <div class="footer-contact">
+
+                <h3 class="footer-heading">
+                    Contact
+                </h3>
+
+                <p>
+                    📍 Opeikuma, Kasoa,<br>
+                    Central Region, Ghana
+                </p>
+
+                <p>
+                    ☎ 0243 608 533
+                </p>
+
+                <p>
+                    ☎ 0508 406 048
+                </p>
+
+                <p>
+                    ☎ 0207 588 996
+                </p>
+
+                <p>
+                    ✉ elitecengineers@gmail.com
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <div class="container footer-bottom">
+
+            <span>
+                © 2026 Elitech Engineering Services.
+                All Rights Reserved.
+            </span>
+
+            <span>
+                Engineering • Safety • Reliability
+            </span>
+
+        </div>
+
+    </footer>
+
+
+    <!-- =========================================================
+         JAVASCRIPT
+    ========================================================= -->
+
+    <script>
+
+        const menuToggle =
+            document.getElementById("menuToggle");
+
+        const navLinks =
+            document.getElementById("navLinks");
+
+
+        menuToggle.addEventListener("click", function () {
+
+            const isOpen =
+                navLinks.classList.toggle("active");
+
+            menuToggle.setAttribute(
+                "aria-expanded",
+                isOpen
+            );
+
+            menuToggle.setAttribute(
+                "aria-label",
+                isOpen
+                    ? "Close navigation menu"
+                    : "Open navigation menu"
+            );
+
+            menuToggle.textContent =
+                isOpen ? "✕" : "☰";
+
+        });
+
+
+        /* Close menu after selecting a page */
+
+        document.querySelectorAll(".nav-links a")
+            .forEach(function (link) {
+
+                link.addEventListener("click", function () {
+
+                    navLinks.classList.remove("active");
+
+                    menuToggle.setAttribute(
+                        "aria-expanded",
+                        "false"
+                    );
+
+                    menuToggle.setAttribute(
+                        "aria-label",
+                        "Open navigation menu"
+                    );
+
+                    menuToggle.textContent = "☰";
+
+                });
+
+            });
+
+    </script>
+
+    <script>
+
+        /* SERVICES DROPDOWN TOGGLE */
+
+        document.querySelectorAll(".dropdown-toggle")
+            .forEach(function (toggle) {
+
+                toggle.addEventListener("click", function (e) {
+
+                    e.stopPropagation();
+
+                    const parent = toggle.closest(".nav-dropdown");
+
+                    parent.classList.toggle("open");
+
+                });
+
+            });
+
+        document.addEventListener("click", function () {
+
+            document.querySelectorAll(".nav-dropdown.open")
+                .forEach(function (d) {
+                    d.classList.remove("open");
+                });
+
+        });
+
+    </script>
+
+</body>
+
+</html>

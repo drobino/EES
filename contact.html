@@ -1,0 +1,3013 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+          content="Contact Elitech Engineering Services for electrical, mechanical, IT infrastructure, power quality and OHSE engineering engineering.">
+
+    <meta name="keywords"
+          content="Elitech Engineering Services, EES, electrical engineering, mechanical engineering, IT infrastructure, power quality, Ghana">
+
+    <title>Contact Us | Elitech Engineering Services</title>
+
+    <style>
+
+        /* =========================================================
+           1. GLOBAL VARIABLES
+        ========================================================= */
+
+        :root {
+            --navy: #071f35;
+            --navy-light: #0c304d;
+
+            --blue: #087ea4;
+            --cyan: #00b8d4;
+            --teal: #008c95;
+
+            --gold: #e2b857;
+            --green: #2d7d46;
+
+            --white: #ffffff;
+            --off-white: #f7fafc;
+            --light-blue: #edf7fa;
+
+            --dark: #10202f;
+            --gray: #5d6b78;
+            --light-gray: #eef2f5;
+            --border: #dce5eb;
+
+            --shadow: 0 12px 35px rgba(7, 31, 53, 0.10);
+
+            --radius: 14px;
+
+            --max-width: 1200px;
+        }
+
+
+        /* =========================================================
+           2. RESET
+        ========================================================= */
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+
+        body {
+            font-family:
+                "Segoe UI",
+                Arial,
+                Helvetica,
+                sans-serif;
+
+            color: var(--dark);
+            background: var(--white);
+
+            line-height: 1.7;
+        }
+
+
+        img {
+            width: 100%;
+            display: block;
+        }
+
+
+        a {
+            color: inherit;
+            text-decoration: none;
+        }
+
+
+        button,
+        input,
+        select,
+        textarea {
+            font: inherit;
+        }
+
+
+        button {
+            cursor: pointer;
+        }
+
+
+        .container {
+            width: min(92%, var(--max-width));
+            margin: auto;
+        }
+
+
+        /* =========================================================
+           3. ACCESSIBILITY
+        ========================================================= */
+
+        .skip-link {
+            position: fixed;
+            left: 15px;
+            top: -100px;
+
+            background: var(--gold);
+            color: var(--navy);
+
+            padding: 10px 16px;
+
+            font-weight: 700;
+
+            z-index: 9999;
+
+            border-radius: 0 0 8px 8px;
+        }
+
+
+        .skip-link:focus {
+            top: 0;
+        }
+
+
+        :focus-visible {
+            outline: 3px solid var(--gold);
+            outline-offset: 3px;
+        }
+
+
+        /* =========================================================
+           4. TOP CONTACT BAR
+        ========================================================= */
+
+        .top-bar {
+            background: var(--navy);
+            color: var(--white);
+
+            font-size: 0.88rem;
+        }
+
+
+        .top-bar-inner {
+            min-height: 42px;
+
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            gap: 20px;
+        }
+
+
+        .top-contact {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+
+        .top-contact a {
+            opacity: 0.92;
+            transition: 0.3s;
+        }
+
+
+        .top-contact a:hover {
+            color: var(--gold);
+        }
+
+
+        .top-message {
+            color: #d9e7ef;
+        }
+
+
+        /* =========================================================
+           5. NAVIGATION
+        ========================================================= */
+
+        .navbar {
+            position: sticky;
+            top: 0;
+
+            z-index: 1000;
+
+            background: rgba(255, 255, 255, 0.97);
+
+            border-bottom: 1px solid var(--border);
+
+            backdrop-filter: blur(10px);
+        }
+
+
+        .nav-inner {
+            min-height: 82px;
+
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            gap: 30px;
+        }
+
+
+        /* Logo */
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+
+            flex-shrink: 0;
+        }
+
+
+        .logo-symbol {
+            width: 46px;
+            height: 46px;
+
+            display: grid;
+            place-items: center;
+
+            border-radius: 10px;
+
+            color: var(--white);
+            background:
+                linear-gradient(
+                    135deg,
+                    var(--navy),
+                    var(--blue)
+                );
+
+            font-size: 1.4rem;
+            font-weight: 800;
+        }
+
+
+        .logo-text {
+            line-height: 1.15;
+        }
+
+
+        .logo-text strong {
+            display: block;
+
+            color: var(--navy);
+
+            font-size: 1.05rem;
+            letter-spacing: 0.4px;
+        }
+
+
+        .logo-text span {
+            color: var(--blue);
+
+            font-size: 0.72rem;
+
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+        }
+
+
+        /* Navigation Links */
+
+        .nav-links {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+
+            list-style: none;
+        }
+
+
+        .nav-links a {
+            display: block;
+
+            padding: 10px 13px;
+
+            color: var(--dark);
+
+            font-size: 0.92rem;
+            font-weight: 600;
+
+            border-radius: 7px;
+
+            transition: 0.3s;
+        }
+
+
+        .nav-links a:hover {
+            color: var(--blue);
+            background: var(--light-blue);
+        }
+
+
+        .nav-links a.active {
+            color: var(--white);
+            background: var(--navy);
+        }
+
+
+        .nav-cta {
+            color: var(--white) !important;
+            background: var(--blue) !important;
+        }
+
+
+        .nav-cta:hover {
+            background: var(--navy) !important;
+        }
+
+
+        /* Mobile Menu */
+
+        .menu-toggle {
+            display: none;
+
+            width: 44px;
+            height: 44px;
+
+            border: 1px solid var(--border);
+
+            border-radius: 8px;
+
+            background: var(--white);
+
+            color: var(--navy);
+
+            font-size: 1.4rem;
+        }
+
+
+        /* =========================================================
+           6. PAGE HERO
+        ========================================================= */
+
+        .page-hero {
+            min-height: 430px;
+
+            display: flex;
+            align-items: center;
+
+            position: relative;
+
+            overflow: hidden;
+
+            background:
+                linear-gradient(
+                    90deg,
+                    rgba(7, 31, 53, 0.96),
+                    rgba(7, 31, 53, 0.76),
+                    rgba(7, 31, 53, 0.50)
+                ),
+                url("https://images.unsplash.com/photo-1497366811353-6870744d04b2?auto=format&fit=crop&w=1800&q=85")
+                center/cover no-repeat;
+        }
+
+
+        .page-hero::after {
+            content: "";
+
+            position: absolute;
+
+            right: -100px;
+            bottom: -120px;
+
+            width: 400px;
+            height: 400px;
+
+            border: 1px solid rgba(255,255,255,0.15);
+
+            border-radius: 50%;
+        }
+
+
+        .hero-content {
+            position: relative;
+            z-index: 2;
+
+            max-width: 760px;
+
+            color: var(--white);
+        }
+
+
+        .eyebrow {
+            display: inline-block;
+
+            margin-bottom: 15px;
+
+            color: var(--gold);
+
+            font-size: 0.78rem;
+            font-weight: 800;
+
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+
+        .hero-content h1 {
+            margin-bottom: 18px;
+
+            font-size: clamp(2.5rem, 6vw, 4.5rem);
+
+            line-height: 1.05;
+        }
+
+
+        .hero-content p {
+            max-width: 690px;
+
+            color: #e5eef4;
+
+            font-size: 1.08rem;
+        }
+
+
+        /* =========================================================
+           7. SECTION SYSTEM
+        ========================================================= */
+
+        section {
+            padding: 90px 0;
+        }
+
+
+        .section-heading {
+            max-width: 760px;
+
+            margin-bottom: 45px;
+        }
+
+
+        .section-heading.center {
+            margin-left: auto;
+            margin-right: auto;
+
+            text-align: center;
+        }
+
+
+        .section-label {
+            display: block;
+
+            margin-bottom: 10px;
+
+            color: var(--blue);
+
+            font-size: 0.78rem;
+            font-weight: 800;
+
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+
+        .section-heading h2 {
+            margin-bottom: 15px;
+
+            color: var(--navy);
+
+            font-size: clamp(2rem, 4vw, 3rem);
+
+            line-height: 1.15;
+        }
+
+
+        .section-heading p {
+            color: var(--gray);
+
+            font-size: 1rem;
+        }
+
+
+        /* =========================================================
+           8. CONTACT INFORMATION
+        ========================================================= */
+
+        .contact-section {
+            background: var(--off-white);
+        }
+
+
+        .contact-layout {
+            display: grid;
+
+            grid-template-columns:
+                minmax(280px, 0.85fr)
+                minmax(0, 1.5fr);
+
+            gap: 50px;
+
+            align-items: start;
+        }
+
+
+        .contact-intro h2 {
+            color: var(--navy);
+
+            font-size: 2.2rem;
+
+            line-height: 1.2;
+
+            margin-bottom: 18px;
+        }
+
+
+        .contact-intro > p {
+            color: var(--gray);
+
+            margin-bottom: 30px;
+        }
+
+
+        .contact-list {
+            display: grid;
+            gap: 15px;
+        }
+
+
+        .contact-card {
+            display: flex;
+
+            gap: 16px;
+
+            padding: 18px;
+
+            background: var(--white);
+
+            border: 1px solid var(--border);
+
+            border-radius: var(--radius);
+
+            transition: 0.3s;
+        }
+
+
+        .contact-card:hover {
+            transform: translateY(-3px);
+
+            border-color: rgba(8,126,164,0.35);
+
+            box-shadow: var(--shadow);
+        }
+
+
+        .contact-icon {
+            width: 48px;
+            height: 48px;
+
+            flex-shrink: 0;
+
+            display: grid;
+            place-items: center;
+
+            border-radius: 10px;
+
+            background: var(--light-blue);
+
+            color: var(--blue);
+
+            font-size: 1.3rem;
+        }
+
+
+        .contact-card h3 {
+            margin-bottom: 3px;
+
+            color: var(--navy);
+
+            font-size: 0.95rem;
+        }
+
+
+        .contact-card p,
+        .contact-card a {
+            color: var(--gray);
+
+            font-size: 0.9rem;
+        }
+
+
+        .contact-card a:hover {
+            color: var(--blue);
+        }
+
+
+        /* =========================================================
+           9. CONTACT FORM
+        ========================================================= */
+
+        .form-wrapper {
+            padding: 35px;
+
+            background: var(--white);
+
+            border: 1px solid var(--border);
+
+            border-radius: 18px;
+
+            box-shadow: var(--shadow);
+        }
+
+
+        .form-wrapper h2 {
+            margin-bottom: 8px;
+
+            color: var(--navy);
+
+            font-size: 1.7rem;
+        }
+
+
+        .form-description {
+            margin-bottom: 25px;
+
+            color: var(--gray);
+
+            font-size: 0.92rem;
+        }
+
+
+        .form-grid {
+            display: grid;
+
+            grid-template-columns: 1fr 1fr;
+
+            gap: 20px;
+        }
+
+
+        .form-group {
+            display: flex;
+
+            flex-direction: column;
+        }
+
+
+        .form-group.full {
+            grid-column: 1 / -1;
+        }
+
+
+        label {
+            margin-bottom: 7px;
+
+            color: var(--navy);
+
+            font-size: 0.88rem;
+            font-weight: 700;
+        }
+
+
+        .required {
+            color: #c62828;
+        }
+
+
+        input,
+        select,
+        textarea {
+            width: 100%;
+
+            padding: 13px 14px;
+
+            border: 1px solid var(--border);
+
+            border-radius: 8px;
+
+            background: var(--white);
+
+            color: var(--dark);
+
+            outline: none;
+
+            transition: 0.25s;
+        }
+
+
+        input,
+        select {
+            min-height: 48px;
+        }
+
+
+        textarea {
+            min-height: 145px;
+
+            resize: vertical;
+        }
+
+
+        input:hover,
+        select:hover,
+        textarea:hover {
+            border-color: #a9bcc8;
+        }
+
+
+        input:focus,
+        select:focus,
+        textarea:focus {
+            border-color: var(--blue);
+
+            box-shadow:
+                0 0 0 3px rgba(8,126,164,0.12);
+        }
+
+
+        .form-help {
+            margin-top: 5px;
+
+            color: var(--gray);
+
+            font-size: 0.78rem;
+        }
+
+
+        /* Checkbox */
+
+        .consent {
+            grid-column: 1 / -1;
+
+            display: flex;
+
+            align-items: flex-start;
+
+            gap: 10px;
+
+            margin-top: 2px;
+        }
+
+
+        .consent input {
+            width: 18px;
+            height: 18px;
+
+            margin-top: 3px;
+
+            flex-shrink: 0;
+        }
+
+
+        .consent label {
+            margin: 0;
+
+            color: var(--gray);
+
+            font-weight: 400;
+
+            font-size: 0.82rem;
+        }
+
+
+        /* Submit Button */
+
+        .form-actions {
+            grid-column: 1 / -1;
+
+            display: flex;
+
+            align-items: center;
+
+            gap: 15px;
+
+            margin-top: 5px;
+        }
+
+
+        .btn {
+            display: inline-flex;
+
+            align-items: center;
+            justify-content: center;
+
+            gap: 8px;
+
+            min-height: 50px;
+
+            padding: 0 24px;
+
+            border: 0;
+
+            border-radius: 8px;
+
+            font-weight: 700;
+
+            transition: 0.3s;
+        }
+
+
+        .btn-primary {
+            background: var(--blue);
+
+            color: var(--white);
+        }
+
+
+        .btn-primary:hover {
+            background: var(--navy);
+
+            transform: translateY(-2px);
+        }
+
+
+        .btn-secondary {
+            background: var(--light-blue);
+
+            color: var(--navy);
+        }
+
+
+        .btn-secondary:hover {
+            background: var(--navy);
+
+            color: var(--white);
+        }
+
+
+        /* =========================================================
+           10. DIRECT CONTACT CTA
+        ========================================================= */
+
+        .urgent-section {
+            padding: 65px 0;
+
+            background:
+                linear-gradient(
+                    135deg,
+                    var(--navy),
+                    var(--navy-light)
+                );
+
+            color: var(--white);
+        }
+
+
+        .urgent-layout {
+            display: flex;
+
+            align-items: center;
+            justify-content: space-between;
+
+            gap: 35px;
+        }
+
+
+        .urgent-content {
+            max-width: 720px;
+        }
+
+
+        .urgent-content .section-label {
+            color: var(--gold);
+        }
+
+
+        .urgent-content h2 {
+            margin-bottom: 12px;
+
+            font-size: clamp(1.8rem, 4vw, 2.7rem);
+        }
+
+
+        .urgent-content p {
+            color: #dce8ef;
+        }
+
+
+        .urgent-number {
+            display: inline-flex;
+
+            align-items: center;
+
+            gap: 10px;
+
+            margin-top: 18px;
+
+            color: var(--gold);
+
+            font-size: 1.25rem;
+            font-weight: 800;
+        }
+
+
+        /* =========================================================
+           11. LOCATION / MAP
+        ========================================================= */
+
+        .location-section {
+            background: var(--white);
+        }
+
+
+        .location-grid {
+            display: grid;
+
+            grid-template-columns: 1fr 1fr;
+
+            gap: 45px;
+
+            align-items: stretch;
+        }
+
+
+        .location-content {
+            padding: 10px 0;
+        }
+
+
+        .location-content h2 {
+            margin-bottom: 15px;
+
+            color: var(--navy);
+
+            font-size: 2.2rem;
+        }
+
+
+        .location-content p {
+            margin-bottom: 20px;
+
+            color: var(--gray);
+        }
+
+
+        .location-details {
+            display: grid;
+
+            gap: 12px;
+
+            margin: 25px 0;
+        }
+
+
+        .location-detail {
+            display: flex;
+
+            align-items: flex-start;
+
+            gap: 12px;
+        }
+
+
+        .location-detail span:first-child {
+            color: var(--blue);
+
+            font-size: 1.1rem;
+        }
+
+
+        .location-detail strong {
+            display: block;
+
+            color: var(--navy);
+
+            font-size: 0.9rem;
+        }
+
+
+        .location-detail p {
+            margin: 0;
+
+            font-size: 0.88rem;
+        }
+
+
+        .map-card {
+            min-height: 380px;
+
+            position: relative;
+
+            overflow: hidden;
+
+            display: flex;
+
+            align-items: center;
+            justify-content: center;
+
+            text-align: center;
+
+            padding: 30px;
+
+            border-radius: 18px;
+
+            background:
+                linear-gradient(
+                    rgba(7,31,53,0.78),
+                    rgba(7,31,53,0.78)
+                ),
+                url("https://images.unsplash.com/photo-1524666041070-9c8762f5c7c2?auto=format&fit=crop&w=1200&q=85")
+                center/cover no-repeat;
+
+            box-shadow: var(--shadow);
+        }
+
+
+        .map-content {
+            max-width: 400px;
+
+            color: var(--white);
+        }
+
+
+        .map-pin {
+            font-size: 3rem;
+
+            margin-bottom: 10px;
+        }
+
+
+        .map-content h3 {
+            margin-bottom: 8px;
+
+            font-size: 1.6rem;
+        }
+
+
+        .map-content p {
+            margin-bottom: 20px;
+
+            color: #e2edf3;
+        }
+
+
+        .map-link {
+            display: inline-flex;
+
+            align-items: center;
+
+            min-height: 48px;
+
+            padding: 0 20px;
+
+            border-radius: 8px;
+
+            background: var(--gold);
+
+            color: var(--navy);
+
+            font-weight: 800;
+
+            transition: 0.3s;
+        }
+
+
+        .map-link:hover {
+            background: var(--white);
+
+            transform: translateY(-2px);
+        }
+
+
+        /* =========================================================
+           12. WHY CONTACT EES
+        ========================================================= */
+
+        .why-section {
+            background: var(--off-white);
+        }
+
+
+        .why-grid {
+            display: grid;
+
+            grid-template-columns:
+                repeat(3, 1fr);
+
+            gap: 22px;
+        }
+
+
+        .why-card {
+            padding: 30px;
+
+            background: var(--white);
+
+            border: 1px solid var(--border);
+
+            border-radius: var(--radius);
+
+            transition: 0.3s;
+        }
+
+
+        .why-card:hover {
+            transform: translateY(-5px);
+
+            box-shadow: var(--shadow);
+
+            border-color: rgba(8,126,164,0.25);
+        }
+
+
+        .why-number {
+            display: block;
+
+            margin-bottom: 15px;
+
+            color: var(--gold);
+
+            font-size: 0.8rem;
+            font-weight: 900;
+        }
+
+
+        .why-card h3 {
+            margin-bottom: 10px;
+
+            color: var(--navy);
+
+            font-size: 1.1rem;
+        }
+
+
+        .why-card p {
+            color: var(--gray);
+
+            font-size: 0.9rem;
+        }
+
+
+        /* =========================================================
+           13. FINAL CTA
+        ========================================================= */
+
+        .final-cta {
+            padding: 80px 0;
+
+            text-align: center;
+
+            background:
+                linear-gradient(
+                    135deg,
+                    var(--blue),
+                    var(--teal)
+                );
+
+            color: var(--white);
+        }
+
+
+        .final-cta h2 {
+            margin-bottom: 15px;
+
+            font-size: clamp(2rem, 4vw, 3rem);
+        }
+
+
+        .final-cta p {
+            max-width: 650px;
+
+            margin: 0 auto 25px;
+
+            color: #e8f7fa;
+        }
+
+
+        .final-cta .btn {
+            background: var(--white);
+
+            color: var(--navy);
+        }
+
+
+        .final-cta .btn:hover {
+            background: var(--gold);
+        }
+
+
+        /* =========================================================
+           14. FOOTER
+        ========================================================= */
+
+        footer {
+            background: #041522;
+
+            color: #dce6ec;
+        }
+
+
+        .footer-main {
+            padding: 65px 0 40px;
+
+            display: grid;
+
+            grid-template-columns:
+                1.4fr
+                1fr
+                1fr;
+
+            gap: 45px;
+        }
+
+
+        .footer-brand p {
+            max-width: 420px;
+
+            margin-top: 15px;
+
+            color: #aebec8;
+
+            font-size: 0.9rem;
+        }
+
+
+        .footer-title {
+            margin-bottom: 18px;
+
+            color: var(--white);
+
+            font-size: 1rem;
+        }
+
+
+        .footer-links {
+            display: grid;
+
+            gap: 9px;
+
+            list-style: none;
+        }
+
+
+        .footer-links a {
+            color: #aebec8;
+
+            font-size: 0.88rem;
+
+            transition: 0.3s;
+        }
+
+
+        .footer-links a:hover {
+            color: var(--gold);
+        }
+
+
+        .footer-contact {
+            display: grid;
+
+            gap: 9px;
+        }
+
+
+        .footer-contact p {
+            color: #aebec8;
+
+            font-size: 0.88rem;
+        }
+
+
+        .footer-contact a:hover {
+            color: var(--gold);
+        }
+
+
+        .footer-bottom {
+            padding: 20px 0;
+
+            border-top: 1px solid rgba(255,255,255,0.1);
+
+            display: flex;
+
+            align-items: center;
+            justify-content: space-between;
+
+            gap: 20px;
+
+            color: #8fa3af;
+
+            font-size: 0.78rem;
+        }
+
+
+        /* =========================================================
+           15. FORM STATUS
+        ========================================================= */
+
+        .form-status {
+            display: none;
+
+            padding: 14px 16px;
+
+            margin-bottom: 20px;
+
+            border-radius: 8px;
+
+            background: #eaf7ef;
+
+            color: #23613a;
+
+            border: 1px solid #b9dfc5;
+
+            font-size: 0.88rem;
+        }
+
+
+        .form-status.show {
+            display: block;
+        }
+
+
+        /* =========================================================
+           16. RESPONSIVE DESIGN
+        ========================================================= */
+
+        @media (max-width: 1050px) {
+
+            .nav-links {
+                gap: 0;
+            }
+
+
+            .nav-links a {
+                padding: 9px 8px;
+
+                font-size: 0.83rem;
+            }
+
+
+            .contact-layout {
+                grid-template-columns: 1fr;
+            }
+
+
+            .location-grid {
+                grid-template-columns: 1fr;
+            }
+
+        }
+
+
+        @media (max-width: 760px) {
+
+            .top-bar {
+                display: none;
+            }
+
+
+            .nav-inner {
+                min-height: 72px;
+            }
+
+
+            .menu-toggle {
+                display: block;
+            }
+
+
+            .nav-links {
+                position: absolute;
+
+                left: 0;
+                right: 0;
+                top: 100%;
+
+                display: none;
+
+                flex-direction: column;
+                align-items: stretch;
+
+                padding: 12px;
+
+                background: var(--white);
+
+                border-bottom: 1px solid var(--border);
+
+                box-shadow: var(--shadow);
+            }
+
+
+            .nav-links.open {
+                display: flex;
+            }
+
+
+            .nav-links a {
+                padding: 13px 15px;
+
+                font-size: 0.95rem;
+            }
+
+
+            .page-hero {
+                min-height: 390px;
+            }
+
+
+            section {
+                padding: 70px 0;
+            }
+
+
+            .form-grid {
+                grid-template-columns: 1fr;
+            }
+
+
+            .form-group.full,
+            .consent,
+            .form-actions {
+                grid-column: auto;
+            }
+
+
+            .form-wrapper {
+                padding: 25px 20px;
+            }
+
+
+            .urgent-layout {
+                flex-direction: column;
+
+                align-items: flex-start;
+            }
+
+
+            .why-grid {
+                grid-template-columns: 1fr;
+            }
+
+
+            .footer-main {
+                grid-template-columns: 1fr;
+            }
+
+
+            .footer-bottom {
+                flex-direction: column;
+
+                align-items: flex-start;
+            }
+
+        }
+
+
+        @media (max-width: 500px) {
+
+            .logo-text span {
+                display: none;
+            }
+
+
+            .hero-content h1 {
+                font-size: 2.5rem;
+            }
+
+
+            .form-actions {
+                flex-direction: column;
+
+                align-items: stretch;
+            }
+
+
+            .form-actions .btn {
+                width: 100%;
+            }
+
+
+            .contact-card {
+                padding: 15px;
+            }
+
+        }
+
+    </style>
+    <style>
+
+        /* SERVICES DROPDOWN */
+
+        .nav-dropdown {
+            position: relative;
+        }
+
+        .dropdown-toggle {
+            display: inline-flex;
+            align-items: center;
+            gap: 4px;
+
+            padding: 11px 14px;
+
+            color: var(--dark);
+
+            font-size: 14px;
+            font-weight: 600;
+
+            border-radius: 7px;
+
+            cursor: pointer;
+
+            transition: 0.25s ease;
+        }
+
+        .dropdown-toggle:hover,
+        .dropdown-toggle.active {
+            color: var(--blue);
+            background: var(--light-blue);
+        }
+
+        .dropdown-arrow {
+            font-size: 10px;
+            transition: transform 0.2s ease;
+        }
+
+        .nav-dropdown.open .dropdown-arrow,
+        .nav-dropdown:hover .dropdown-arrow {
+            transform: rotate(180deg);
+        }
+
+        .dropdown-menu {
+            position: absolute;
+            top: 100%;
+            left: 0;
+
+            min-width: 230px;
+
+            margin-top: 6px;
+
+            background: var(--white);
+
+            border: 1px solid var(--border);
+            border-radius: 12px;
+
+            box-shadow: var(--shadow);
+
+            padding: 8px;
+
+            opacity: 0;
+            visibility: hidden;
+            transform: translateY(8px);
+
+            transition: 0.2s ease;
+
+            z-index: 1001;
+        }
+
+        .nav-dropdown:hover .dropdown-menu,
+        .nav-dropdown.open .dropdown-menu {
+            opacity: 1;
+            visibility: visible;
+            transform: translateY(0);
+        }
+
+        .dropdown-menu a {
+            display: block;
+
+            padding: 10px 12px;
+
+            border-radius: 8px;
+
+            font-size: 14px;
+            font-weight: 600;
+
+            color: var(--dark);
+
+            white-space: nowrap;
+        }
+
+        .dropdown-menu a:hover,
+        .dropdown-menu a.active {
+            background: var(--light-blue);
+            color: var(--blue);
+        }
+
+        @media (max-width: 760px) {
+
+            .dropdown-toggle {
+                display: flex;
+                justify-content: space-between;
+                padding: 13px 15px;
+            }
+
+            .dropdown-menu {
+                position: static;
+
+                display: none;
+
+                opacity: 1;
+                visibility: visible;
+                transform: none;
+
+                margin-top: 4px;
+
+                box-shadow: none;
+                border: none;
+
+                background: var(--off-white);
+
+                padding: 4px 4px 4px 15px;
+            }
+
+            .nav-dropdown.open .dropdown-menu {
+                display: block;
+            }
+        }
+
+    </style>
+
+</head>
+
+
+
+<body>
+
+    <!-- =========================================================
+         ACCESSIBILITY
+    ========================================================== -->
+
+    <a href="#main-content" class="skip-link">
+        Skip to main content
+    </a>
+
+
+    <!-- =========================================================
+         TOP CONTACT BAR
+    ========================================================== -->
+
+    <div class="top-bar">
+
+        <div class="container top-bar-inner">
+
+            <div class="top-contact">
+
+                <a href="tel:+233243608533">
+                    ☎ 0243 608 533
+                </a>
+
+                <a href="mailto:elitecengineers@gmail.com">
+                    ✉ elitecengineers@gmail.com
+                </a>
+
+            </div>
+
+            <div class="top-message">
+                Engineering • Infrastructure • Reliability
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- =========================================================
+         NAVIGATION
+    ========================================================== -->
+
+    <header class="navbar">
+
+        <div class="container nav-inner">
+
+            <a href="index.html" class="logo" aria-label="Elitech Engineering Services Home">
+
+                <div class="logo-symbol">
+                    E
+                </div>
+
+                <div class="logo-text">
+
+                    <strong>
+                        Elitech Engineering
+                    </strong>
+
+                    <span>
+                        Engineering Services
+                    </span>
+
+                </div>
+
+            </a>
+
+
+            <button
+                class="menu-toggle"
+                id="menuToggle"
+                aria-label="Open navigation menu"
+                aria-expanded="false"
+                aria-controls="navLinks">
+
+                ☰
+
+            </button>
+
+
+            <nav aria-label="Main navigation">
+
+                <ul class="nav-links" id="navLinks">
+
+                    <li>
+                        <a href="index.html">
+                            Home
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="about.html">
+                            About
+                        </a>
+                    </li>
+
+                    <li class="nav-dropdown">
+                        <span class="dropdown-toggle">
+                            Services
+                            <span class="dropdown-arrow">▾</span>
+                        </span>
+
+                        <div class="dropdown-menu">
+                            <a href="engineering.html">
+                                Engineering
+                            </a>
+                            <a href="data-center-operations.html">
+                                Data Center Operations
+                            </a>
+                        </div>
+                    </li>
+
+                    <li>
+                        <a href="ohse.html">
+                            OHSE
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="power-quality.html">
+                            Power Quality
+                        </a>
+                    </li>
+
+                    <li>
+                        <a
+                            href="contact.html"
+                            class="active"
+                            aria-current="page">
+                            Contact Us
+                        </a>
+                    </li>
+
+                </ul>
+
+            </nav>
+
+        </div>
+
+    </header>
+
+
+    <!-- =========================================================
+         HERO
+    ========================================================== -->
+
+    <section class="page-hero">
+
+        <div class="container">
+
+            <div class="hero-content">
+
+                <span class="eyebrow">
+                    Contact Elitech Engineering Services
+                </span>
+
+                <h1>
+                    Let's Build Reliable Infrastructure Together.
+                </h1>
+
+                <p>
+                    Tell us what you need. Our team is ready to discuss
+                    electrical, mechanical, IT infrastructure, power quality
+                    and OHSE requirements for your facility.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================================================
+         CONTACT SECTION
+    ========================================================== -->
+
+    <main id="main-content">
+
+        <section class="contact-section">
+
+            <div class="container">
+
+                <div class="contact-layout">
+
+
+                    <!-- CONTACT INFORMATION -->
+
+                    <div class="contact-intro">
+
+                        <span class="section-label">
+                            Get in Touch
+                        </span>
+
+                        <h2>
+                            We're ready to hear from you.
+                        </h2>
+
+                        <p>
+                            Whether you require engineering engineering,
+                            preventive maintenance, infrastructure
+                            assessment or technical advice, contact
+                            Elitech Engineering Services to discuss
+                            your requirements.
+                        </p>
+
+
+                        <div class="contact-list">
+
+
+                            <!-- ADDRESS -->
+
+                            <div class="contact-card">
+
+                                <div class="contact-icon">
+                                    ⌖
+                                </div>
+
+                                <div>
+
+                                    <h3>
+                                        Office Address
+                                    </h3>
+
+                                    <p>
+                                        Opeikuma, Kasoa<br>
+                                        Central Region, Ghana
+                                    </p>
+
+                                </div>
+
+                            </div>
+
+
+                            <!-- PHONE -->
+
+                            <div class="contact-card">
+
+                                <div class="contact-icon">
+                                    ☎
+                                </div>
+
+                                <div>
+
+                                    <h3>
+                                        Telephone
+                                    </h3>
+
+                                    <p>
+
+                                        <a href="tel:+233243608533">
+                                            0243 608 533
+                                        </a>
+                                        <br>
+
+                                        <a href="tel:+233508406048">
+                                            0508 406 048
+                                        </a>
+                                        <br>
+
+                                        <a href="tel:+233207588996">
+                                            0207 588 996
+                                        </a>
+
+                                    </p>
+
+                                </div>
+
+                            </div>
+
+
+                            <!-- EMAIL -->
+
+                            <div class="contact-card">
+
+                                <div class="contact-icon">
+                                    ✉
+                                </div>
+
+                                <div>
+
+                                    <h3>
+                                        Email
+                                    </h3>
+
+                                    <p>
+
+                                        <a href="mailto:elitecengineers@gmail.com">
+                                            elitecengineers@gmail.com
+                                        </a>
+
+                                    </p>
+
+                                </div>
+
+                            </div>
+
+
+                            <!-- TECHNICAL engineering -->
+
+                            <div class="contact-card">
+
+                                <div class="contact-icon">
+                                    ⚙
+                                </div>
+
+                                <div>
+
+                                    <h3>
+                                        Technical Enquiries
+                                    </h3>
+
+                                    <p>
+                                        For urgent technical requirements,
+                                        please contact us directly by telephone.
+                                    </p>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- CONTACT FORM -->
+
+                    <div class="form-wrapper">
+
+                        <h2>
+                            Send an Enquiry
+                        </h2>
+
+                        <p class="form-description">
+                            Complete the form below and provide enough
+                            information for us to understand your
+                            requirements.
+                        </p>
+
+
+                        <div
+                            class="form-status"
+                            id="formStatus"
+                            role="status"
+                            aria-live="polite">
+                        </div>
+
+
+                        <form id="contactForm">
+
+                            <div class="form-grid">
+
+
+                                <!-- NAME -->
+
+                                <div class="form-group">
+
+                                    <label for="name">
+                                        Full Name
+                                        <span class="required">*</span>
+                                    </label>
+
+                                    <input
+                                        type="text"
+                                        id="name"
+                                        name="name"
+                                        placeholder="Enter your full name"
+                                        autocomplete="name"
+                                        required>
+
+                                </div>
+
+
+                                <!-- COMPANY -->
+
+                                <div class="form-group">
+
+                                    <label for="company">
+                                        Company / Organisation
+                                    </label>
+
+                                    <input
+                                        type="text"
+                                        id="company"
+                                        name="company"
+                                        placeholder="Company name"
+                                        autocomplete="organization">
+
+                                </div>
+
+
+                                <!-- EMAIL -->
+
+                                <div class="form-group">
+
+                                    <label for="email">
+                                        Email Address
+                                        <span class="required">*</span>
+                                    </label>
+
+                                    <input
+                                        type="email"
+                                        id="email"
+                                        name="email"
+                                        placeholder="name@example.com"
+                                        autocomplete="email"
+                                        required>
+
+                                </div>
+
+
+                                <!-- PHONE -->
+
+                                <div class="form-group">
+
+                                    <label for="phone">
+                                        Phone Number
+                                        <span class="required">*</span>
+                                    </label>
+
+                                    <input
+                                        type="tel"
+                                        id="phone"
+                                        name="phone"
+                                        placeholder="e.g. 0243 608 533"
+                                        autocomplete="tel"
+                                        required>
+
+                                </div>
+
+
+                                <!-- SERVICE -->
+
+                                <div class="form-group">
+
+                                    <label for="service">
+                                        Required Service
+                                        <span class="required">*</span>
+                                    </label>
+
+                                    <select
+                                        id="service"
+                                        name="service"
+                                        required>
+
+                                        <option value="">
+                                            Select a service
+                                        </option>
+
+                                        <option value="Electrical Engineering">
+                                            Electrical Engineering
+                                        </option>
+
+                                        <option value="Mechanical Engineering">
+                                            Mechanical Engineering
+                                        </option>
+
+                                        <option value="Power Systems">
+                                            Power Systems
+                                        </option>
+
+                                        <option value="Generators">
+                                            Generators
+                                        </option>
+
+                                        <option value="UPS and AVR">
+                                            UPS / AVR
+                                        </option>
+
+                                        <option value="Solar PV">
+                                            Solar PV
+                                        </option>
+
+                                        <option value="HVAC">
+                                            HVAC / CRAC / AHU
+                                        </option>
+
+                                        <option value="IT Infrastructure">
+                                            IT Infrastructure
+                                        </option>
+
+                                        <option value="LAN and WAN">
+                                            LAN / WAN
+                                        </option>
+
+                                        <option value="Surveillance">
+                                            Surveillance Systems
+                                        </option>
+
+                                        <option value="Power Quality">
+                                            Power Quality
+                                        </option>
+
+                                        <option value="OHSE">
+                                            OHSE Services
+                                        </option>
+
+                                        <option value="Preventive Maintenance">
+                                            Preventive Maintenance
+                                        </option>
+
+                                        <option value="Other">
+                                            Other
+                                        </option>
+
+                                    </select>
+
+                                </div>
+
+
+                                <!-- ENQUIRY TYPE -->
+
+                                <div class="form-group">
+
+                                    <label for="enquiry">
+                                        Enquiry Type
+                                        <span class="required">*</span>
+                                    </label>
+
+                                    <select
+                                        id="enquiry"
+                                        name="enquiry"
+                                        required>
+
+                                        <option value="">
+                                            Select enquiry type
+                                        </option>
+
+                                        <option value="General Enquiry">
+                                            General Enquiry
+                                        </option>
+
+                                        <option value="Technical engineering">
+                                            Technical engineering
+                                        </option>
+
+                                        <option value="Site Assessment">
+                                            Site Assessment
+                                        </option>
+
+                                        <option value="Maintenance">
+                                            Maintenance Request
+                                        </option>
+
+                                        <option value="Quotation">
+                                            Request for Quotation
+                                        </option>
+
+                                        <option value="Partnership">
+                                            Partnership
+                                        </option>
+
+                                    </select>
+
+                                </div>
+
+
+                                <!-- MESSAGE -->
+
+                                <div class="form-group full">
+
+                                    <label for="message">
+                                        How Can We Help?
+                                        <span class="required">*</span>
+                                    </label>
+
+                                    <textarea
+                                        id="message"
+                                        name="message"
+                                        placeholder="Describe your project, technical requirement or enquiry..."
+                                        required></textarea>
+
+                                    <span class="form-help">
+                                        Please include relevant technical
+                                        information where possible.
+                                    </span>
+
+                                </div>
+
+
+                                <!-- CONSENT -->
+
+                                <div class="consent">
+
+                                    <input
+                                        type="checkbox"
+                                        id="consent"
+                                        name="consent"
+                                        required>
+
+                                    <label for="consent">
+
+                                        I confirm that the information
+                                        provided is accurate and may be
+                                        used by Elitech Engineering Services
+                                        to respond to my enquiry.
+
+                                        <span class="required">*</span>
+
+                                    </label>
+
+                                </div>
+
+
+                                <!-- ACTIONS -->
+
+                                <div class="form-actions">
+
+                                    <button
+                                        type="submit"
+                                        class="btn btn-primary">
+
+                                        Send Enquiry →
+                                    </button>
+
+                                    <a
+                                        href="mailto:elitecengineers@gmail.com"
+                                        class="btn btn-secondary">
+
+                                        Email Directly
+                                    </a>
+
+                                </div>
+
+                            </div>
+
+                        </form>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =====================================================
+             URGENT CONTACT
+        ====================================================== -->
+
+        <section class="urgent-section">
+
+            <div class="container">
+
+                <div class="urgent-layout">
+
+                    <div class="urgent-content">
+
+                        <span class="section-label">
+                            Need Direct Assistance?
+                        </span>
+
+                        <h2>
+                            For urgent technical requirements,
+                            contact our team directly.
+                        </h2>
+
+                        <p>
+                            When the requirement is time-sensitive,
+                            a direct telephone conversation can help
+                            us understand the situation quickly and
+                            determine the appropriate next step.
+                        </p>
+
+                        <a
+                            href="tel:+233243608533"
+                            class="urgent-number">
+
+                            ☎ 0243 608 533
+
+                        </a>
+
+                    </div>
+
+
+                    <a
+                        href="tel:+233243608533"
+                        class="btn btn-primary"
+                        style="background:#e2b857;color:#071f35;">
+
+                        Call EES Now
+
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =====================================================
+             LOCATION
+        ====================================================== -->
+
+        <section class="location-section">
+
+            <div class="container">
+
+                <div class="location-grid">
+
+
+                    <div class="location-content">
+
+                        <span class="section-label">
+                            Our Location
+                        </span>
+
+                        <h2>
+                            Find Elitech Engineering Services.
+                        </h2>
+
+                        <p>
+                            Our office is located in Opeikuma, Kasoa,
+                            Central Region, Ghana. Contact our team
+                            before visiting so we can coordinate your
+                            meeting or technical requirement.
+                        </p>
+
+
+                        <div class="location-details">
+
+
+                            <div class="location-detail">
+
+                                <span>
+                                    ⌖
+                                </span>
+
+                                <div>
+
+                                    <strong>
+                                        Location
+                                    </strong>
+
+                                    <p>
+                                        Opeikuma, Kasoa,
+                                        Central Region, Ghana
+                                    </p>
+
+                                </div>
+
+                            </div>
+
+
+                            <div class="location-detail">
+
+                                <span>
+                                    ☎
+                                </span>
+
+                                <div>
+
+                                    <strong>
+                                        Telephone
+                                    </strong>
+
+                                    <p>
+                                        0243 608 533
+                                    </p>
+
+                                </div>
+
+                            </div>
+
+
+                            <div class="location-detail">
+
+                                <span>
+                                    ✉
+                                </span>
+
+                                <div>
+
+                                    <strong>
+                                        Email
+                                    </strong>
+
+                                    <p>
+                                        elitecengineers@gmail.com
+                                    </p>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+
+                        <a
+                            href="https://www.google.com/maps/search/?api=1&query=Opeikuma%2C+Kasoa%2C+Central+Region%2C+Ghana"
+                            target="_blank"
+                            rel="noopener"
+                            class="btn btn-primary">
+
+                            Get Directions →
+
+                        </a>
+
+                    </div>
+
+
+                    <!-- MAP VISUAL -->
+
+                    <div class="map-card">
+
+                        <div class="map-content">
+
+                            <div class="map-pin">
+                                ⌖
+                            </div>
+
+                            <h3>
+                                Opeikuma, Kasoa
+                            </h3>
+
+                            <p>
+                                Central Region, Ghana
+                            </p>
+
+                            <a
+                                href="https://www.google.com/maps/search/?api=1&query=Opeikuma%2C+Kasoa%2C+Central+Region%2C+Ghana"
+                                target="_blank"
+                                rel="noopener"
+                                class="map-link">
+
+                                Open in Google Maps
+
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =====================================================
+             WHY CONTACT EES
+        ====================================================== -->
+
+        <section class="why-section">
+
+            <div class="container">
+
+                <div class="section-heading center">
+
+                    <span class="section-label">
+                        Why Engage EES
+                    </span>
+
+                    <h2>
+                        Engineering engineering Built Around Value.
+                    </h2>
+
+                    <p>
+                        Our approach focuses on professional service,
+                        dependable technical engineering, safety and
+                        long-term customer value.
+                    </p>
+
+                </div>
+
+
+                <div class="why-grid">
+
+
+                    <article class="why-card">
+
+                        <span class="why-number">
+                            01
+                        </span>
+
+                        <h3>
+                            Professionalism
+                        </h3>
+
+                        <p>
+                            We approach engineering requirements with
+                            discipline, technical responsibility and
+                            professional standards.
+                        </p>
+
+                    </article>
+
+
+                    <article class="why-card">
+
+                        <span class="why-number">
+                            02
+                        </span>
+
+                        <h3>
+                            Promptness
+                        </h3>
+
+                        <p>
+                            We understand that infrastructure issues
+                            can affect operations and require timely
+                            attention.
+                        </p>
+
+                    </article>
+
+
+                    <article class="why-card">
+
+                        <span class="why-number">
+                            03
+                        </span>
+
+                        <h3>
+                            Safety
+                        </h3>
+
+                        <p>
+                            Safety remains an essential consideration
+                            throughout engineering and infrastructure
+                            engineering activities.
+                        </p>
+
+                    </article>
+
+
+                    <article class="why-card">
+
+                        <span class="why-number">
+                            04
+                        </span>
+
+                        <h3>
+                            Innovation
+                        </h3>
+
+                        <p>
+                            We continuously consider practical and
+                            modern approaches to solving engineering
+                            and infrastructure challenges.
+                        </p>
+
+                    </article>
+
+
+                    <article class="why-card">
+
+                        <span class="why-number">
+                            05
+                        </span>
+
+                        <h3>
+                            Customer Value
+                        </h3>
+
+                        <p>
+                            Our objective is to help clients obtain
+                            dependable performance and meaningful
+                            value from their infrastructure investments.
+                        </p>
+
+                    </article>
+
+
+                    <article class="why-card">
+
+                        <span class="why-number">
+                            06
+                        </span>
+
+                        <h3>
+                            Long-Term Partnership
+                        </h3>
+
+                        <p>
+                            We seek to develop lasting relationships
+                            based on trust, service quality and
+                            engineering excellence.
+                        </p>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =====================================================
+             FINAL CTA
+        ====================================================== -->
+
+        <section class="final-cta">
+
+            <div class="container">
+
+                <h2>
+                    Have an Engineering Requirement?
+                </h2>
+
+                <p>
+                    Start a conversation with Elitech Engineering
+                    Services and let us understand how we can engineering
+                    your facility, infrastructure or project.
+                </p>
+
+                <a
+                    href="#contactForm"
+                    class="btn">
+
+                    Submit an Enquiry →
+
+                </a>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- =========================================================
+         FOOTER
+    ========================================================== -->
+
+    <footer>
+
+        <div class="container">
+
+            <div class="footer-main">
+
+
+                <!-- BRAND -->
+
+                <div class="footer-brand">
+
+                    <a href="index.html" class="logo">
+
+                        <div class="logo-symbol">
+                            E
+                        </div>
+
+                        <div class="logo-text">
+
+                            <strong style="color:white;">
+                                Elitech Engineering
+                            </strong>
+
+                            <span style="color:#8ed7e5;">
+                                Engineering Services
+                            </span>
+
+                        </div>
+
+                    </a>
+
+                    <p>
+                        Electrical, mechanical and IT infrastructure
+                        engineering services focused on reliability,
+                        safety, performance and customer value.
+                    </p>
+
+                </div>
+
+
+                <!-- QUICK LINKS -->
+
+                <div>
+
+                    <h3 class="footer-title">
+                        Quick Links
+                    </h3>
+
+                    <ul class="footer-links">
+
+                        <li>
+                            <a href="index.html">
+                                Home
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="about.html">
+                                About EES
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="engineering.html">
+                                Engineering Services
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="data-center-operations.html">
+                                Data Center Operations
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="ohse.html">
+                                OHSE
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="power-quality.html">
+                                Power Quality
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="contact.html">
+                                Contact Us
+                            </a>
+                        </li>
+
+                    </ul>
+
+                </div>
+
+
+                <!-- FOOTER CONTACT -->
+
+                <div>
+
+                    <h3 class="footer-title">
+                        Contact
+                    </h3>
+
+                    <div class="footer-contact">
+
+                        <p>
+                            Opeikuma, Kasoa<br>
+                            Central Region, Ghana
+                        </p>
+
+                        <p>
+                            <a href="tel:+233243608533">
+                                0243 608 533
+                            </a>
+                        </p>
+
+                        <p>
+                            <a href="tel:+233508406048">
+                                0508 406 048
+                            </a>
+                        </p>
+
+                        <p>
+                            <a href="tel:+233207588996">
+                                0207 588 996
+                            </a>
+                        </p>
+
+                        <p>
+                            <a href="mailto:elitecengineers@gmail.com">
+                                elitecengineers@gmail.com
+                            </a>
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="footer-bottom">
+
+                <span>
+                    © 2026 Elitech Engineering Services.
+                    All rights reserved.
+                </span>
+
+                <span>
+                    Engineering • Safety • Reliability • Value
+                </span>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+
+    <!-- =========================================================
+         JAVASCRIPT
+    ========================================================== -->
+
+    <script>
+
+        /* =====================================================
+           MOBILE NAVIGATION
+        ====================================================== */
+
+        const menuToggle =
+            document.getElementById("menuToggle");
+
+        const navLinks =
+            document.getElementById("navLinks");
+
+
+        menuToggle.addEventListener("click", function () {
+
+            const isOpen =
+                navLinks.classList.toggle("open");
+
+            menuToggle.setAttribute(
+                "aria-expanded",
+                isOpen
+            );
+
+            menuToggle.setAttribute(
+                "aria-label",
+                isOpen
+                    ? "Close navigation menu"
+                    : "Open navigation menu"
+            );
+
+        });
+
+
+        /* Close menu when a link is clicked */
+
+        document
+            .querySelectorAll("#navLinks a")
+            .forEach(function (link) {
+
+                link.addEventListener("click", function () {
+
+                    navLinks.classList.remove("open");
+
+                    menuToggle.setAttribute(
+                        "aria-expanded",
+                        "false"
+                    );
+
+                    menuToggle.setAttribute(
+                        "aria-label",
+                        "Open navigation menu"
+                    );
+
+                });
+
+            });
+
+
+        /* =====================================================
+           CONTACT FORM
+        ====================================================== */
+
+        const contactForm =
+            document.getElementById("contactForm");
+
+        const formStatus =
+            document.getElementById("formStatus");
+
+
+        contactForm.addEventListener("submit", function (event) {
+
+            event.preventDefault();
+
+
+            /* Collect form information */
+
+            const name =
+                document.getElementById("name").value.trim();
+
+            const company =
+                document.getElementById("company").value.trim();
+
+            const email =
+                document.getElementById("email").value.trim();
+
+            const phone =
+                document.getElementById("phone").value.trim();
+
+            const service =
+                document.getElementById("service").value;
+
+            const enquiry =
+                document.getElementById("enquiry").value;
+
+            const message =
+                document.getElementById("message").value.trim();
+
+
+            /* Create email */
+
+            const subject =
+                encodeURIComponent(
+                    "EES Website Enquiry - " +
+                    service
+                );
+
+
+            const body =
+                encodeURIComponent(
+                    "NEW WEBSITE ENQUIRY\n\n" +
+
+                    "Full Name: " +
+                    name +
+                    "\n" +
+
+                    "Company / Organisation: " +
+                    (company || "Not provided") +
+                    "\n" +
+
+                    "Email: " +
+                    email +
+                    "\n" +
+
+                    "Phone: " +
+                    phone +
+                    "\n" +
+
+                    "Required Service: " +
+                    service +
+                    "\n" +
+
+                    "Enquiry Type: " +
+                    enquiry +
+                    "\n\n" +
+
+                    "MESSAGE:\n" +
+                    message +
+                    "\n\n" +
+
+                    "Sent through the Elitech Engineering Services website."
+                );
+
+
+            /* Open user's email client */
+
+            window.location.href =
+                "mailto:elitecengineers@gmail.com" +
+                "?subject=" +
+                subject +
+                "&body=" +
+                body;
+
+
+            /* Show status */
+
+            formStatus.textContent =
+                "Your email application should now open with the enquiry prepared. Please review it and send the message.";
+
+            formStatus.classList.add("show");
+
+        });
+
+    </script>
+
+    <script>
+
+        /* SERVICES DROPDOWN TOGGLE */
+
+        document.querySelectorAll(".dropdown-toggle")
+            .forEach(function (toggle) {
+
+                toggle.addEventListener("click", function (e) {
+
+                    e.stopPropagation();
+
+                    const parent = toggle.closest(".nav-dropdown");
+
+                    parent.classList.toggle("open");
+
+                });
+
+            });
+
+        document.addEventListener("click", function () {
+
+            document.querySelectorAll(".nav-dropdown.open")
+                .forEach(function (d) {
+                    d.classList.remove("open");
+                });
+
+        });
+
+    </script>
+
+</body>
+
+</html>

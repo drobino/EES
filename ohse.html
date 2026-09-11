@@ -1,0 +1,2851 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+        content="Elitech Engineering Services provides Occupational Health, Safety and Environmental services focused on risk management, compliance, workplace safety and environmental responsibility.">
+
+    <meta name="keywords"
+        content="Elitech Engineering Services, OHSE, occupational health, safety, environmental services, risk assessment, workplace safety, Ghana">
+
+    <meta name="author" content="Elitech Engineering Services">
+
+    <title>OHSE | Elitech Engineering Services</title>
+
+
+    <!-- FAVICON -->
+
+    <link rel="icon" type="image/svg+xml"
+        href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='20' fill='%23071f35'/%3E%3Cpath d='M25 20h50v12H39v15h30v12H39v21h36v12H25z' fill='%2300b8d4'/%3E%3C/svg%3E">
+
+
+<style>
+
+/* =========================================================
+   1. GLOBAL VARIABLES
+========================================================= */
+
+:root {
+
+    --navy: #071f35;
+    --navy-light: #0c304d;
+
+    --blue: #087ea4;
+    --cyan: #00b8d4;
+    --teal: #008c95;
+
+    --green: #2d7d46;
+    --green-light: #edf7ef;
+
+    --gold: #e2b857;
+
+    --white: #ffffff;
+    --off-white: #f7fafc;
+    --light-blue: #edf7fa;
+
+    --dark: #152536;
+    --text: #44515c;
+    --muted: #71808d;
+
+    --border: #dce6eb;
+
+    --shadow-sm: 0 5px 20px rgba(7,31,53,0.07);
+    --shadow-md: 0 12px 35px rgba(7,31,53,0.11);
+    --shadow-lg: 0 20px 55px rgba(7,31,53,0.15);
+
+    --radius: 12px;
+    --radius-lg: 20px;
+
+    --max-width: 1200px;
+}
+
+
+/* =========================================================
+   2. RESET
+========================================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: var(--white);
+    color: var(--text);
+    line-height: 1.7;
+}
+
+img {
+    width: 100%;
+    display: block;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+
+/* =========================================================
+   3. ACCESSIBILITY
+========================================================= */
+
+.skip-link {
+    position: absolute;
+    left: -9999px;
+    top: 10px;
+
+    background: var(--cyan);
+    color: var(--navy);
+
+    padding: 12px 18px;
+
+    font-weight: 700;
+
+    border-radius: 5px;
+
+    z-index: 9999;
+}
+
+.skip-link:focus {
+    left: 10px;
+}
+
+:focus-visible {
+    outline: 3px solid var(--gold);
+    outline-offset: 3px;
+}
+
+
+/* =========================================================
+   4. TOP BAR
+========================================================= */
+
+.top-bar {
+
+    background: var(--navy);
+
+    color: rgba(255,255,255,0.85);
+
+    font-size: 13px;
+}
+
+.top-bar-container {
+
+    max-width: var(--max-width);
+
+    margin: auto;
+
+    min-height: 42px;
+
+    padding: 0 25px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    gap: 20px;
+}
+
+.top-left,
+.top-right {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 20px;
+
+    flex-wrap: wrap;
+}
+
+.top-bar span {
+
+    display: inline-flex;
+
+    align-items: center;
+
+    gap: 7px;
+}
+
+
+/* =========================================================
+   5. NAVIGATION
+========================================================= */
+
+.navbar {
+
+    position: sticky;
+
+    top: 0;
+
+    z-index: 1000;
+
+    background: rgba(255,255,255,0.97);
+
+    backdrop-filter: blur(10px);
+
+    border-bottom: 1px solid var(--border);
+}
+
+.nav-container {
+
+    max-width: var(--max-width);
+
+    margin: auto;
+
+    padding: 0 25px;
+
+    height: 82px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+}
+
+
+/* LOGO */
+
+.logo {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 12px;
+}
+
+.logo-symbol {
+
+    width: 45px;
+    height: 45px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    background: var(--navy);
+
+    color: var(--cyan);
+
+    border-radius: 9px;
+
+    font-size: 27px;
+
+    font-weight: 900;
+}
+
+.logo-text strong {
+
+    display: block;
+
+    color: var(--navy);
+
+    font-size: 17px;
+
+    letter-spacing: 0.5px;
+}
+
+.logo-text span {
+
+    display: block;
+
+    color: var(--blue);
+
+    font-size: 10px;
+
+    font-weight: 700;
+
+    letter-spacing: 1.5px;
+}
+
+
+/* NAV LINKS */
+
+.nav-links {
+
+    list-style: none;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 5px;
+}
+
+.nav-links a {
+
+    padding: 11px 14px;
+
+    color: var(--dark);
+
+    font-size: 14px;
+
+    font-weight: 600;
+
+    border-radius: 7px;
+
+    transition: 0.25s ease;
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+
+    color: var(--blue);
+
+    background: var(--light-blue);
+}
+
+.nav-cta {
+
+    background: var(--blue) !important;
+
+    color: var(--white) !important;
+
+    padding: 12px 18px !important;
+}
+
+.nav-cta:hover {
+
+    background: var(--navy) !important;
+}
+
+
+/* MOBILE MENU */
+
+.menu-btn {
+
+    display: none;
+
+    width: 44px;
+
+    height: 44px;
+
+    border: 1px solid var(--border);
+
+    background: var(--white);
+
+    border-radius: 8px;
+
+    cursor: pointer;
+
+    font-size: 24px;
+
+    color: var(--navy);
+}
+
+
+/* =========================================================
+   6. HERO
+========================================================= */
+
+.hero {
+
+    min-height: 590px;
+
+    display: flex;
+
+    align-items: center;
+
+    position: relative;
+
+    background:
+
+        linear-gradient(
+            90deg,
+            rgba(7,31,53,0.96) 0%,
+            rgba(7,31,53,0.88) 48%,
+            rgba(7,31,53,0.40) 100%
+        ),
+
+        url("https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=1800&q=85")
+        center/cover no-repeat;
+}
+
+.hero-container {
+
+    max-width: var(--max-width);
+
+    width: 100%;
+
+    margin: auto;
+
+    padding: 90px 25px;
+}
+
+.hero-content {
+
+    max-width: 750px;
+
+    color: var(--white);
+}
+
+.eyebrow {
+
+    display: inline-flex;
+
+    align-items: center;
+
+    gap: 10px;
+
+    margin-bottom: 18px;
+
+    color: var(--cyan);
+
+    font-size: 13px;
+
+    font-weight: 800;
+
+    letter-spacing: 2px;
+
+    text-transform: uppercase;
+}
+
+.eyebrow::before {
+
+    content: "";
+
+    width: 38px;
+
+    height: 2px;
+
+    background: var(--cyan);
+}
+
+.hero h1 {
+
+    font-size: clamp(40px, 5vw, 68px);
+
+    line-height: 1.08;
+
+    margin-bottom: 22px;
+
+    letter-spacing: -1.5px;
+}
+
+.hero h1 span {
+
+    color: var(--cyan);
+}
+
+.hero p {
+
+    max-width: 680px;
+
+    color: rgba(255,255,255,0.85);
+
+    font-size: 18px;
+
+    line-height: 1.8;
+
+    margin-bottom: 30px;
+}
+
+.hero-buttons {
+
+    display: flex;
+
+    gap: 13px;
+
+    flex-wrap: wrap;
+}
+
+.btn {
+
+    display: inline-flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    min-height: 50px;
+
+    padding: 0 22px;
+
+    border-radius: 7px;
+
+    font-size: 14px;
+
+    font-weight: 700;
+
+    transition: 0.25s ease;
+}
+
+.btn-primary {
+
+    background: var(--cyan);
+
+    color: var(--navy);
+}
+
+.btn-primary:hover {
+
+    background: var(--white);
+
+    transform: translateY(-2px);
+}
+
+.btn-outline {
+
+    border: 1px solid rgba(255,255,255,0.55);
+
+    color: var(--white);
+}
+
+.btn-outline:hover {
+
+    background: var(--white);
+
+    color: var(--navy);
+}
+
+
+/* =========================================================
+   7. GENERAL SECTIONS
+========================================================= */
+
+.section {
+
+    padding: 90px 25px;
+}
+
+.section-light {
+
+    background: var(--off-white);
+}
+
+.container {
+
+    max-width: var(--max-width);
+
+    margin: auto;
+}
+
+.section-heading {
+
+    max-width: 720px;
+
+    margin-bottom: 50px;
+}
+
+.section-heading.center {
+
+    text-align: center;
+
+    margin-left: auto;
+
+    margin-right: auto;
+}
+
+.section-label {
+
+    color: var(--blue);
+
+    font-size: 12px;
+
+    font-weight: 800;
+
+    letter-spacing: 2px;
+
+    text-transform: uppercase;
+
+    margin-bottom: 10px;
+}
+
+.section-heading h2 {
+
+    color: var(--navy);
+
+    font-size: clamp(30px, 4vw, 44px);
+
+    line-height: 1.2;
+
+    margin-bottom: 16px;
+}
+
+.section-heading p {
+
+    color: var(--muted);
+
+    font-size: 16px;
+}
+
+
+/* =========================================================
+   8. INTRODUCTION
+========================================================= */
+
+.intro-grid {
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 60px;
+
+    align-items: center;
+}
+
+.intro-image {
+
+    min-height: 450px;
+
+    border-radius: var(--radius-lg);
+
+    overflow: hidden;
+
+    box-shadow: var(--shadow-lg);
+}
+
+.intro-image img {
+
+    height: 100%;
+
+    object-fit: cover;
+}
+
+.intro-content h2 {
+
+    color: var(--navy);
+
+    font-size: 38px;
+
+    line-height: 1.25;
+
+    margin-bottom: 20px;
+}
+
+.intro-content p {
+
+    margin-bottom: 18px;
+}
+
+.highlight-box {
+
+    margin-top: 25px;
+
+    padding: 22px;
+
+    background: var(--green-light);
+
+    border-left: 4px solid var(--green);
+
+    border-radius: 8px;
+}
+
+.highlight-box strong {
+
+    display: block;
+
+    color: var(--green);
+
+    margin-bottom: 5px;
+}
+
+
+/* =========================================================
+   9. SAFETY PRINCIPLES
+========================================================= */
+
+.principles-grid {
+
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 22px;
+}
+
+.principle-card {
+
+    background: var(--white);
+
+    padding: 32px 25px;
+
+    border: 1px solid var(--border);
+
+    border-radius: var(--radius);
+
+    box-shadow: var(--shadow-sm);
+
+    transition: 0.3s ease;
+}
+
+.principle-card:hover {
+
+    transform: translateY(-6px);
+
+    box-shadow: var(--shadow-md);
+
+    border-color: var(--cyan);
+}
+
+.principle-icon {
+
+    width: 58px;
+
+    height: 58px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    background: var(--light-blue);
+
+    color: var(--blue);
+
+    border-radius: 12px;
+
+    font-size: 25px;
+
+    margin-bottom: 22px;
+}
+
+.principle-card h3 {
+
+    color: var(--navy);
+
+    font-size: 19px;
+
+    margin-bottom: 10px;
+}
+
+.principle-card p {
+
+    color: var(--muted);
+
+    font-size: 14px;
+}
+
+
+/* =========================================================
+   10. OHSE SERVICE GRID
+========================================================= */
+
+.ohse-grid {
+
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 20px;
+}
+
+.ohse-card {
+
+    position: relative;
+
+    padding: 30px 25px;
+
+    background: var(--white);
+
+    border: 1px solid var(--border);
+
+    border-radius: var(--radius);
+
+    overflow: hidden;
+
+    transition: 0.3s ease;
+}
+
+.ohse-card::before {
+
+    content: "";
+
+    position: absolute;
+
+    top: 0;
+
+    left: 0;
+
+    width: 100%;
+
+    height: 4px;
+
+    background: var(--cyan);
+}
+
+.ohse-card:hover {
+
+    transform: translateY(-6px);
+
+    box-shadow: var(--shadow-md);
+}
+
+.ohse-number {
+
+    color: var(--cyan);
+
+    font-size: 13px;
+
+    font-weight: 900;
+
+    letter-spacing: 1px;
+
+    margin-bottom: 20px;
+}
+
+.ohse-card h3 {
+
+    color: var(--navy);
+
+    font-size: 19px;
+
+    margin-bottom: 12px;
+}
+
+.ohse-card p {
+
+    color: var(--muted);
+
+    font-size: 14px;
+}
+
+
+/* =========================================================
+   11. RISK MANAGEMENT
+========================================================= */
+
+.risk-section {
+
+    background: var(--navy);
+
+    color: var(--white);
+}
+
+.risk-grid {
+
+    display: grid;
+
+    grid-template-columns: 0.8fr 1.2fr;
+
+    gap: 70px;
+
+    align-items: center;
+}
+
+.risk-title .section-label {
+
+    color: var(--cyan);
+}
+
+.risk-title h2 {
+
+    color: var(--white);
+
+    font-size: 42px;
+
+    line-height: 1.2;
+
+    margin-bottom: 18px;
+}
+
+.risk-title p {
+
+    color: rgba(255,255,255,0.7);
+}
+
+.risk-list {
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 15px;
+}
+
+.risk-item {
+
+    padding: 25px;
+
+    background: rgba(255,255,255,0.05);
+
+    border: 1px solid rgba(255,255,255,0.12);
+
+    border-radius: 10px;
+
+    transition: 0.25s ease;
+}
+
+.risk-item:hover {
+
+    background: rgba(255,255,255,0.09);
+}
+
+.risk-item span {
+
+    display: block;
+
+    color: var(--cyan);
+
+    font-size: 22px;
+
+    font-weight: 900;
+
+    margin-bottom: 8px;
+}
+
+.risk-item h3 {
+
+    font-size: 16px;
+
+    margin-bottom: 6px;
+}
+
+.risk-item p {
+
+    color: rgba(255,255,255,0.62);
+
+    font-size: 13px;
+}
+
+
+/* =========================================================
+   12. SAFETY MANAGEMENT PROCESS
+========================================================= */
+
+.process {
+
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 20px;
+
+    counter-reset: safety;
+}
+
+.process-card {
+
+    position: relative;
+
+    padding: 30px 25px;
+
+    background: var(--white);
+
+    border: 1px solid var(--border);
+
+    border-radius: var(--radius);
+
+    box-shadow: var(--shadow-sm);
+}
+
+.process-card::before {
+
+    counter-increment: safety;
+
+    content: "0" counter(safety);
+
+    display: block;
+
+    color: var(--cyan);
+
+    font-size: 14px;
+
+    font-weight: 900;
+
+    margin-bottom: 22px;
+}
+
+.process-card h3 {
+
+    color: var(--navy);
+
+    margin-bottom: 10px;
+}
+
+.process-card p {
+
+    color: var(--muted);
+
+    font-size: 14px;
+}
+
+
+/* =========================================================
+   13. ENVIRONMENTAL RESPONSIBILITY
+========================================================= */
+
+.environment-grid {
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 60px;
+
+    align-items: center;
+}
+
+.environment-image {
+
+    min-height: 430px;
+
+    border-radius: var(--radius-lg);
+
+    overflow: hidden;
+
+    box-shadow: var(--shadow-lg);
+}
+
+.environment-image img {
+
+    height: 100%;
+
+    object-fit: cover;
+}
+
+.environment-content h2 {
+
+    color: var(--navy);
+
+    font-size: 38px;
+
+    line-height: 1.25;
+
+    margin-bottom: 18px;
+}
+
+.environment-content > p {
+
+    color: var(--muted);
+
+    margin-bottom: 25px;
+}
+
+.environment-list {
+
+    display: grid;
+
+    gap: 13px;
+}
+
+.environment-item {
+
+    display: flex;
+
+    gap: 15px;
+
+    padding: 15px;
+
+    background: var(--off-white);
+
+    border: 1px solid var(--border);
+
+    border-radius: 8px;
+}
+
+.environment-item-icon {
+
+    width: 38px;
+
+    height: 38px;
+
+    flex-shrink: 0;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    background: var(--green-light);
+
+    color: var(--green);
+
+    border-radius: 50%;
+
+    font-weight: 900;
+}
+
+.environment-item h3 {
+
+    color: var(--navy);
+
+    font-size: 15px;
+
+    margin-bottom: 3px;
+}
+
+.environment-item p {
+
+    color: var(--muted);
+
+    font-size: 13px;
+}
+
+
+/* =========================================================
+   14. SAFETY CULTURE BANNER
+========================================================= */
+
+.safety-banner {
+
+    background:
+
+        linear-gradient(
+            135deg,
+            var(--teal),
+            var(--navy)
+        );
+
+    color: var(--white);
+
+    padding: 70px 25px;
+}
+
+.safety-banner-container {
+
+    max-width: var(--max-width);
+
+    margin: auto;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    gap: 40px;
+}
+
+.safety-banner h2 {
+
+    font-size: 38px;
+
+    margin-bottom: 10px;
+}
+
+.safety-banner p {
+
+    max-width: 650px;
+
+    color: rgba(255,255,255,0.75);
+}
+
+
+/* =========================================================
+   15. CTA
+========================================================= */
+
+.cta {
+
+    padding: 80px 25px;
+
+    background: var(--off-white);
+}
+
+.cta-container {
+
+    max-width: var(--max-width);
+
+    margin: auto;
+
+    padding: 50px;
+
+    border-radius: var(--radius-lg);
+
+    background: var(--navy);
+
+    color: var(--white);
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    gap: 40px;
+}
+
+.cta h2 {
+
+    font-size: clamp(28px,4vw,40px);
+
+    margin-bottom: 10px;
+}
+
+.cta p {
+
+    max-width: 650px;
+
+    color: rgba(255,255,255,0.7);
+}
+
+
+/* =========================================================
+   16. FOOTER
+========================================================= */
+
+footer {
+
+    background: #041522;
+
+    color: rgba(255,255,255,0.7);
+
+    padding: 65px 25px 25px;
+}
+
+.footer-grid {
+
+    max-width: var(--max-width);
+
+    margin: auto;
+
+    display: grid;
+
+    grid-template-columns: 1.5fr 1fr 1fr 1fr;
+
+    gap: 45px;
+}
+
+.footer-brand h3 {
+
+    color: var(--white);
+
+    font-size: 20px;
+
+    margin-bottom: 12px;
+}
+
+.footer-brand p {
+
+    max-width: 350px;
+
+    font-size: 14px;
+
+    line-height: 1.8;
+}
+
+footer h4 {
+
+    color: var(--white);
+
+    margin-bottom: 18px;
+}
+
+.footer-links {
+
+    list-style: none;
+}
+
+.footer-links li {
+
+    margin-bottom: 10px;
+}
+
+.footer-links a {
+
+    font-size: 14px;
+
+    transition: 0.2s ease;
+}
+
+.footer-links a:hover {
+
+    color: var(--cyan);
+}
+
+.footer-bottom {
+
+    max-width: var(--max-width);
+
+    margin: 50px auto 0;
+
+    padding-top: 20px;
+
+    border-top: 1px solid rgba(255,255,255,0.1);
+
+    display: flex;
+
+    justify-content: space-between;
+
+    gap: 20px;
+
+    font-size: 12px;
+}
+
+
+/* =========================================================
+   17. RESPONSIVE DESIGN
+========================================================= */
+
+@media (max-width: 1050px) {
+
+    .nav-links a {
+
+        padding: 10px 9px;
+
+        font-size: 13px;
+    }
+
+    .principles-grid,
+    .ohse-grid {
+
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .process {
+
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .footer-grid {
+
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+
+@media (max-width: 760px) {
+
+    .top-bar-container {
+
+        justify-content: center;
+
+        padding: 8px 20px;
+    }
+
+    .top-right {
+
+        display: none;
+    }
+
+    .nav-container {
+
+        height: 70px;
+    }
+
+    .menu-btn {
+
+        display: block;
+    }
+
+    .nav-links {
+
+        position: absolute;
+
+        top: 70px;
+
+        left: 0;
+
+        right: 0;
+
+        background: var(--white);
+
+        border-bottom: 1px solid var(--border);
+
+        box-shadow: var(--shadow-md);
+
+        display: none;
+
+        flex-direction: column;
+
+        align-items: stretch;
+
+        padding: 15px 20px;
+    }
+
+    .nav-links.open {
+
+        display: flex;
+    }
+
+    .nav-links a {
+
+        display: block;
+
+        padding: 13px 15px;
+    }
+
+    .hero {
+
+        min-height: 620px;
+    }
+
+    .hero-container {
+
+        padding: 70px 20px;
+    }
+
+    .section {
+
+        padding: 70px 20px;
+    }
+
+    .intro-grid,
+    .risk-grid,
+    .environment-grid {
+
+        grid-template-columns: 1fr;
+
+        gap: 35px;
+    }
+
+    .risk-list {
+
+        grid-template-columns: 1fr;
+    }
+
+    .safety-banner-container,
+    .cta-container {
+
+        flex-direction: column;
+
+        align-items: flex-start;
+    }
+
+    .cta-container {
+
+        padding: 35px 25px;
+    }
+}
+
+
+@media (max-width: 500px) {
+
+    .logo-text strong {
+
+        font-size: 14px;
+    }
+
+    .logo-text span {
+
+        font-size: 8px;
+    }
+
+    .logo-symbol {
+
+        width: 40px;
+
+        height: 40px;
+    }
+
+    .hero h1 {
+
+        font-size: 38px;
+    }
+
+    .hero p {
+
+        font-size: 16px;
+    }
+
+    .hero-buttons {
+
+        flex-direction: column;
+
+        align-items: stretch;
+    }
+
+    .btn {
+
+        width: 100%;
+    }
+
+    .principles-grid,
+    .ohse-grid,
+    .process,
+    .footer-grid {
+
+        grid-template-columns: 1fr;
+    }
+
+    .footer-bottom {
+
+        flex-direction: column;
+    }
+}
+
+</style>
+
+    <style>
+
+        /* SERVICES DROPDOWN */
+
+        .nav-dropdown {
+            position: relative;
+        }
+
+        .dropdown-toggle {
+            display: inline-flex;
+            align-items: center;
+            gap: 4px;
+
+            padding: 11px 14px;
+
+            color: var(--dark);
+
+            font-size: 14px;
+            font-weight: 600;
+
+            border-radius: 7px;
+
+            cursor: pointer;
+
+            transition: 0.25s ease;
+        }
+
+        .dropdown-toggle:hover,
+        .dropdown-toggle.active {
+            color: var(--blue);
+            background: var(--light-blue);
+        }
+
+        .dropdown-arrow {
+            font-size: 10px;
+            transition: transform 0.2s ease;
+        }
+
+        .nav-dropdown.open .dropdown-arrow,
+        .nav-dropdown:hover .dropdown-arrow {
+            transform: rotate(180deg);
+        }
+
+        .dropdown-menu {
+            position: absolute;
+            top: 100%;
+            left: 0;
+
+            min-width: 230px;
+
+            margin-top: 6px;
+
+            background: var(--white);
+
+            border: 1px solid var(--border);
+            border-radius: 12px;
+
+            box-shadow: var(--shadow-md);
+
+            padding: 8px;
+
+            opacity: 0;
+            visibility: hidden;
+            transform: translateY(8px);
+
+            transition: 0.2s ease;
+
+            z-index: 1001;
+        }
+
+        .nav-dropdown:hover .dropdown-menu,
+        .nav-dropdown.open .dropdown-menu {
+            opacity: 1;
+            visibility: visible;
+            transform: translateY(0);
+        }
+
+        .dropdown-menu a {
+            display: block;
+
+            padding: 10px 12px;
+
+            border-radius: 8px;
+
+            font-size: 14px;
+            font-weight: 600;
+
+            color: var(--dark);
+
+            white-space: nowrap;
+        }
+
+        .dropdown-menu a:hover,
+        .dropdown-menu a.active {
+            background: var(--light-blue);
+            color: var(--blue);
+        }
+
+        @media (max-width: 760px) {
+
+            .dropdown-toggle {
+                display: flex;
+                justify-content: space-between;
+                padding: 13px 15px;
+            }
+
+            .dropdown-menu {
+                position: static;
+
+                display: none;
+
+                opacity: 1;
+                visibility: visible;
+                transform: none;
+
+                margin-top: 4px;
+
+                box-shadow: none;
+                border: none;
+
+                background: var(--off-white);
+
+                padding: 4px 4px 4px 15px;
+            }
+
+            .nav-dropdown.open .dropdown-menu {
+                display: block;
+            }
+        }
+
+    </style>
+
+</head>
+
+
+
+<body>
+
+
+<!-- =========================================================
+     ACCESSIBILITY
+========================================================= -->
+
+<a href="#main-content" class="skip-link">
+    Skip to main content
+</a>
+
+
+<!-- =========================================================
+     TOP CONTACT BAR
+========================================================= -->
+
+<div class="top-bar">
+
+    <div class="top-bar-container">
+
+        <div class="top-left">
+
+            <span>
+                📍 Opeikuma, Kasoa, Central Region, Ghana
+            </span>
+
+        </div>
+
+        <div class="top-right">
+
+            <span>
+                ☎ 0243 608 533
+            </span>
+
+            <span>
+                ✉ elitecengineers@gmail.com
+            </span>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+<!-- =========================================================
+     NAVIGATION
+========================================================= -->
+
+<nav class="navbar" aria-label="Main navigation">
+
+    <div class="nav-container">
+
+
+        <a href="index.html"
+           class="logo"
+           aria-label="Elitech Engineering Services Home">
+
+            <div class="logo-symbol">
+                E
+            </div>
+
+            <div class="logo-text">
+
+                <strong>
+                    ELITECH
+                </strong>
+
+                <span>
+                    ENGINEERING SERVICES
+                </span>
+
+            </div>
+
+        </a>
+
+
+        <button
+            class="menu-btn"
+            id="menuBtn"
+            aria-label="Open navigation menu"
+            aria-expanded="false"
+            aria-controls="navLinks">
+
+            ☰
+
+        </button>
+
+
+        <ul class="nav-links" id="navLinks">
+
+            <li>
+                <a href="index.html">
+                    Home
+                </a>
+            </li>
+
+            <li>
+                <a href="about.html">
+                    About
+                </a>
+            </li>
+
+            <li class="nav-dropdown">
+                <span class="dropdown-toggle">
+                    Services
+                    <span class="dropdown-arrow">▾</span>
+                </span>
+
+                <div class="dropdown-menu">
+                    <a href="engineering.html">
+                        Engineering
+                    </a>
+                    <a href="data-center-operations.html">
+                        Data Center Operations
+                    </a>
+                </div>
+            </li>
+
+            <li>
+                <a href="ohse.html" class="active">
+                    OHSE
+                </a>
+            </li>
+
+            <li>
+                <a href="power-quality.html">
+                    Power Quality
+                </a>
+            </li>
+
+            <li>
+                <a href="contact.html" class="nav-cta">
+                    Contact Us
+                </a>
+            </li>
+
+        </ul>
+
+    </div>
+
+</nav>
+
+
+<!-- =========================================================
+     MAIN CONTENT
+========================================================= -->
+
+<main id="main-content">
+
+
+<!-- =========================================================
+     HERO
+========================================================= -->
+
+<section class="hero">
+
+    <div class="hero-container">
+
+        <div class="hero-content">
+
+            <div class="eyebrow">
+                Occupational Health • Safety • Environment
+            </div>
+
+            <h1>
+                Safety is not a
+                <span>choice.</span>
+            </h1>
+
+            <p>
+                We engineering organizations in creating safer workplaces,
+                managing operational risks and promoting responsible
+                environmental practices through structured OHSE solutions.
+            </p>
+
+            <div class="hero-buttons">
+
+                <a href="#ohse-services"
+                   class="btn btn-primary">
+
+                    Explore OHSE Services
+
+                </a>
+
+                <a href="contact.html"
+                   class="btn btn-outline">
+
+                    Speak With Our Team
+
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     INTRODUCTION
+========================================================= -->
+
+<section class="section">
+
+    <div class="container">
+
+        <div class="intro-grid">
+
+
+            <div class="intro-image">
+
+                <img
+                    src="https://images.unsplash.com/photo-1541888946425-d81bb19240f5?auto=format&fit=crop&w=1000&q=85"
+                    alt="Engineering and construction professionals working safely"
+                    loading="lazy">
+
+            </div>
+
+
+            <div class="intro-content">
+
+                <div class="section-label">
+                    Our OHSE Commitment
+                </div>
+
+                <h2>
+                    Protecting people,
+                    assets and the environment.
+                </h2>
+
+                <p>
+                    At Elitech Engineering Services, safety is an
+                    essential part of how engineering and infrastructure
+                    services are delivered.
+                </p>
+
+                <p>
+                    Our OHSE approach is focused on identifying hazards,
+                    reducing risks, promoting safe working practices and
+                    engineeringing environmental responsibility.
+                </p>
+
+
+                <div class="highlight-box">
+
+                    <strong>
+                        Safety First
+                    </strong>
+
+                    <span>
+                        Every engineering activity should be planned,
+                        executed and reviewed with safety and operational
+                        responsibility in mind.
+                    </span>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     OHSE PRINCIPLES
+========================================================= -->
+
+<section class="section section-light">
+
+    <div class="container">
+
+        <div class="section-heading center">
+
+            <div class="section-label">
+                Our Foundation
+            </div>
+
+            <h2>
+                Three pillars of responsible operations.
+            </h2>
+
+            <p>
+                Effective OHSE management requires attention to people,
+                workplace conditions and the environment.
+            </p>
+
+        </div>
+
+
+        <div class="principles-grid">
+
+
+            <article class="principle-card">
+
+                <div class="principle-icon">
+                    👷
+                </div>
+
+                <h3>
+                    Occupational Health
+                </h3>
+
+                <p>
+                    engineeringing workplace practices that promote the
+                    health, wellbeing and safety of employees and
+                    contractors.
+                </p>
+
+            </article>
+
+
+            <article class="principle-card">
+
+                <div class="principle-icon">
+                    🛡
+                </div>
+
+                <h3>
+                    Workplace Safety
+                </h3>
+
+                <p>
+                    Identifying hazards and implementing practical
+                    controls to reduce workplace risks and incidents.
+                </p>
+
+            </article>
+
+
+            <article class="principle-card">
+
+                <div class="principle-icon">
+                    🌱
+                </div>
+
+                <h3>
+                    Environmental Responsibility
+                </h3>
+
+                <p>
+                    Encouraging responsible practices that minimize
+                    environmental impact and engineering sustainable operations.
+                </p>
+
+            </article>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     OHSE SERVICES
+========================================================= -->
+
+<section class="section" id="ohse-services">
+
+    <div class="container">
+
+        <div class="section-heading center">
+
+            <div class="section-label">
+                OHSE Services
+            </div>
+
+            <h2>
+                Safety built into every operation.
+            </h2>
+
+            <p>
+                Our OHSE services are structured to help organizations
+                identify risks, strengthen safety practices and maintain
+                responsible working environments.
+            </p>
+
+        </div>
+
+
+        <div class="ohse-grid">
+
+
+            <article class="ohse-card">
+
+                <div class="ohse-number">
+                    01
+                </div>
+
+                <h3>
+                    Risk Assessment
+                </h3>
+
+                <p>
+                    Identification of workplace hazards and evaluation
+                    of risks associated with operational activities.
+                </p>
+
+            </article>
+
+
+            <article class="ohse-card">
+
+                <div class="ohse-number">
+                    02
+                </div>
+
+                <h3>
+                    Hazard Identification
+                </h3>
+
+                <p>
+                    Systematic identification of potential hazards that
+                    may affect people, equipment or operations.
+                </p>
+
+            </article>
+
+
+            <article class="ohse-card">
+
+                <div class="ohse-number">
+                    03
+                </div>
+
+                <h3>
+                    Safety Procedures
+                </h3>
+
+                <p>
+                    Development and implementation of practical safety
+                    procedures for engineering and operational activities.
+                </p>
+
+            </article>
+
+
+            <article class="ohse-card">
+
+                <div class="ohse-number">
+                    04
+                </div>
+
+                <h3>
+                    Safety Training
+                </h3>
+
+                <p>
+                    engineeringing workforce awareness through appropriate
+                    safety education and workplace guidance.
+                </p>
+
+            </article>
+
+
+            <article class="ohse-card">
+
+                <div class="ohse-number">
+                    05
+                </div>
+
+                <h3>
+                    Emergency Preparedness
+                </h3>
+
+                <p>
+                    engineeringing emergency planning and response
+                    preparedness for workplace incidents.
+                </p>
+
+            </article>
+
+
+            <article class="ohse-card">
+
+                <div class="ohse-number">
+                    06
+                </div>
+
+                <h3>
+                    Incident Management
+                </h3>
+
+                <p>
+                    engineeringing structured reporting, investigation and
+                    corrective action following incidents.
+                </p>
+
+            </article>
+
+
+            <article class="ohse-card">
+
+                <div class="ohse-number">
+                    07
+                </div>
+
+                <h3>
+                    Environmental Management
+                </h3>
+
+                <p>
+                    Promoting responsible environmental practices across
+                    engineering and facility operations.
+                </p>
+
+            </article>
+
+
+            <article class="ohse-card">
+
+                <div class="ohse-number">
+                    08
+                </div>
+
+                <h3>
+                    Compliance engineering
+                </h3>
+
+                <p>
+                    engineeringing organizations in maintaining appropriate
+                    workplace health, safety and environmental practices.
+                </p>
+
+            </article>
+
+
+            <article class="ohse-card">
+
+                <div class="ohse-number">
+                    09
+                </div>
+
+                <h3>
+                    Safety Inspections
+                </h3>
+
+                <p>
+                    Workplace inspections designed to identify unsafe
+                    conditions and opportunities for improvement.
+                </p>
+
+            </article>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     RISK MANAGEMENT
+========================================================= -->
+
+<section class="section risk-section">
+
+    <div class="container">
+
+        <div class="risk-grid">
+
+
+            <div class="risk-title">
+
+                <div class="section-label">
+                    Risk Management
+                </div>
+
+                <h2>
+                    Identify risks
+                    before they become incidents.
+                </h2>
+
+                <p>
+                    Proactive risk management helps organizations
+                    understand potential hazards and establish
+                    appropriate controls before work begins.
+                </p>
+
+            </div>
+
+
+            <div class="risk-list">
+
+
+                <div class="risk-item">
+
+                    <span>
+                        01
+                    </span>
+
+                    <h3>
+                        Identify
+                    </h3>
+
+                    <p>
+                        Determine potential hazards associated with
+                        activities, equipment and work environments.
+                    </p>
+
+                </div>
+
+
+                <div class="risk-item">
+
+                    <span>
+                        02
+                    </span>
+
+                    <h3>
+                        Evaluate
+                    </h3>
+
+                    <p>
+                        Assess the likelihood and potential consequences
+                        of identified risks.
+                    </p>
+
+                </div>
+
+
+                <div class="risk-item">
+
+                    <span>
+                        03
+                    </span>
+
+                    <h3>
+                        Control
+                    </h3>
+
+                    <p>
+                        Establish appropriate measures to reduce
+                        exposure to identified risks.
+                    </p>
+
+                </div>
+
+
+                <div class="risk-item">
+
+                    <span>
+                        04
+                    </span>
+
+                    <h3>
+                        Review
+                    </h3>
+
+                    <p>
+                        Monitor controls and identify opportunities for
+                        continuous safety improvement.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     SAFETY PROCESS
+========================================================= -->
+
+<section class="section section-light">
+
+    <div class="container">
+
+        <div class="section-heading center">
+
+            <div class="section-label">
+                Safety Management
+            </div>
+
+            <h2>
+                A structured approach to safer work.
+            </h2>
+
+            <p>
+                Safety becomes stronger when it is integrated into
+                planning, execution and continuous improvement.
+            </p>
+
+        </div>
+
+
+        <div class="process">
+
+
+            <div class="process-card">
+
+                <h3>
+                    Plan
+                </h3>
+
+                <p>
+                    Understand the work scope, identify requirements
+                    and establish appropriate safety considerations.
+                </p>
+
+            </div>
+
+
+            <div class="process-card">
+
+                <h3>
+                    Prepare
+                </h3>
+
+                <p>
+                    Identify hazards, communicate responsibilities and
+                    establish necessary controls.
+                </p>
+
+            </div>
+
+
+            <div class="process-card">
+
+                <h3>
+                    Execute
+                </h3>
+
+                <p>
+                    Carry out activities using approved procedures,
+                    appropriate controls and safe working practices.
+                </p>
+
+            </div>
+
+
+            <div class="process-card">
+
+                <h3>
+                    Improve
+                </h3>
+
+                <p>
+                    Review performance, learn from observations and
+                    strengthen future safety practices.
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     ENVIRONMENT
+========================================================= -->
+
+<section class="section">
+
+    <div class="container">
+
+        <div class="environment-grid">
+
+
+            <div class="environment-image">
+
+                <img
+                    src="https://images.unsplash.com/photo-1473341304170-971dccb5ac1e?auto=format&fit=crop&w=1000&q=85"
+                    alt="Electrical infrastructure and environmental sustainability"
+                    loading="lazy">
+
+            </div>
+
+
+            <div class="environment-content">
+
+                <div class="section-label">
+                    Environmental Responsibility
+                </div>
+
+                <h2>
+                    Engineering with environmental
+                    responsibility.
+                </h2>
+
+                <p>
+                    Responsible engineering considers not only
+                    performance and reliability, but also the impact
+                    infrastructure and operations can have on the
+                    surrounding environment.
+                </p>
+
+
+                <div class="environment-list">
+
+
+                    <div class="environment-item">
+
+                        <div class="environment-item-icon">
+                            ✓
+                        </div>
+
+                        <div>
+
+                            <h3>
+                                Responsible Resource Use
+                            </h3>
+
+                            <p>
+                                Encourage efficient use of materials,
+                                energy and operational resources.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="environment-item">
+
+                        <div class="environment-item-icon">
+                            ✓
+                        </div>
+
+                        <div>
+
+                            <h3>
+                                Waste Awareness
+                            </h3>
+
+                            <p>
+                                Promote appropriate handling and
+                                responsible management of waste.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="environment-item">
+
+                        <div class="environment-item-icon">
+                            ✓
+                        </div>
+
+                        <div>
+
+                            <h3>
+                                Environmental Protection
+                            </h3>
+
+                            <p>
+                                Consider environmental risks when
+                                planning and executing engineering work.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="environment-item">
+
+                        <div class="environment-item-icon">
+                            ✓
+                        </div>
+
+                        <div>
+
+                            <h3>
+                                Continuous Improvement
+                            </h3>
+
+                            <p>
+                                Identify opportunities to improve
+                                environmental performance over time.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     SAFETY CULTURE
+========================================================= -->
+
+<section class="safety-banner">
+
+    <div class="safety-banner-container">
+
+        <div>
+
+            <h2>
+                Building a culture where safety comes first.
+            </h2>
+
+            <p>
+                Strong safety performance depends on awareness,
+                accountability, communication and continuous
+                improvement at every level of an organization.
+            </p>
+
+        </div>
+
+        <a href="contact.html"
+           class="btn btn-primary">
+
+            Discuss Your OHSE Needs
+
+        </a>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     FINAL CTA
+========================================================= -->
+
+<section class="cta">
+
+    <div class="cta-container">
+
+        <div>
+
+            <h2>
+                Make safety part of your next project.
+            </h2>
+
+            <p>
+                Contact Elitech Engineering Services to discuss
+                occupational health, safety and environmental
+                requirements for your organization.
+            </p>
+
+        </div>
+
+
+        <a href="contact.html"
+           class="btn btn-primary">
+
+            Contact EES
+
+        </a>
+
+    </div>
+
+</section>
+
+
+</main>
+
+
+<!-- =========================================================
+     FOOTER
+========================================================= -->
+
+<footer>
+
+    <div class="footer-grid">
+
+
+        <div class="footer-brand">
+
+            <h3>
+                Elitech Engineering Services
+            </h3>
+
+            <p>
+                Professional electrical, mechanical and IT
+                infrastructure engineering services focused on
+                quality, safety, reliability and customer value.
+            </p>
+
+        </div>
+
+
+        <div>
+
+            <h4>
+                Company
+            </h4>
+
+            <ul class="footer-links">
+
+                <li>
+                    <a href="index.html">
+                        Home
+                    </a>
+                </li>
+
+                <li>
+                    <a href="about.html">
+                        About Us
+                    </a>
+                </li>
+
+                <li>
+                    <a href="engineering.html">
+                        Engineering
+                    </a>
+                </li>
+
+                <li>
+                    <a href="data-center-operations.html">
+                        Data Center Operations
+                    </a>
+                </li>
+
+                <li>
+                    <a href="ohse.html">
+                        OHSE
+                    </a>
+                </li>
+
+                <li>
+                    <a href="power-quality.html">
+                        Power Quality
+                    </a>
+                </li>
+
+                <li>
+                    <a href="contact.html">
+                        Contact Us
+                    </a>
+                </li>
+
+            </ul>
+
+        </div>
+
+
+        <div>
+
+            <h4>
+                Services
+            </h4>
+
+            <ul class="footer-links">
+
+                <li>
+                    <a href="engineering.html">
+                        Engineering
+                    </a>
+                </li>
+
+                <li>
+                    <a href="ohse.html">
+                        OHSE
+                    </a>
+                </li>
+
+                <li>
+                    <a href="power-quality.html">
+                        Power Quality
+                    </a>
+                </li>
+
+            </ul>
+
+        </div>
+
+
+        <div>
+
+            <h4>
+                Contact
+            </h4>
+
+            <ul class="footer-links">
+
+                <li>
+                    Opeikuma, Kasoa
+                </li>
+
+                <li>
+                    Central Region, Ghana
+                </li>
+
+                <li>
+                    0243 608 533
+                </li>
+
+                <li>
+                    0508 406 048
+                </li>
+
+                <li>
+                    elitecengineers@gmail.com
+                </li>
+
+            </ul>
+
+        </div>
+
+    </div>
+
+
+    <div class="footer-bottom">
+
+        <span>
+            © 2026 Elitech Engineering Services.
+            All Rights Reserved.
+        </span>
+
+        <span>
+            Safety • Quality • Reliability
+        </span>
+
+    </div>
+
+</footer>
+
+
+<!-- =========================================================
+     MOBILE MENU JAVASCRIPT
+========================================================= -->
+
+<script>
+
+const menuBtn =
+    document.getElementById("menuBtn");
+
+const navLinks =
+    document.getElementById("navLinks");
+
+
+menuBtn.addEventListener("click", function () {
+
+    navLinks.classList.toggle("open");
+
+    const isOpen =
+        navLinks.classList.contains("open");
+
+    menuBtn.setAttribute(
+        "aria-expanded",
+        isOpen
+    );
+
+    menuBtn.setAttribute(
+        "aria-label",
+        isOpen
+            ? "Close navigation menu"
+            : "Open navigation menu"
+    );
+
+    menuBtn.textContent =
+        isOpen ? "✕" : "☰";
+
+});
+
+
+/* Close mobile menu after clicking a link */
+
+document.querySelectorAll(".nav-links a")
+.forEach(function(link) {
+
+    link.addEventListener("click", function() {
+
+        navLinks.classList.remove("open");
+
+        menuBtn.setAttribute(
+            "aria-expanded",
+            "false"
+        );
+
+        menuBtn.setAttribute(
+            "aria-label",
+            "Open navigation menu"
+        );
+
+        menuBtn.textContent = "☰";
+
+    });
+
+});
+
+</script>
+
+
+    <script>
+
+        /* SERVICES DROPDOWN TOGGLE */
+
+        document.querySelectorAll(".dropdown-toggle")
+            .forEach(function (toggle) {
+
+                toggle.addEventListener("click", function (e) {
+
+                    e.stopPropagation();
+
+                    const parent = toggle.closest(".nav-dropdown");
+
+                    parent.classList.toggle("open");
+
+                });
+
+            });
+
+        document.addEventListener("click", function () {
+
+            document.querySelectorAll(".nav-dropdown.open")
+                .forEach(function (d) {
+                    d.classList.remove("open");
+                });
+
+        });
+
+    </script>
+
+</body>
+
+</html>
