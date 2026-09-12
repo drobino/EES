@@ -1,1547 +1,1965 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-
     <meta charset="UTF-8">
 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
 
     <meta name="description"
-        content="Elitech Engineering Services provides power quality assessment, monitoring, analysis and corrective solutions for reliable electrical infrastructure.">
+          content="Learn about Elitech Engineering Services, our history, mission, vision, values and commitment to engineering excellence.">
 
     <meta name="keywords"
-        content="Elitech Engineering Services, power quality, harmonics, voltage regulation, power factor, electrical monitoring, surge protection, UPS, AVR, Ghana">
+          content="Elitech Engineering Services, EES, Ghana engineering company, electrical engineering, mechanical engineering, IT infrastructure">
 
-    <meta name="author" content="Elitech Engineering Services">
+    <meta name="author"
+          content="Elitech Engineering Services">
 
-    <title>Power Quality | Elitech Engineering Services</title>
+    <title>About Us | Elitech Engineering Services</title>
 
-    <link rel="icon" type="image/svg+xml"
-        href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='20' fill='%23071f35'/%3E%3Cpath d='M25 20h50v12H39v15h30v12H39v21h36v12H25z' fill='%2300b8d4'/%3E%3C/svg%3E">
+    <!-- FAVICON -->
+    <link rel="icon"
+          href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='18' fill='%23071F35'/%3E%3Cpath d='M18 25h64v12H31v8h43v11H31v9h51v12H18z' fill='white'/%3E%3Cpath d='M60 15l-12 34h13L39 85l8-30H34z' fill='%2300B8D4'/%3E%3C/svg%3E">
 
-<style>
+    <style>
 
-/* =========================================================
-   1. GLOBAL VARIABLES
-========================================================= */
+        /* =====================================================
+           ROOT VARIABLES
+        ===================================================== */
 
-:root {
+        :root {
 
-    --navy: #071f35;
-    --navy-light: #0c304d;
+            --navy: #071f35;
+            --navy-light: #0c304d;
 
-    --blue: #087ea4;
-    --cyan: #00b8d4;
-    --teal: #008c95;
+            --blue: #087ea4;
+            --cyan: #00b8d4;
+            --teal: #008c95;
 
-    --gold: #e2b857;
+            --gold: #e2b857;
 
-    --green: #2d7d46;
+            --white: #ffffff;
+            --off-white: #f5f8fa;
+            --light-blue: #eaf6fa;
 
-    --white: #ffffff;
-    --off-white: #f7fafc;
-    --light-blue: #edf7fa;
+            --dark: #17232d;
+            --gray: #667784;
 
-    --dark: #152536;
-    --text: #44515c;
-    --muted: #71808d;
+            --border: #dce6eb;
 
-    --border: #dce6eb;
+            --shadow-sm:
+                0 5px 18px rgba(7,31,53,0.08);
 
-    --shadow-sm:
-        0 5px 20px rgba(7,31,53,0.07);
+            --shadow-md:
+                0 12px 35px rgba(7,31,53,0.12);
 
-    --shadow-md:
-        0 12px 35px rgba(7,31,53,0.11);
+            --shadow-lg:
+                0 22px 55px rgba(7,31,53,0.17);
 
-    --shadow-lg:
-        0 20px 55px rgba(7,31,53,0.15);
+            --radius-sm: 8px;
+            --radius-md: 16px;
+            --radius-lg: 26px;
 
-    --radius: 12px;
+            --container: 1200px;
 
-    --radius-lg: 20px;
+            --transition:
+                all 0.3s ease;
+        }
 
-    --max-width: 1200px;
-}
 
-/* =========================================================
-   2. RESET
-========================================================= */
+        /* =====================================================
+           RESET
+        ===================================================== */
 
-* {
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
-    margin: 0;
+        html {
+            scroll-behavior: smooth;
+        }
 
-    padding: 0;
+        body {
 
-    box-sizing: border-box;
-}
+            font-family:
+                "Segoe UI",
+                Arial,
+                Helvetica,
+                sans-serif;
 
-html {
+            color: var(--dark);
 
-    scroll-behavior: smooth;
-}
+            background: var(--white);
 
-body {
+            line-height: 1.7;
 
-    font-family:
-        Arial,
-        Helvetica,
-        sans-serif;
+            overflow-x: hidden;
+        }
 
-    background: var(--white);
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
 
-    color: var(--text);
+        img {
+            max-width: 100%;
+            display: block;
+        }
 
-    line-height: 1.7;
-}
+        button {
+            font: inherit;
+        }
 
-img {
+        .container {
 
-    width: 100%;
+            width:
+                min(92%, var(--container));
 
-    display: block;
-}
+            margin: auto;
+        }
 
-a {
 
-    color: inherit;
+        /* =====================================================
+           ACCESSIBILITY
+        ===================================================== */
 
-    text-decoration: none;
-}
+        .skip-link {
 
-/* =========================================================
-   3. ACCESSIBILITY
-========================================================= */
+            position: absolute;
 
-.skip-link {
+            top: -100px;
+            left: 20px;
 
-    position: absolute;
+            background: var(--cyan);
 
-    left: -9999px;
+            color: var(--navy);
 
-    top: 10px;
+            padding: 12px 20px;
 
-    z-index: 9999;
+            font-weight: 700;
 
-    background: var(--cyan);
+            z-index: 9999;
 
-    color: var(--navy);
+            border-radius:
+                0 0 8px 8px;
+        }
 
-    padding: 12px 18px;
+        .skip-link:focus {
+            top: 0;
+        }
 
-    font-weight: 700;
+        :focus-visible {
 
-    border-radius: 5px;
-}
+            outline:
+                3px solid var(--gold);
 
-.skip-link:focus {
+            outline-offset: 4px;
+        }
 
-    left: 10px;
-}
 
-:focus-visible {
+        /* =====================================================
+           TOP BAR
+        ===================================================== */
 
-    outline: 3px solid var(--gold);
+        .top-bar {
 
-    outline-offset: 3px;
-}
+            background: var(--navy);
 
-/* =========================================================
-   4. TOP BAR
-========================================================= */
+            color:
+                rgba(255,255,255,0.85);
 
-.top-bar {
+            font-size: 0.84rem;
+        }
 
-    background: var(--navy);
+        .top-inner {
 
-    color:
-        rgba(255,255,255,0.85);
+            min-height: 40px;
 
-    font-size: 13px;
-}
+            display: flex;
 
-.top-bar-container {
+            align-items: center;
 
-    max-width: var(--max-width);
+            justify-content: space-between;
 
-    margin: auto;
+            gap: 20px;
+        }
 
-    min-height: 42px;
+        .top-contact {
 
-    padding: 0 25px;
+            display: flex;
 
-    display: flex;
+            flex-wrap: wrap;
 
-    align-items: center;
+            gap: 25px;
+        }
 
-    justify-content: space-between;
+        .top-contact span {
 
-    gap: 20px;
-}
+            display: flex;
 
-.top-left,
-.top-right {
+            align-items: center;
 
-    display: flex;
+            gap: 7px;
+        }
 
-    align-items: center;
+        .top-right {
 
-    gap: 20px;
+            color: var(--cyan);
 
-    flex-wrap: wrap;
-}
+            font-weight: 700;
+        }
 
-.top-bar span {
 
-    display: inline-flex;
+        /* =====================================================
+           NAVIGATION
+        ===================================================== */
 
-    align-items: center;
+        .navbar {
 
-    gap: 7px;
-}
+            position: sticky;
 
-/* =========================================================
-   5. NAVIGATION
-========================================================= */
+            top: 0;
 
-.navbar {
+            z-index: 1000;
 
-    position: sticky;
+            background:
+                rgba(255,255,255,0.97);
 
-    top: 0;
+            backdrop-filter:
+                blur(12px);
 
-    z-index: 1000;
+            border-bottom:
+                1px solid rgba(7,31,53,0.08);
+        }
 
-    background:
-        rgba(255,255,255,0.97);
+        .nav-inner {
 
-    backdrop-filter: blur(10px);
+            height: 82px;
 
-    border-bottom:
-        1px solid var(--border);
-}
+            display: flex;
 
-.nav-container {
+            align-items: center;
 
-    max-width: var(--max-width);
+            justify-content: space-between;
 
-    margin: auto;
+            gap: 30px;
+        }
 
-    padding: 0 25px;
 
-    height: 82px;
+        /* LOGO */
 
-    display: flex;
+        .logo {
 
-    align-items: center;
+            display: flex;
 
-    justify-content: space-between;
-}
+            align-items: center;
 
-/* LOGO */
+            gap: 12px;
+        }
 
-.logo {
+        .logo-mark {
 
-    display: flex;
+            width: 47px;
+            height: 47px;
 
-    align-items: center;
+            border-radius: 11px;
 
-    gap: 12px;
-}
+            background:
+                linear-gradient(
+                    135deg,
+                    var(--navy),
+                    var(--blue)
+                );
 
-.logo-symbol {
+            color: var(--white);
 
-    width: 45px;
+            display: grid;
 
-    height: 45px;
+            place-items: center;
 
-    display: flex;
+            font-size: 1.35rem;
 
-    align-items: center;
+            font-weight: 900;
 
-    justify-content: center;
+            position: relative;
 
-    background: var(--navy);
+            overflow: hidden;
+        }
 
-    color: var(--cyan);
+        .logo-mark::after {
 
-    border-radius: 9px;
+            content: "";
 
-    font-size: 27px;
+            position: absolute;
 
-    font-weight: 900;
-}
+            width: 40px;
+            height: 5px;
 
-.logo-text strong {
+            background: var(--cyan);
 
-    display: block;
+            transform: rotate(-45deg);
 
-    color: var(--navy);
+            bottom: 8px;
+            left: 5px;
+        }
 
-    font-size: 17px;
+        .logo-text {
 
-    letter-spacing: 0.5px;
-}
+            display: flex;
 
-.logo-text span {
+            flex-direction: column;
 
-    display: block;
+            line-height: 1.1;
+        }
 
-    color: var(--blue);
+        .logo-text strong {
 
-    font-size: 10px;
+            color: var(--navy);
 
-    font-weight: 700;
+            font-size: 1.15rem;
 
-    letter-spacing: 1.5px;
-}
+            letter-spacing: 1px;
+        }
 
-/* NAVIGATION LINKS */
+        .logo-text span {
 
-.nav-links {
+            color: var(--blue);
 
-    list-style: none;
+            font-size: 0.68rem;
 
-    display: flex;
+            font-weight: 700;
 
-    align-items: center;
+            letter-spacing: 1.6px;
 
-    gap: 5px;
-}
+            text-transform: uppercase;
+        }
 
-.nav-links a {
 
-    padding: 11px 14px;
+        /* NAV LINKS */
 
-    color: var(--dark);
+        .nav-links {
 
-    font-size: 14px;
+            display: flex;
 
-    font-weight: 600;
+            align-items: center;
 
-    border-radius: 7px;
+            gap: 28px;
 
-    transition: 0.25s ease;
-}
+            list-style: none;
+        }
 
-.nav-links a:hover,
-.nav-links a.active {
+        .nav-links a {
 
-    color: var(--blue);
+            color: var(--dark);
 
-    background: var(--light-blue);
-}
+            font-size: 0.92rem;
 
-.nav-cta {
+            font-weight: 600;
 
-    background: var(--blue) !important;
+            position: relative;
 
-    color: var(--white) !important;
+            padding: 8px 0;
 
-    padding: 12px 18px !important;
-}
+            transition: var(--transition);
+        }
 
-.nav-cta:hover {
+        .nav-links a::after {
 
-    background: var(--navy) !important;
-}
+            content: "";
 
-/* MOBILE BUTTON */
+            position: absolute;
 
-.menu-btn {
+            left: 0;
+            bottom: 0;
 
-    display: none;
+            width: 0;
 
-    width: 44px;
+            height: 2px;
 
-    height: 44px;
+            background: var(--cyan);
 
-    border:
-        1px solid var(--border);
+            transition: var(--transition);
+        }
 
-    background: var(--white);
+        .nav-links a:hover,
+        .nav-links a.active {
 
-    border-radius: 8px;
+            color: var(--blue);
+        }
 
-    cursor: pointer;
+        .nav-links a.active::after,
+        .nav-links a:hover::after {
 
-    font-size: 24px;
+            width: 100%;
+        }
 
-    color: var(--navy);
-}
 
-/* =========================================================
-   6. HERO
-========================================================= */
+        /* NAVIGATION CTA */
 
-.hero {
+        .nav-cta {
 
-    min-height: 600px;
+            background:
+                linear-gradient(
+                    135deg,
+                    var(--blue),
+                    var(--teal)
+                );
 
-    display: flex;
+            color: var(--white) !important;
 
-    align-items: center;
+            padding: 11px 20px !important;
 
-    position: relative;
+            border-radius: 8px;
 
-    background:
+            box-shadow: var(--shadow-sm);
+        }
 
-        linear-gradient(
-            90deg,
-            rgba(7,31,53,0.97) 0%,
-            rgba(7,31,53,0.88) 48%,
-            rgba(7,31,53,0.38) 100%
-        ),
+        .nav-cta::after {
+            display: none !important;
+        }
 
-        url("https://images.unsplash.com/photo-1473341304170-971dccb5ac1e?auto=format&fit=crop&w=1800&q=85")
-        center/cover no-repeat;
-}
+        .nav-cta:hover {
 
-.hero-container {
+            transform:
+                translateY(-2px);
 
-    max-width: var(--max-width);
+            box-shadow:
+                var(--shadow-md);
+        }
 
-    width: 100%;
 
-    margin: auto;
+        /* MOBILE BUTTON */
 
-    padding: 90px 25px;
-}
+        .menu-toggle {
 
-.hero-content {
+            display: none;
 
-    max-width: 760px;
+            width: 44px;
+            height: 44px;
 
-    color: var(--white);
-}
+            border: none;
 
-.eyebrow {
+            border-radius: 8px;
 
-    display: inline-flex;
+            background:
+                var(--light-blue);
 
-    align-items: center;
+            color: var(--navy);
 
-    gap: 10px;
+            cursor: pointer;
 
-    margin-bottom: 18px;
+            font-size: 1.35rem;
+        }
 
-    color: var(--cyan);
 
-    font-size: 13px;
+        /* =====================================================
+           PAGE HERO
+        ===================================================== */
 
-    font-weight: 800;
+        .page-hero {
 
-    letter-spacing: 2px;
+            min-height: 430px;
 
-    text-transform: uppercase;
-}
+            display: flex;
 
-.eyebrow::before {
+            align-items: center;
 
-    content: "";
+            position: relative;
 
-    width: 38px;
+            color: var(--white);
 
-    height: 2px;
+            background:
 
-    background: var(--cyan);
-}
+                linear-gradient(
+                    90deg,
+                    rgba(4,24,41,0.94),
+                    rgba(4,31,51,0.72),
+                    rgba(4,31,51,0.45)
+                ),
 
-.hero h1 {
+                url("pictures/background-about.png")
+                center/cover no-repeat;
+        }
 
-    font-size:
-        clamp(40px, 5vw, 68px);
+        .page-hero-content {
 
-    line-height: 1.08;
+            max-width: 760px;
 
-    margin-bottom: 22px;
+            padding: 90px 0;
+        }
 
-    letter-spacing: -1.5px;
-}
+        .breadcrumb {
 
-.hero h1 span {
+            display: flex;
 
-    color: var(--cyan);
-}
+            align-items: center;
 
-.hero p {
+            gap: 10px;
 
-    max-width: 680px;
+            color:
+                rgba(255,255,255,0.62);
 
-    color:
-        rgba(255,255,255,0.84);
+            font-size: 0.82rem;
 
-    font-size: 18px;
+            margin-bottom: 20px;
+        }
 
-    line-height: 1.8;
+        .breadcrumb span {
 
-    margin-bottom: 30px;
-}
+            color: var(--cyan);
+        }
 
-.hero-buttons {
+        .page-hero h1 {
 
-    display: flex;
+            font-size:
+                clamp(2.7rem, 6vw, 4.8rem);
 
-    gap: 13px;
+            line-height: 1.05;
 
-    flex-wrap: wrap;
-}
+            letter-spacing: -1.5px;
 
-.btn {
+            margin-bottom: 20px;
+        }
 
-    display: inline-flex;
+        .page-hero h1 span {
 
-    align-items: center;
+            color: var(--cyan);
+        }
 
-    justify-content: center;
+        .page-hero p {
 
-    min-height: 50px;
+            max-width: 680px;
 
-    padding: 0 22px;
+            color:
+                rgba(255,255,255,0.8);
 
-    border-radius: 7px;
+            font-size: 1.04rem;
+        }
 
-    font-size: 14px;
 
-    font-weight: 700;
+        /* =====================================================
+           GENERAL SECTIONS
+        ===================================================== */
 
-    transition: 0.25s ease;
-}
+        .section {
 
-.btn-primary {
+            padding: 100px 0;
+        }
 
-    background: var(--cyan);
+        .section-light {
 
-    color: var(--navy);
-}
+            background: var(--off-white);
+        }
 
-.btn-primary:hover {
+        .eyebrow {
 
-    background: var(--white);
+            display: inline-flex;
 
-    transform: translateY(-2px);
-}
+            align-items: center;
 
-.btn-outline {
+            gap: 10px;
 
-    border:
-        1px solid rgba(255,255,255,0.55);
+            color: var(--blue);
 
-    color: var(--white);
-}
+            font-size: 0.78rem;
 
-.btn-outline:hover {
+            font-weight: 800;
 
-    background: var(--white);
+            letter-spacing: 2px;
 
-    color: var(--navy);
-}
+            text-transform: uppercase;
 
-/* =========================================================
-   7. GENERAL SECTIONS
-========================================================= */
+            margin-bottom: 14px;
+        }
 
-.section {
+        .eyebrow::before {
 
-    padding: 90px 25px;
-}
+            content: "";
 
-.section-light {
+            width: 30px;
 
-    background: var(--off-white);
-}
+            height: 2px;
 
-.container {
+            background: var(--cyan);
+        }
 
-    max-width: var(--max-width);
+        .section-title {
 
-    margin: auto;
-}
+            font-size:
+                clamp(2rem,4vw,3.2rem);
 
-.section-heading {
+            line-height: 1.15;
 
-    max-width: 750px;
+            color: var(--navy);
 
-    margin-bottom: 50px;
-}
+            margin-bottom: 18px;
+        }
 
-.section-heading.center {
+        .section-title span {
 
-    text-align: center;
+            color: var(--blue);
+        }
 
-    margin-left: auto;
+        .section-intro {
 
-    margin-right: auto;
-}
+            color: var(--gray);
 
-.section-label {
+            max-width: 720px;
+        }
 
-    color: var(--blue);
 
-    font-size: 12px;
+        /* =====================================================
+           COMPANY STORY
+        ===================================================== */
 
-    font-weight: 800;
+        .story-grid {
 
-    letter-spacing: 2px;
+            display: grid;
 
-    text-transform: uppercase;
+            grid-template-columns:
+                1fr 1.05fr;
 
-    margin-bottom: 10px;
-}
+            gap: 75px;
 
-.section-heading h2 {
+            align-items: center;
+        }
 
-    color: var(--navy);
+        .story-image {
 
-    font-size:
-        clamp(30px,4vw,44px);
+            min-height: 560px;
 
-    line-height: 1.2;
+            border-radius:
+                var(--radius-lg);
 
-    margin-bottom: 16px;
-}
+            position: relative;
 
-.section-heading p {
+            background:
 
-    color: var(--muted);
+                linear-gradient(
+                    rgba(7,31,53,0.12),
+                    rgba(7,31,53,0.12)
+                ),
 
-    font-size: 16px;
-}
+                url("pictures/buil-on-technical-excellence.png")
+                center/cover no-repeat;
 
-/* =========================================================
-   8. INTRODUCTION
-========================================================= */
+            box-shadow:
+                var(--shadow-lg);
+        }
 
-.intro-grid {
+        .story-badge {
 
-    display: grid;
+            position: absolute;
 
-    grid-template-columns:
-        1fr 1fr;
+            right: -25px;
 
-    gap: 60px;
+            bottom: 35px;
 
-    align-items: center;
-}
+            width: 190px;
 
-.intro-image {
+            padding: 25px;
 
-    min-height: 460px;
+            background: var(--white);
 
-    border-radius: var(--radius-lg);
+            border-radius:
+                var(--radius-md);
 
-    overflow: hidden;
+            box-shadow:
+                var(--shadow-md);
 
-    box-shadow: var(--shadow-lg);
-}
+            border-top:
+                4px solid var(--cyan);
+        }
 
-.intro-image img {
+        .story-badge strong {
 
-    height: 100%;
+            display: block;
 
-    object-fit: cover;
-}
+            color: var(--blue);
 
-.intro-content h2 {
+            font-size: 2.4rem;
 
-    color: var(--navy);
+            line-height: 1;
+        }
 
-    font-size: 38px;
+        .story-badge span {
 
-    line-height: 1.25;
+            color: var(--gray);
 
-    margin-bottom: 20px;
-}
+            font-size: 0.78rem;
+        }
 
-.intro-content p {
+        .story-content p {
 
-    margin-bottom: 18px;
-}
+            color: var(--gray);
 
-.intro-list {
+            margin-bottom: 18px;
+        }
 
-    list-style: none;
+        .story-highlight {
 
-    margin-top: 25px;
-}
+            margin-top: 30px;
 
-.intro-list li {
+            padding: 25px;
 
-    position: relative;
+            background: var(--light-blue);
 
-    padding: 12px 0 12px 32px;
+            border-left:
+                4px solid var(--cyan);
 
-    border-bottom:
-        1px solid var(--border);
-}
+            border-radius:
+                0 12px 12px 0;
+        }
 
-.intro-list li::before {
+        .story-highlight strong {
 
-    content: "✓";
+            display: block;
 
-    position: absolute;
+            color: var(--navy);
 
-    left: 0;
+            margin-bottom: 5px;
+        }
 
-    top: 12px;
+        .story-highlight span {
 
-    width: 21px;
+            color: var(--gray);
 
-    height: 21px;
+            font-size: 0.88rem;
+        }
 
-    display: flex;
 
-    align-items: center;
+        /* =====================================================
+           COMPANY FACTS
+        ===================================================== */
 
-    justify-content: center;
+        .facts {
 
-    border-radius: 50%;
+            margin-top: 70px;
 
-    background: var(--light-blue);
+            display: grid;
 
-    color: var(--blue);
+            grid-template-columns:
+                repeat(4,1fr);
 
-    font-size: 12px;
+            gap: 20px;
+        }
 
-    font-weight: 900;
-}
+        .fact {
 
-/* =========================================================
-   9. POWER QUALITY INDICATORS
-========================================================= */
+            padding: 28px;
 
-.indicators {
+            border:
+                1px solid var(--border);
 
-    display: grid;
+            background: var(--white);
 
-    grid-template-columns:
-        repeat(4,1fr);
+            border-radius:
+                var(--radius-md);
 
-    gap: 18px;
-}
+            transition:
+                var(--transition);
+        }
 
-.indicator {
+        .fact:hover {
 
-    padding: 28px 22px;
+            transform:
+                translateY(-5px);
 
-    background: var(--white);
+            box-shadow:
+                var(--shadow-md);
+        }
 
-    border:
-        1px solid var(--border);
+        .fact-number {
 
-    border-radius: var(--radius);
+            font-size: 2rem;
 
-    box-shadow: var(--shadow-sm);
+            font-weight: 800;
 
-    transition: 0.3s ease;
-}
+            color: var(--blue);
 
-.indicator:hover {
+            line-height: 1;
+        }
 
-    transform: translateY(-6px);
+        .fact h3 {
 
-    box-shadow: var(--shadow-md);
+            color: var(--navy);
 
-    border-color: var(--cyan);
-}
+            font-size: 1rem;
 
-.indicator-symbol {
+            margin:
+                12px 0 5px;
+        }
 
-    width: 55px;
+        .fact p {
 
-    height: 55px;
+            color: var(--gray);
 
-    display: flex;
+            font-size: 0.8rem;
+        }
 
-    align-items: center;
 
-    justify-content: center;
+        /* =====================================================
+           MISSION / VISION
+        ===================================================== */
 
-    background: var(--light-blue);
+        .direction-grid {
 
-    color: var(--blue);
+            display: grid;
 
-    border-radius: 12px;
+            grid-template-columns:
+                repeat(2,1fr);
 
-    font-size: 23px;
+            gap: 25px;
+        }
 
-    margin-bottom: 20px;
-}
+        .direction-card {
 
-.indicator h3 {
+            padding: 45px;
 
-    color: var(--navy);
+            border-radius:
+                var(--radius-lg);
 
-    font-size: 17px;
+            position: relative;
 
-    margin-bottom: 8px;
-}
+            overflow: hidden;
 
-.indicator p {
+            background:
+                linear-gradient(
+                    135deg,
+                    #edf9fb,
+                    #ffffff
+                );
 
-    color: var(--muted);
+            border:
+                1px solid #d8edf1;
+        }
 
-    font-size: 13px;
-}
+        .direction-card.dark {
 
-/* =========================================================
-   10. POWER QUALITY SERVICES
-========================================================= */
+            color: var(--white);
 
-.service-grid {
+            background:
+                linear-gradient(
+                    135deg,
+                    var(--navy),
+                    var(--navy-light)
+                );
 
-    display: grid;
+            border: none;
+        }
 
-    grid-template-columns:
-        repeat(3,1fr);
+        .direction-card::after {
 
-    gap: 20px;
-}
+            content: "";
 
-.service-card {
+            position: absolute;
 
-    position: relative;
+            width: 180px;
+            height: 180px;
 
-    padding: 32px 25px;
+            border-radius: 50%;
 
-    background: var(--white);
+            border:
+                1px solid rgba(0,184,212,0.18);
 
-    border:
-        1px solid var(--border);
+            right: -70px;
+            bottom: -70px;
+        }
 
-    border-radius: var(--radius);
+        .direction-icon {
 
-    overflow: hidden;
+            width: 60px;
+            height: 60px;
 
-    transition: 0.3s ease;
-}
+            display: grid;
 
-.service-card::before {
+            place-items: center;
 
-    content: "";
+            background: var(--white);
 
-    position: absolute;
+            border-radius: 15px;
 
-    top: 0;
+            font-size: 1.6rem;
 
-    left: 0;
+            margin-bottom: 22px;
 
-    width: 100%;
+            box-shadow:
+                var(--shadow-sm);
+        }
 
-    height: 4px;
+        .direction-card h2 {
 
-    background: var(--cyan);
-}
+            color: var(--navy);
 
-.service-card:hover {
+            margin-bottom: 14px;
+        }
 
-    transform: translateY(-6px);
+        .direction-card.dark h2 {
 
-    box-shadow: var(--shadow-md);
-}
+            color: var(--white);
+        }
 
-.service-number {
+        .direction-card p {
 
-    color: var(--cyan);
+            color: var(--gray);
 
-    font-size: 13px;
+            font-size: 0.95rem;
+        }
 
-    font-weight: 900;
+        .direction-card.dark p {
 
-    letter-spacing: 1px;
+            color:
+                rgba(255,255,255,0.68);
+        }
 
-    margin-bottom: 18px;
-}
 
-.service-card h3 {
+        /* =====================================================
+           VALUES
+        ===================================================== */
 
-    color: var(--navy);
+        .values-header {
 
-    font-size: 19px;
+            max-width: 720px;
 
-    margin-bottom: 10px;
-}
+            margin-bottom: 50px;
+        }
 
-.service-card p {
+        .values-grid {
 
-    color: var(--muted);
+            display: grid;
 
-    font-size: 14px;
-}
+            grid-template-columns:
+                repeat(5,1fr);
 
-/* =========================================================
-   11. PROBLEM / SOLUTION SECTION
-========================================================= */
+            gap: 18px;
+        }
 
-.problem-section {
+        .value-card {
 
-    background: var(--navy);
+            padding: 30px 24px;
 
-    color: var(--white);
-}
+            background: var(--white);
 
-.problem-grid {
+            border:
+                1px solid var(--border);
 
-    display: grid;
+            border-radius:
+                var(--radius-md);
 
-    grid-template-columns:
-        0.8fr 1.2fr;
+            transition:
+                var(--transition);
+        }
 
-    gap: 70px;
+        .value-card:hover {
 
-    align-items: center;
-}
+            transform:
+                translateY(-7px);
 
-.problem-title .section-label {
+            box-shadow:
+                var(--shadow-md);
 
-    color: var(--cyan);
-}
+            border-color:
+                transparent;
+        }
 
-.problem-title h2 {
+        .value-number {
 
-    color: var(--white);
+            color: var(--cyan);
 
-    font-size: 42px;
+            font-weight: 900;
 
-    line-height: 1.2;
+            font-size: 0.75rem;
 
-    margin-bottom: 18px;
-}
+            letter-spacing: 1px;
+        }
 
-.problem-title p {
+        .value-icon {
 
-    color:
-        rgba(255,255,255,0.7);
-}
+            font-size: 1.7rem;
 
-.problem-list {
+            margin:
+                18px 0 15px;
+        }
 
-    display: grid;
+        .value-card h3 {
 
-    grid-template-columns:
-        1fr 1fr;
+            color: var(--navy);
 
-    gap: 15px;
-}
+            font-size: 1.05rem;
 
-.problem-item {
+            margin-bottom: 9px;
+        }
 
-    padding: 25px;
+        .value-card p {
 
-    background:
-        rgba(255,255,255,0.05);
+            color: var(--gray);
 
-    border:
-        1px solid rgba(255,255,255,0.12);
+            font-size: 0.78rem;
+        }
 
-    border-radius: 10px;
 
-    transition: 0.25s ease;
-}
+        /* =====================================================
+           JOURNEY / TIMELINE
+        ===================================================== */
 
-.problem-item:hover {
+        .timeline-section {
 
-    background:
-        rgba(255,255,255,0.09);
-}
+            background:
+                var(--navy);
 
-.problem-item span {
+            color: var(--white);
 
-    display: block;
+            position: relative;
 
-    color: var(--cyan);
+            overflow: hidden;
+        }
 
-    font-size: 22px;
+        .timeline-section::before {
 
-    font-weight: 900;
+            content: "";
 
-    margin-bottom: 8px;
-}
+            position: absolute;
 
-.problem-item h3 {
+            width: 550px;
+            height: 550px;
 
-    font-size: 16px;
+            border-radius: 50%;
 
-    margin-bottom: 6px;
-}
+            background:
+                radial-gradient(
+                    circle,
+                    rgba(0,184,212,0.13),
+                    transparent 68%
+                );
 
-.problem-item p {
+            right: -250px;
+            top: -250px;
+        }
 
-    color:
-        rgba(255,255,255,0.62);
+        .timeline-heading {
 
-    font-size: 13px;
-}
+            max-width: 700px;
 
-/* =========================================================
-   12. ASSESSMENT PROCESS
-========================================================= */
+            margin-bottom: 60px;
+        }
 
-.assessment {
+        .timeline-heading .eyebrow {
 
-    display: grid;
+            color: var(--cyan);
+        }
 
-    grid-template-columns:
-        repeat(4,1fr);
+        .timeline-heading h2 {
 
-    gap: 20px;
+            font-size:
+                clamp(2rem,4vw,3.2rem);
 
-    counter-reset: assessment;
-}
+            line-height: 1.15;
+        }
 
-.assessment-card {
+        .timeline-heading p {
 
-    padding: 30px 25px;
+            color:
+                rgba(255,255,255,0.65);
 
-    background: var(--white);
+            margin-top: 15px;
+        }
 
-    border:
-        1px solid var(--border);
+        .timeline {
 
-    border-radius: var(--radius);
+            position: relative;
 
-    box-shadow: var(--shadow-sm);
+            max-width: 900px;
 
-    position: relative;
-}
+            margin: auto;
+        }
 
-.assessment-card::before {
+        .timeline::before {
 
-    counter-increment: assessment;
+            content: "";
 
-    content:
-        "0" counter(assessment);
+            position: absolute;
 
-    display: block;
+            left: 50%;
 
-    color: var(--cyan);
+            top: 0;
+            bottom: 0;
 
-    font-size: 14px;
+            width: 2px;
 
-    font-weight: 900;
+            background:
+                rgba(0,184,212,0.3);
 
-    margin-bottom: 22px;
-}
+            transform:
+                translateX(-50%);
+        }
 
-.assessment-card h3 {
+        .timeline-item {
 
-    color: var(--navy);
+            width: 50%;
 
-    margin-bottom: 10px;
-}
+            padding: 0 40px 55px;
 
-.assessment-card p {
+            position: relative;
+        }
 
-    color: var(--muted);
+        .timeline-item:nth-child(even) {
 
-    font-size: 14px;
-}
+            margin-left: 50%;
+        }
 
-/* =========================================================
-   13. TECHNICAL SOLUTIONS
-========================================================= */
+        .timeline-dot {
 
-.solution-grid {
+            position: absolute;
 
-    display: grid;
+            width: 16px;
+            height: 16px;
 
-    grid-template-columns:
-        1fr 1fr;
+            background: var(--cyan);
 
-    gap: 20px;
-}
+            border:
+                4px solid var(--navy);
 
-.solution-card {
+            border-radius: 50%;
 
-    padding: 28px;
+            top: 4px;
+        }
 
-    background: var(--white);
+        .timeline-item:nth-child(odd)
+        .timeline-dot {
 
-    border:
-        1px solid var(--border);
+            right: -8px;
+        }
 
-    border-radius: 12px;
+        .timeline-item:nth-child(even)
+        .timeline-dot {
 
-    display: flex;
+            left: -8px;
+        }
 
-    gap: 20px;
+        .timeline-year {
 
-    align-items: flex-start;
+            color: var(--cyan);
 
-    transition: 0.25s ease;
-}
+            font-size: 0.8rem;
 
-.solution-card:hover {
+            font-weight: 900;
 
-    border-color: var(--cyan);
+            letter-spacing: 1px;
+        }
 
-    box-shadow: var(--shadow-sm);
-}
+        .timeline-item h3 {
 
-.solution-icon {
+            margin:
+                7px 0 8px;
 
-    width: 48px;
+            font-size: 1.2rem;
+        }
 
-    height: 48px;
+        .timeline-item p {
 
-    flex-shrink: 0;
+            color:
+                rgba(255,255,255,0.6);
 
-    display: flex;
+            font-size: 0.86rem;
+        }
 
-    align-items: center;
 
-    justify-content: center;
+        /* =====================================================
+           LEADERSHIP
+        ===================================================== */
 
-    background: var(--light-blue);
+        .leadership-grid {
 
-    color: var(--blue);
+            display: grid;
 
-    border-radius: 10px;
+            grid-template-columns:
+                0.8fr 1.2fr;
 
-    font-size: 20px;
-}
+            gap: 70px;
 
-.solution-card h3 {
+            align-items: center;
+        }
 
-    color: var(--navy);
+        .leader-photo {
 
-    font-size: 17px;
+            min-height: 520px;
 
-    margin-bottom: 5px;
-}
+            border-radius:
+                var(--radius-lg);
 
-.solution-card p {
+            background:
 
-    color: var(--muted);
+                linear-gradient(
+                    rgba(7,31,53,0.05),
+                    rgba(7,31,53,0.05)
+                ),
 
-    font-size: 13px;
-}
+                url("pictures/kwame-ahiadzi1.png")
+                center/cover no-repeat;
 
-/* =========================================================
-   14. WHY POWER QUALITY MATTERS
-========================================================= */
+            box-shadow:
+                var(--shadow-lg);
+        }
 
-.why-section {
+        /* =====================================================
+           LEADERSHIP TEAM
+        ===================================================== */
 
-    background: var(--off-white);
-}
+        .team-grid {
 
-.why-grid {
+            display: grid;
 
-    display: grid;
+            grid-template-columns:
+                repeat(3, 1fr);
 
-    grid-template-columns:
-        repeat(3,1fr);
+            gap: 30px;
 
-    gap: 22px;
-}
+            margin-top: 60px;
+        }
 
-.why-card {
+        .team-card {
 
-    background: var(--white);
+            background: var(--white);
 
-    padding: 30px 25px;
+            border: 1px solid var(--border);
 
-    border:
-        1px solid var(--border);
+            border-radius: var(--radius-md);
 
-    border-radius: var(--radius);
+            overflow: hidden;
 
-    text-align: center;
+            text-align: center;
 
-    transition: 0.3s ease;
-}
+            transition: var(--transition);
+        }
 
-.why-card:hover {
+        .team-card:hover {
 
-    transform: translateY(-5px);
+            transform: translateY(-7px);
 
-    box-shadow: var(--shadow-md);
-}
+            box-shadow: var(--shadow-md);
 
-.why-number {
+            border-color: transparent;
+        }
 
-    color: var(--cyan);
+        .team-photo {
 
-    font-size: 32px;
+            width: 100%;
 
-    font-weight: 900;
+            height: 350px;
 
-    margin-bottom: 10px;
-}
+            object-fit: cover;
 
-.why-card h3 {
+            display: block;
+        }
 
-    color: var(--navy);
+        .team-info {
 
-    font-size: 18px;
+            padding: 24px 20px 30px;
+        }
 
-    margin-bottom: 8px;
-}
+        .team-info h3 {
 
-.why-card p {
+            color: var(--navy);
 
-    color: var(--muted);
+            font-size: 1.1rem;
 
-    font-size: 14px;
-}
+            margin-bottom: 6px;
+        }
 
-/* =========================================================
-   15. CTA
-========================================================= */
+        .team-role {
 
-.cta {
+            color: var(--blue);
 
-    padding: 80px 25px;
+            font-weight: 700;
 
-    background: var(--off-white);
-}
+            font-size: 0.82rem;
 
-.cta-container {
+            margin-bottom: 14px;
+        }
 
-    max-width: var(--max-width);
+        .team-info p {
 
-    margin: auto;
+            color: var(--gray);
 
-    padding: 55px;
+            font-size: 0.88rem;
+        }
 
-    background: var(--navy);
+        .leader-content .eyebrow {
 
-    color: var(--white);
+            margin-bottom: 10px;
+        }
 
-    border-radius: var(--radius-lg);
+        .leader-content h2 {
 
-    display: flex;
+            font-size:
+                clamp(2rem,4vw,3rem);
 
-    align-items: center;
+            line-height: 1.15;
 
-    justify-content: space-between;
+            color: var(--navy);
 
-    gap: 40px;
-}
+            margin-bottom: 8px;
+        }
 
-.cta h2 {
+        .leader-name {
 
-    font-size:
-        clamp(28px,4vw,40px);
+            color: var(--navy);
 
-    line-height: 1.2;
+            font-weight: 700;
 
-    margin-bottom: 10px;
-}
+            font-size: 1.15rem;
 
-.cta p {
+            margin-bottom: 4px;
+        }
 
-    max-width: 650px;
+        .leader-role {
 
-    color:
-        rgba(255,255,255,0.7);
-}
+            color: var(--blue);
 
-/* =========================================================
-   16. FOOTER
-========================================================= */
+            font-weight: 700;
 
-footer {
+            font-size: 0.88rem;
 
-    background: #041522;
+            margin-bottom: 25px;
+        }
 
-    color:
-        rgba(255,255,255,0.7);
+        .leader-content p {
 
-    padding: 65px 25px 25px;
-}
+            color: var(--gray);
 
-.footer-grid {
+            margin-bottom: 18px;
+        }
 
-    max-width: var(--max-width);
+        .credentials {
 
-    margin: auto;
+            display: grid;
 
-    display: grid;
+            grid-template-columns:
+                repeat(2,1fr);
 
-    grid-template-columns:
-        1.5fr 1fr 1fr 1fr;
+            gap: 12px;
 
-    gap: 45px;
-}
+            margin-top: 28px;
+        }
 
-.footer-brand h3 {
+        .credential {
 
-    color: var(--white);
+            padding: 16px;
 
-    font-size: 20px;
+            background:
+                var(--off-white);
 
-    margin-bottom: 12px;
-}
+            border-radius: 10px;
 
-.footer-brand p {
+            border:
+                1px solid var(--border);
+        }
 
-    max-width: 350px;
+        .credential strong {
 
-    font-size: 14px;
+            display: block;
 
-    line-height: 1.8;
-}
+            color: var(--navy);
 
-footer h4 {
+            font-size: 0.82rem;
+        }
 
-    color: var(--white);
+        .credential span {
 
-    margin-bottom: 18px;
-}
+            color: var(--gray);
 
-.footer-links {
+            font-size: 0.72rem;
+        }
 
-    list-style: none;
-}
 
-.footer-links li {
+        /* =====================================================
+           QUALITY STATEMENT
+        ===================================================== */
 
-    margin-bottom: 10px;
-}
+        .quality {
 
-.footer-links a {
+            padding: 85px 0;
 
-    font-size: 14px;
+            background:
+                linear-gradient(
+                    120deg,
+                    var(--blue),
+                    var(--teal)
+                );
 
-    transition: 0.2s ease;
-}
+            color: var(--white);
+        }
 
-.footer-links a:hover {
+        .quality-inner {
 
-    color: var(--cyan);
-}
+            display: flex;
 
-.footer-bottom {
+            justify-content: space-between;
 
-    max-width: var(--max-width);
+            align-items: center;
 
-    margin: 50px auto 0;
+            gap: 40px;
+        }
 
-    padding-top: 20px;
+        .quality h2 {
 
-    border-top:
-        1px solid rgba(255,255,255,0.1);
+            font-size:
+                clamp(2rem,4vw,3rem);
 
-    display: flex;
+            line-height: 1.15;
 
-    justify-content: space-between;
+            margin-bottom: 12px;
+        }
 
-    gap: 20px;
+        .quality p {
 
-    font-size: 12px;
-}
+            color:
+                rgba(255,255,255,0.75);
 
-/* =========================================================
-   17. RESPONSIVE DESIGN
-========================================================= */
+            max-width: 700px;
+        }
 
-@media (max-width: 1050px) {
+        .quality-badge {
 
-    .nav-links a {
+            min-width: 190px;
 
-        padding: 10px 9px;
+            min-height: 150px;
 
-        font-size: 13px;
-    }
+            border:
+                1px solid rgba(255,255,255,0.3);
 
-    .indicators {
+            border-radius:
+                var(--radius-md);
 
-        grid-template-columns:
-            repeat(2,1fr);
-    }
+            display: flex;
 
-    .service-grid {
+            flex-direction: column;
 
-        grid-template-columns:
-            repeat(2,1fr);
-    }
+            align-items: center;
 
-    .assessment {
+            justify-content: center;
 
-        grid-template-columns:
-            repeat(2,1fr);
-    }
+            text-align: center;
+        }
 
-    .why-grid {
+        .quality-badge strong {
 
-        grid-template-columns:
-            repeat(2,1fr);
-    }
+            font-size: 2.5rem;
 
-    .footer-grid {
+            line-height: 1;
+        }
 
-        grid-template-columns:
-            repeat(2,1fr);
-    }
-}
+        .quality-badge span {
 
-@media (max-width: 760px) {
+            font-size: 0.72rem;
 
-    .top-bar-container {
+            color:
+                rgba(255,255,255,0.7);
 
-        justify-content: center;
+            margin-top: 8px;
+        }
 
-        padding: 8px 20px;
-    }
 
-    .top-right {
+        /* =====================================================
+           CTA
+        ===================================================== */
 
-        display: none;
-    }
+        .cta-section {
 
-    .nav-container {
+            padding: 85px 0;
+        }
 
-        height: 70px;
-    }
+        .cta-box {
 
-    .menu-btn {
+            padding: 65px;
 
-        display: block;
-    }
+            border-radius:
+                var(--radius-lg);
 
-    .nav-links {
+            background:
+                linear-gradient(
+                    120deg,
+                    var(--navy),
+                    var(--navy-light)
+                );
 
-        position: absolute;
+            color: var(--white);
 
-        top: 70px;
+            display: flex;
 
-        left: 0;
+            justify-content: space-between;
 
-        right: 0;
+            align-items: center;
 
-        background: var(--white);
+            gap: 40px;
 
-        border-bottom:
-            1px solid var(--border);
+            position: relative;
 
-        box-shadow: var(--shadow-md);
+            overflow: hidden;
+        }
 
-        display: none;
+        .cta-box::after {
 
-        flex-direction: column;
+            content: "";
 
-        align-items: stretch;
+            position: absolute;
 
-        padding: 15px 20px;
-    }
+            width: 300px;
+            height: 300px;
 
-    .nav-links.open {
+            border-radius: 50%;
 
-        display: flex;
-    }
+            border:
+                1px solid rgba(0,184,212,0.2);
 
-    .nav-links a {
+            right: -100px;
+            top: -100px;
+        }
 
-        display: block;
+        .cta-content {
 
-        padding: 13px 15px;
-    }
+            max-width: 700px;
 
-    .hero {
+            position: relative;
 
-        min-height: 630px;
-    }
+            z-index: 1;
+        }
 
-    .hero-container {
+        .cta-content h2 {
 
-        padding: 70px 20px;
-    }
+            font-size:
+                clamp(2rem,4vw,3rem);
 
-    .section {
+            line-height: 1.15;
 
-        padding: 70px 20px;
-    }
+            margin-bottom: 15px;
+        }
 
-    .intro-grid,
-    .problem-grid {
+        .cta-content p {
 
-        grid-template-columns: 1fr;
+            color:
+                rgba(255,255,255,0.68);
+        }
 
-        gap: 35px;
-    }
+        .btn {
 
-    .problem-list {
+            display: inline-flex;
 
-        grid-template-columns: 1fr;
-    }
+            align-items: center;
 
-    .solution-grid {
+            justify-content: center;
 
-        grid-template-columns: 1fr;
-    }
+            gap: 8px;
 
-    .cta-container {
+            padding: 14px 24px;
 
-        flex-direction: column;
+            border-radius: 8px;
 
-        align-items: flex-start;
+            font-weight: 700;
 
-        padding: 35px 25px;
-    }
-}
+            transition:
+                var(--transition);
 
-@media (max-width: 500px) {
+            position: relative;
 
-    .logo-text strong {
+            z-index: 2;
+        }
 
-        font-size: 14px;
-    }
+        .btn-primary {
 
-    .logo-text span {
+            background: var(--cyan);
 
-        font-size: 8px;
-    }
+            color: var(--navy);
+        }
 
-    .logo-symbol {
+        .btn-primary:hover {
 
-        width: 40px;
+            background: var(--white);
 
-        height: 40px;
-    }
+            transform:
+                translateY(-3px);
 
-    .hero h1 {
+            box-shadow:
+                var(--shadow-md);
+        }
 
-        font-size: 38px;
-    }
 
-    .hero p {
+        /* =====================================================
+           FOOTER
+        ===================================================== */
 
-        font-size: 16px;
-    }
+        footer {
 
-    .hero-buttons {
+            background: #041725;
 
-        flex-direction: column;
+            color: var(--white);
+        }
 
-        align-items: stretch;
-    }
+        .footer-main {
 
-    .btn {
+            padding:
+                70px 0 45px;
 
-        width: 100%;
-    }
+            display: grid;
 
-    .indicators,
-    .service-grid,
-    .assessment,
-    .why-grid,
-    .footer-grid {
+            grid-template-columns:
+                1.4fr 1fr 1fr 1.2fr;
 
-        grid-template-columns: 1fr;
-    }
+            gap: 50px;
+        }
 
-    .footer-bottom {
+        .footer-brand p {
 
-        flex-direction: column;
-    }
-}
+            color:
+                rgba(255,255,255,0.58);
 
-</style>
+            font-size: 0.86rem;
 
+            max-width: 350px;
+
+            margin-top: 20px;
+        }
+
+        .footer-heading {
+
+            color: var(--cyan);
+
+            font-size: 0.82rem;
+
+            letter-spacing: 1.3px;
+
+            text-transform: uppercase;
+
+            margin-bottom: 20px;
+        }
+
+        .footer-links {
+
+            list-style: none;
+        }
+
+        .footer-links li {
+
+            margin-bottom: 10px;
+        }
+
+        .footer-links a {
+
+            color:
+                rgba(255,255,255,0.6);
+
+            font-size: 0.86rem;
+
+            transition:
+                var(--transition);
+        }
+
+        .footer-links a:hover {
+
+            color: var(--white);
+
+            padding-left: 4px;
+        }
+
+        .footer-contact p {
+
+            color:
+                rgba(255,255,255,0.6);
+
+            font-size: 0.84rem;
+
+            margin-bottom: 10px;
+        }
+
+        .footer-bottom {
+
+            border-top:
+                1px solid rgba(255,255,255,0.08);
+
+            padding: 20px 0;
+
+            display: flex;
+
+            justify-content: space-between;
+
+            gap: 20px;
+
+            color:
+                rgba(255,255,255,0.42);
+
+            font-size: 0.73rem;
+        }
+
+
+        /* =====================================================
+           RESPONSIVE — TABLET
+        ===================================================== */
+
+        @media (max-width: 1050px) {
+
+            .nav-links {
+                gap: 16px;
+            }
+
+            .team-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .story-grid,
+            .leadership-grid {
+
+                grid-template-columns: 1fr;
+
+                gap: 45px;
+            }
+
+            .story-image,
+            .leader-photo {
+
+                min-height: 450px;
+            }
+
+            .facts {
+
+                grid-template-columns:
+                    repeat(2,1fr);
+            }
+
+            .values-grid {
+
+                grid-template-columns:
+                    repeat(3,1fr);
+            }
+
+            .footer-main {
+
+                grid-template-columns:
+                    repeat(2,1fr);
+            }
+        }
+
+
+        /* =====================================================
+           RESPONSIVE — MOBILE
+        ===================================================== */
+
+        @media (max-width: 760px) {
+
+            .team-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .top-bar {
+                display: none;
+            }
+
+            .nav-inner {
+                height: 72px;
+            }
+
+            .menu-toggle {
+
+                display: grid;
+
+                place-items: center;
+            }
+
+            .nav-links {
+
+                position: absolute;
+
+                top: 72px;
+
+                left: 0;
+                right: 0;
+
+                display: none;
+
+                flex-direction: column;
+
+                align-items: stretch;
+
+                padding: 20px;
+
+                background: var(--white);
+
+                box-shadow:
+                    var(--shadow-md);
+
+                border-top:
+                    1px solid var(--border);
+            }
+
+            .nav-links.active {
+                display: flex;
+            }
+
+            .nav-links a {
+
+                padding: 12px;
+
+                border-radius: 7px;
+            }
+
+            .nav-links a:hover {
+
+                background:
+                    var(--light-blue);
+            }
+
+            .nav-links a::after {
+                display: none;
+            }
+
+            .nav-cta {
+
+                text-align: center;
+            }
+
+            .page-hero {
+
+                min-height: 480px;
+            }
+
+            .page-hero-content {
+
+                padding: 80px 0;
+            }
+
+            .section {
+
+                padding: 75px 0;
+            }
+
+            .story-image,
+            .leader-photo {
+
+                min-height: 400px;
+            }
+
+            .story-badge {
+
+                right: 15px;
+            }
+
+            .facts,
+            .direction-grid,
+            .credentials {
+
+                grid-template-columns: 1fr;
+            }
+
+            .values-grid {
+
+                grid-template-columns:
+                    repeat(2,1fr);
+            }
+
+            .timeline::before {
+
+                left: 8px;
+            }
+
+            .timeline-item,
+            .timeline-item:nth-child(even) {
+
+                width: 100%;
+
+                margin-left: 0;
+
+                padding:
+                    0 0 45px 35px;
+            }
+
+            .timeline-item:nth-child(odd)
+            .timeline-dot,
+            .timeline-item:nth-child(even)
+            .timeline-dot {
+
+                left: 0;
+                right: auto;
+            }
+
+            .quality-inner {
+
+                flex-direction: column;
+
+                align-items: flex-start;
+            }
+
+            .cta-box {
+
+                padding: 40px 28px;
+
+                flex-direction: column;
+
+                align-items: flex-start;
+            }
+
+            .footer-main {
+
+                grid-template-columns: 1fr;
+
+                gap: 35px;
+            }
+
+            .footer-bottom {
+
+                flex-direction: column;
+
+                align-items: flex-start;
+            }
+        }
+
+
+        /* =====================================================
+           VERY SMALL SCREENS
+        ===================================================== */
+
+        @media (max-width: 450px) {
+
+            .values-grid {
+
+                grid-template-columns: 1fr;
+            }
+
+            .page-hero h1 {
+
+                font-size: 2.6rem;
+            }
+
+            .section-title {
+
+                font-size: 2rem;
+            }
+        }
+
+
+        /* =====================================================
+           REDUCED MOTION
+        ===================================================== */
+
+        @media (prefers-reduced-motion: reduce) {
+
+            html {
+                scroll-behavior: auto;
+            }
+
+            *,
+            *::before,
+            *::after {
+
+                animation-duration: 0.01ms !important;
+
+                animation-iteration-count: 1 !important;
+
+                transition-duration: 0.01ms !important;
+            }
+        }
+
+    </style>
     <style>
 
         /* SERVICES DROPDOWN */
@@ -1677,25 +2095,33 @@ footer h4 {
 </head>
 
 
+
 <body>
 
-<a href="#main-content" class="skip-link">
+
+<!-- ==========================================================
+     ACCESSIBILITY
+=========================================================== -->
+
+<a href="#main-content"
+   class="skip-link">
     Skip to main content
 </a>
 
+
+<!-- ==========================================================
+     TOP BAR
+=========================================================== -->
+
 <div class="top-bar">
 
-    <div class="top-bar-container">
+    <div class="container top-inner">
 
-        <div class="top-left">
+        <div class="top-contact">
 
             <span>
-                📍 Opeikuma, Kasoa, Central Region, Ghana
+                📍 Opeikuma, Kasoa, Central Region
             </span>
-
-        </div>
-
-        <div class="top-right">
 
             <span>
                 ☎ 0243 608 533
@@ -1707,19 +2133,29 @@ footer h4 {
 
         </div>
 
+        <div class="top-right">
+            Engineering • Infrastructure • Safety
+        </div>
+
     </div>
 
 </div>
 
-<nav class="navbar" aria-label="Main navigation">
 
-    <div class="nav-container">
+<!-- ==========================================================
+     NAVIGATION
+=========================================================== -->
+
+<header class="navbar">
+
+    <div class="container nav-inner">
+
 
         <a href="index.html"
            class="logo"
-           aria-label="Elitech Engineering Services Home">
+           aria-label="Elitech Engineering Services">
 
-            <div class="logo-symbol">
+            <div class="logo-mark">
                 E
             </div>
 
@@ -1730,195 +2166,283 @@ footer h4 {
                 </strong>
 
                 <span>
-                    ENGINEERING SERVICES
+                    Engineering Services
                 </span>
 
             </div>
 
         </a>
 
+
         <button
-            class="menu-btn"
-            id="menuBtn"
+            class="menu-toggle"
+            id="menuToggle"
             aria-label="Open navigation menu"
-            aria-expanded="false"
-            aria-controls="navLinks">
+            aria-expanded="false">
 
             ☰
 
         </button>
 
-        <ul class="nav-links" id="navLinks">
 
-            <li>
-                <a href="index.html">
-                    Home
-                </a>
-            </li>
+        <nav aria-label="Main navigation">
 
-            <li>
-                <a href="about.html">
-                    About
-                </a>
-            </li>
+            <ul class="nav-links"
+                id="navLinks">
 
-            <li class="nav-dropdown">
-                <span class="dropdown-toggle">
-                    Services
-                    <span class="dropdown-arrow">▾</span>
-                </span>
-
-                <div class="dropdown-menu">
-                    <a href="engineering.html">
-                        Engineering
+                <li>
+                    <a href="index.html">
+                        Home
                     </a>
-                    <a href="data-center-operations.html">
-                        Data Center Operations
+                </li>
+
+                <li>
+                    <a href="about.html"
+                       class="active">
+                        About
                     </a>
-                </div>
-            </li>
+                </li>
 
-            <li>
-                <a href="ohse.html">
-                    OHSE
-                </a>
-            </li>
+                <li class="nav-dropdown">
+                    <span class="dropdown-toggle">
+                        Services
+                        <span class="dropdown-arrow">▾</span>
+                    </span>
 
-            <li>
-                <a href="power-quality.html"
-                   class="active">
-                    Power Quality
-                </a>
-            </li>
+                    <div class="dropdown-menu">
+                        <a href="engineering.html">
+                            Engineering
+                        </a>
+                        <a href="data-center-operations.html">
+                            Data Center Operations
+                        </a>
+                    </div>
+                </li>
 
-            <li>
-                <a href="contact.html"
-                   class="nav-cta">
-                    Contact Us
-                </a>
-            </li>
+                <li>
+                    <a href="ohse.html">
+                        OHSE
+                    </a>
+                </li>
 
-        </ul>
+                <li>
+                    <a href="power-quality.html">
+                        Power Quality
+                    </a>
+                </li>
+
+                <li>
+                    <a href="contact.html"
+                       class="nav-cta">
+                        Contact Us
+                    </a>
+                </li>
+
+            </ul>
+
+        </nav>
 
     </div>
 
-</nav>
+</header>
+
+
+<!-- ==========================================================
+     MAIN CONTENT
+=========================================================== -->
 
 <main id="main-content">
 
-<section class="hero">
 
-    <div class="hero-container">
+<!-- ==========================================================
+     PAGE HERO
+=========================================================== -->
 
-        <div class="hero-content">
+<section class="page-hero">
 
-            <div class="eyebrow">
-                Power Quality Engineering
-            </div>
+    <div class="container">
+
+        <div class="page-hero-content">
+
 
             <h1>
-                Better Power.
-                <span>Better Performance.</span>
+                Engineering
+                <span>with purpose.</span>
             </h1>
 
             <p>
-                Power quality affects equipment reliability, energy
-                efficiency, and operational continuity. Our solutions
-                help organizations understand electrical conditions
-                and improve the performance of critical power systems.
+                Discover the people, principles, and professional
+                expertise behind Elitech Engineering Services.
             </p>
-
-            <div class="hero-buttons">
-
-                <a href="#services"
-                   class="btn btn-primary">
-
-                    Explore Solutions
-
-                </a>
-
-                <a href="contact.html"
-                   class="btn btn-outline">
-
-                    Request Assessment
-
-                </a>
-
-            </div>
 
         </div>
 
     </div>
 
 </section>
+
+
+<!-- ==========================================================
+     COMPANY STORY
+=========================================================== -->
 
 <section class="section">
 
     <div class="container">
 
-        <div class="intro-grid">
 
-            <div class="intro-image">
+        <div class="story-grid">
 
-                <img
-                    src="https://images.unsplash.com/photo-1473341304170-971dccb5ac1e?auto=format&fit=crop&w=1000&q=85"
-                    alt="Electrical power infrastructure"
-                    loading="lazy">
+
+            <!-- IMAGE -->
+
+            <div class="story-image"
+                 role="img"
+                 aria-label="Engineering professional working on industrial equipment">
+
+                <div class="story-badge">
+
+                    <strong>
+                        2014
+                    </strong>
+
+                    <span>
+                        Founded and incorporated
+                    </span>
+
+                </div>
 
             </div>
 
-            <div class="intro-content">
 
-                <div class="section-label">
-                    Power Quality Expertise
+            <!-- CONTENT -->
+
+            <div class="story-content">
+
+                <div class="eyebrow">
+                    Our Story
                 </div>
 
-                <h2>
-                    Stable power for
-                    dependable operations.
+                <h2 class="section-title">
+
+                    Built on technical
+                    <span>excellence.</span>
+
                 </h2>
 
                 <p>
-                    Electrical equipment can be affected by disturbances
-                    in the quality of the power supplied to it. These
-                    disturbances may affect equipment performance,
-                    reliability, and operational continuity.
+                    Elitech Engineering Services was founded and
+                    incorporated in August 2014 as an Electrical,
+                    Mechanical and IT Infrastructure engineering services
+                    company.
                 </p>
 
                 <p>
-                    Elitech Engineering Services provides engineering
-                    engineering focused on understanding power conditions,
-                    identifying potential issues and implementing
-                    appropriate solutions.
+                    From the beginning, the company has focused on
+                    providing dependable technical solutions that
+                    engineer the performance, reliability and safety
+                    of critical infrastructure.
                 </p>
 
-                <ul class="intro-list">
+                <p>
+                    Our service portfolio brings together electrical
+                    engineering, mechanical systems, IT infrastructure,
+                    power-quality solutions and occupational health,
+                    safety and environmental services.
+                </p>
 
-                    <li>
-                        Power quality assessment and analysis
-                    </li>
 
-                    <li>
-                        Voltage disturbance investigation
-                    </li>
+                <div class="story-highlight">
 
-                    <li>
-                        Harmonic and electrical disturbance awareness
-                    </li>
+                    <strong>
+                        Our commitment
+                    </strong>
 
-                    <li>
-                        Power factor improvement considerations
-                    </li>
+                    <span>
+                        Deliver professional, efficient and
+                        safety-focused services while creating
+                        lasting value for our clients.
+                    </span>
 
-                    <li>
-                        Surge and transient protection engineering
-                    </li>
+                </div>
 
-                    <li>
-                        UPS and AVR integration engineering
-                    </li>
+            </div>
 
-                </ul>
+        </div>
+
+
+        <!-- COMPANY FACTS -->
+
+        <div class="facts">
+
+            <div class="fact">
+
+                <div class="fact-number">
+                    2014
+                </div>
+
+                <h3>
+                    Year Established
+                </h3>
+
+                <p>
+                    Founded and incorporated as an engineering
+                    services company.
+                </p>
+
+            </div>
+
+
+            <div class="fact">
+
+                <div class="fact-number">
+                    4
+                </div>
+
+                <h3>
+                    Core Disciplines
+                </h3>
+
+                <p>
+                    Electrical, mechanical, IT infrastructure, 
+                    and OHSE engineering.
+                </p>
+
+            </div>
+
+
+            <div class="fact">
+
+                <div class="fact-number">
+                    18+
+                </div>
+
+                <h3>
+                    Leadership Experience
+                </h3>
+
+                <p>
+                    Extensive experience in critical power
+                    and infrastructure environments.
+                </p>
+
+            </div>
+
+
+            <div class="fact">
+
+                <div class="fact-number">
+                    2035
+                </div>
+
+                <h3>
+                    Vision Horizon
+                </h3>
+
+                <p>
+                    Target: to establish leadership in West Africa
+                    as a service provider.
+                </p>
 
             </div>
 
@@ -1927,665 +2451,79 @@ footer h4 {
     </div>
 
 </section>
+
+
+<!-- ==========================================================
+     MISSION AND VISION
+=========================================================== -->
 
 <section class="section section-light">
-
-    <div class="container">
-
-        <div class="section-heading center">
-
-            <div class="section-label">
-                What We Monitor
-            </div>
-
-            <h2>
-                Understanding your electrical environment.
-            </h2>
-
-            <p>
-                Effective power-quality management starts with
-                understanding the electrical conditions affecting
-                equipment and operations.
-            </p>
-
-        </div>
-
-        <div class="indicators">
-
-            <article class="indicator">
-
-                <img src="pictures/voltage.png"
-                     alt="Electrical power lines and voltage infrastructure"
-                     loading="lazy">
-
-                <div class="indicator-symbol">V</div>
-
-                <h3>
-                    Voltage
-                </h3>
-
-                <p>
-                    Monitoring voltage conditions and identifying
-                    abnormal variations that may affect equipment.
-                </p>
-
-            </article>
-
-            <article class="indicator">
-
-                <img src="pictures/harmonic.png"
-                     alt="Electrical circuit board representing harmonic distortion"
-                     loading="lazy">
-
-                <div class="indicator-symbol">~</div>
-
-                <h3>
-                    Harmonics
-                </h3>
-
-                <p>
-                    Understanding harmonic distortion and its potential
-                    effect on electrical systems and equipment.
-                </p>
-
-            </article>
-
-            <article class="indicator">
-
-                <img src="pictures/power-factor.png"
-                     alt="Industrial electrical equipment for power factor monitoring"
-                     loading="lazy">
-
-                <div class="indicator-symbol">PF</div>
-
-                <h3>
-                    Power Factor
-                </h3>
-
-                <p>
-                    Assessing power factor conditions and identifying
-                    opportunities for improved electrical efficiency.
-                </p>
-
-            </article>
-
-            <article class="indicator">
-
-                <img src="pictures/transient.png"
-                     alt="Lightning representing electrical transient events"
-                     loading="lazy">
-
-                <div class="indicator-symbol">⚡</div>
-
-                <h3>
-                    Transients
-                </h3>
-
-                <p>
-                    Identifying electrical disturbances such as
-                    surges and transient events.
-                </p>
-
-            </article>
-
-        </div>
-
-    </div>
-
-</section>
-
-<section class="section"
-         id="services">
-
-    <div class="container">
-
-        <div class="section-heading center">
-
-            <div class="section-label">
-                Our Services
-            </div>
-
-            <h2>
-                Power quality solutions.
-            </h2>
-
-            <p>
-                From identifying electrical disturbances to engineering
-                corrective action, our approach focuses on improving
-                system reliability and protecting critical equipment.
-            </p>
-
-        </div>
-
-        <div class="service-grid">
-
-            <article class="service-card">
-				<img src="pictures/power-quality-assessment.png"
-                     alt="Power Quality Assessment"
-                     loading="lazy">
-
-                <div class="service-number">
-                    01
-                </div>
-
-                <h3>
-                    Power Quality Analysis
-                </h3>
-
-                <p>
-                    Assessment of electrical conditions to identify
-                    potential power-quality concerns affecting
-                    facility operations.
-                </p>
-
-            </article>
-
-            <article class="service-card">
-				<img src="pictures/electrical-monitoring.png"
-                     alt="Electrical Monitoring"
-                     loading="lazy">
-
-                <div class="service-number">
-                    02
-                </div>
-
-                <h3>
-                    Electrical Monitoring
-                </h3>
-
-                <p>
-                    Monitoring and review of electrical parameters to make
-                    informed engineering decisions.
-                </p>
-
-            </article>
-
-            <article class="service-card">
-				<img src="pictures/voltage-analysis.png"
-                     alt="Voltage Analysis"
-                     loading="lazy">
-
-                <div class="service-number">
-                    03
-                </div>
-
-                <h3>
-                    Voltage Analysis
-                </h3>
-
-                <p>
-                    Investigation of voltage conditions and disturbances
-                    that may affect sensitive electrical equipment.
-                </p>
-
-            </article>
-
-            <article class="service-card">
-			
-				<img src="pictures/harmonics.png"
-                     alt="Harmonic Analysis"
-                     loading="lazy">
-
-                <div class="service-number">
-                    04
-                </div>
-
-                <h3>
-                    Harmonic Analysis
-                </h3>
-
-                <p>
-                    Engineering for identifying harmonic distortion and
-                    understanding its effect on electrical systems.
-                </p>
-
-            </article>
-
-            <article class="service-card">
-			
-				<img src="pictures/power-factor-engineering.png"
-                     alt="Power Factor Engineering"
-                     loading="lazy">
-
-                <div class="service-number">
-                    05
-                </div>
-
-                <h3>
-                    Power Factor Engineering
-                </h3>
-
-                <p>
-                    Engineering for evaluating power factor
-                    conditions and potential improvement measures.
-                </p>
-
-            </article>
-
-            <article class="service-card">
-				 
-				<img src="pictures/surge-protection.png"
-                     alt="Surge Protection"
-                     loading="lazy">
-
-                <div class="service-number">
-                    06
-                </div>
-
-                <h3>
-                    Surge Protection
-                </h3>
-
-                <p>
-                    Engineering for protecting electrical infrastructure
-                    from damaging surge and transient conditions.
-                </p>
-
-            </article>
-
-            <article class="service-card">
-			
-				<img src="pictures/ups-integration.png"
-                     alt="UPS Integration"
-                     loading="lazy">
-
-                <div class="service-number">
-                    07
-                </div>
-
-                <h3>
-                    UPS Integration
-                </h3>
-
-                <p>
-                    Engineering involving UPS systems and
-                    critical power continuity requirements.
-                </p>
-
-            </article>
-
-            <article class="service-card">
-				
-				<img src="pictures/avr-solution.png"
-                     alt="AVR Solution"
-                     loading="lazy">
-
-                <div class="service-number">
-                    08
-                </div>
-
-                <h3>
-                    AVR Solutions
-                </h3>
-
-                <p>
-                    Voltage regulation engineering for equipment requiring
-                    improved electrical stability.
-                </p>
-
-            </article>
-
-            <article class="service-card">
-				
-				<img src="pictures/corrective-solution.png"
-                     alt="Corrective Solution"
-                     loading="lazy">
-
-                <div class="service-number">
-                    09
-                </div>
-
-                <h3>
-                    Corrective Solutions
-                </h3>
-
-                <p>
-                    engineering for addressing identified power-quality
-                    concerns through appropriate engineering measures.
-                </p>
-
-            </article>
-
-        </div>
-
-    </div>
-
-</section>
-
-<section class="section problem-section">
-
-    <div class="container">
-
-        <div class="problem-grid">
-
-            <div class="problem-title">
-
-                <div class="section-label">
-                    Electrical Challenges
-                </div>
-
-                <h2>
-                    Small disturbances
-                    can create big problems.
-                </h2>
-
-                <p>
-                    Understanding electrical disturbances helps
-                    organizations protect equipment and maintain
-                    dependable operations.
-                </p>
-
-            </div>
-
-            <div class="problem-list">
-
-                <div class="problem-item">
-
-                    <span>
-                        01
-                    </span>
-
-                    <h3>
-                        Voltage Fluctuations
-                    </h3>
-
-                    <p>
-                        Variations in voltage can affect sensitive
-                        electrical and electronic equipment.
-                    </p>
-
-                </div>
-
-                <div class="problem-item">
-
-                    <span>
-                        02
-                    </span>
-
-                    <h3>
-                        Harmonic Distortion
-                    </h3>
-
-                    <p>
-                        Distorted electrical waveforms can contribute
-                        to undesirable system conditions.
-                    </p>
-
-                </div>
-
-                <div class="problem-item">
-
-                    <span>
-                        03
-                    </span>
-
-                    <h3>
-                        Transient Events
-                    </h3>
-
-                    <p>
-                        Short-duration disturbances can potentially
-                        damage or disrupt sensitive equipment.
-                    </p>
-
-                </div>
-
-                <div class="problem-item">
-
-                    <span>
-                        04
-                    </span>
-
-                    <h3>
-                        Poor Power Factor
-                    </h3>
-
-                    <p>
-                        Poor power factor can reduce electrical system
-                        efficiency and increase unnecessary demand.
-                    </p>
-
-                </div>
-
-            </div>
-
-        </div>
-
-    </div>
-
-</section>
-
-<section class="section section-light">
-
-    <div class="container">
-
-        <div class="section-heading center">
-
-            <div class="section-label">
-                Our Methodology
-            </div>
-
-            <h2>
-                From measurement to improvement.
-            </h2>
-
-            <p>
-                A structured process helps ensure that power-quality
-                concerns are properly understood before corrective
-                measures are recommended.
-            </p>
-
-        </div>
-
-        <div class="assessment">
-
-            <article class="assessment-card">
-
-                <h3>
-                    Assess
-                </h3>
-
-                <p>
-                    Understand the facility, electrical infrastructure
-                    and operational requirements.
-                </p>
-
-            </article>
-
-            <article class="assessment-card">
-
-                <h3>
-                    Measure
-                </h3>
-
-                <p>
-                    Examine relevant electrical parameters and
-                    identify abnormal operating conditions.
-                </p>
-
-            </article>
-
-            <article class="assessment-card">
-
-                <h3>
-                    Analyse
-                </h3>
-
-                <p>
-                    Interpret observed conditions and determine
-                    possible sources of electrical disturbances.
-                </p>
-
-            </article>
-
-            <article class="assessment-card">
-
-                <h3>
-                    Improve
-                </h3>
-
-                <p>
-                    Recommend appropriate engineering measures
-                    to improve reliability and system performance.
-                </p>
-
-            </article>
-
-        </div>
-
-    </div>
-
-</section>
-
-<section class="section">
 
     <div class="container">
 
         <div class="section-heading">
 
-            <div class="section-label">
-                Engineering engineering
+            <div class="eyebrow">
+                Our Direction
             </div>
 
-            <h2>
-                Solutions designed around
-                your electrical environment.
+            <h2 class="section-title">
+                Purpose that drives
+                <span>our work.</span>
             </h2>
 
-            <p>
-                Power-quality requirements vary between facilities.
-                Our engineering approach considers the application,
-                equipment and operational requirements when engineeringing
-                corrective solutions.
+            <p class="section-intro">
+                A clear mission and an ambitious long-term vision guide every service we provide.
             </p>
 
         </div>
 
-        <div class="solution-grid">
 
-            <article class="solution-card">
+        <div class="direction-grid">
 
-                <div class="solution-icon">
-                    ⚡
+
+            <!-- MISSION -->
+
+            <article class="direction-card">
+
+                <div class="direction-icon">
+                    🎯
                 </div>
 
-                <div>
+                <h2>
+                    Our Mission
+                </h2>
 
-                    <h3>
-                        Voltage Regulation
-                    </h3>
-
-                    <p>
-                        Engineering for improving voltage stability and
-                        protecting sensitive electrical loads.
-                    </p>
-
-                </div>
+                <p>
+                    Our mission is to deliver exceptional engineering
+                    services that meet the highest standards of
+                    quality and safety while ensuring clients
+                    receive maximum value for their investment.
+                    We aim to foster long-term partnerships built
+                    on trust and excellence.
+                </p>
 
             </article>
 
-            <article class="solution-card">
 
-                <div class="solution-icon">
-                    🔋
+            <!-- VISION -->
+
+            <article class="direction-card dark">
+
+                <div class="direction-icon">
+                    🌍
                 </div>
 
-                <div>
+                <h2>
+                    Our Vision
+                </h2>
 
-                    <h3>
-                        Backup Power
-                    </h3>
-
-                    <p>
-                        Integration considerations for UPS and backup
-                        power systems engineering critical loads.
-                    </p>
-
-                </div>
-
-            </article>
-
-            <article class="solution-card">
-
-                <div class="solution-icon">
-                    🛡
-                </div>
-
-                <div>
-
-                    <h3>
-                        Surge Protection
-                    </h3>
-
-                    <p>
-                        Engineering for protecting infrastructure and
-                        sensitive equipment from transient conditions.
-                    </p>
-
-                </div>
-
-            </article>
-
-            <article class="solution-card">
-
-                <div class="solution-icon">
-                    ≋
-                </div>
-
-                <div>
-
-                    <h3>
-                        Harmonic Management
-                    </h3>
-
-                    <p>
-                        Engineering for understanding and
-                        addressing harmonic-related concerns.
-                    </p>
-
-                </div>
-
-            </article>
-
-            <article class="solution-card">
-
-                <div class="solution-icon">
-                    PF
-                </div>
-
-                <div>
-
-                    <h3>
-                        Power Factor Improvement
-                    </h3>
-
-                    <p>
-                        Assessment and engineering focused on
-                        improved power factor performance.
-                    </p>
-
-                </div>
-
-            </article>
-
-            <article class="solution-card">
-
-                <div class="solution-icon">
-                    📊
-                </div>
-
-                <div>
-
-                    <h3>
-                        Monitoring & Reporting
-                    </h3>
-
-                    <p>
-                        Clear technical observations and reporting to
-                        engineering-informed infrastructure decisions.
-                    </p>
-
-                </div>
+                <p>
+                    Our goal is to establish leadership as a
+                    service provider in West Africa by 2035,
+                    delivering dependable engineering and
+                    infrastructure engineering solutions.
+                </p>
 
             </article>
 
@@ -2595,129 +2533,483 @@ footer h4 {
 
 </section>
 
-<section class="section why-section">
+
+<!-- ==========================================================
+     CORE VALUES
+=========================================================== -->
+
+<section class="section">
 
     <div class="container">
 
-        <div class="section-heading center">
 
-            <div class="section-label">
-                Business Impact
+        <div class="values-header">
+
+            <div class="eyebrow">
+                Our Core Values
+            </div>
+
+            <h2 class="section-title">
+                Principles behind
+                <span>every solution.</span>
+            </h2>
+
+            <p class="section-intro">
+                Our values shape how we work, how we serve clients, 
+                and how we build lasting professional relationships.
+            </p>
+
+        </div>
+
+
+        <div class="values-grid">
+
+
+            <!-- VALUE 1 -->
+
+            <article class="value-card">
+
+                <span class="value-number">
+                    01
+                </span>
+
+                <div class="value-icon">
+                    ⭐
+                </div>
+
+                <h3>
+                    Professionalism
+                </h3>
+
+                <p>
+                    We maintain professional standards in every
+                    engagement and technical assignment.
+                </p>
+
+            </article>
+
+
+            <!-- VALUE 2 -->
+
+            <article class="value-card">
+
+                <span class="value-number">
+                    02
+                </span>
+
+                <div class="value-icon">
+                    ⚡
+                </div>
+
+                <h3>
+                    Promptness
+                </h3>
+
+                <p>
+                    We respond efficiently to client requirements
+                    and operational challenges.
+                </p>
+
+            </article>
+
+
+            <!-- VALUE 3 -->
+
+            <article class="value-card">
+
+                <span class="value-number">
+                    03
+                </span>
+
+                <div class="value-icon">
+                    🛡️
+                </div>
+
+                <h3>
+                    Safety
+                </h3>
+
+                <p>
+                    Safety remains fundamental to our people,
+                    processes, equipment, and service delivery.
+                </p>
+
+            </article>
+
+
+            <!-- VALUE 4 -->
+
+            <article class="value-card">
+
+                <span class="value-number">
+                    04
+                </span>
+
+                <div class="value-icon">
+                    💡
+                </div>
+
+                <h3>
+                    Innovation
+                </h3>
+
+                <p>
+                    We embrace practical approaches that improve
+                    efficiency, reliability, and customer outcomes.
+                </p>
+
+            </article>
+
+
+            <!-- VALUE 5 -->
+
+            <article class="value-card">
+
+                <span class="value-number">
+                    05
+                </span>
+
+                <div class="value-icon">
+                    🤝
+                </div>
+
+                <h3>
+                    Customer Value
+                </h3>
+
+                <p>
+                    We focus on delivering solutions that create
+                    meaningful and measurable value.
+                </p>
+
+            </article>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ==========================================================
+     COMPANY JOURNEY
+=========================================================== -->
+
+<section class="section timeline-section">
+
+    <div class="container">
+
+
+        <div class="timeline-heading">
+
+            <div class="eyebrow">
+                Our Journey
             </div>
 
             <h2>
-                Why power quality matters.
+                From local expertise
+                to a West African vision.
             </h2>
 
             <p>
-                Reliable electrical power contributes directly to
-                equipment performance, operational continuity and
-                long-term infrastructure value.
+                Our journey is guided by continuous improvement,
+                technical expertise and a long-term commitment
+                to infrastructure reliability.
             </p>
 
         </div>
 
-        <div class="why-grid">
 
-            <article class="why-card">
+        <div class="timeline">
 
-                <div class="why-number">
-                    01
+
+            <!-- ITEM 1 -->
+
+            <div class="timeline-item">
+
+                <div class="timeline-dot"></div>
+
+                <div class="timeline-year">
+                    2014
                 </div>
 
                 <h3>
-                    Equipment Reliability
+                    Elitech Engineering Services Established
                 </h3>
 
                 <p>
-                    A better understanding of electrical conditions can
-                    help protect equipment and improve reliability.
+                    EES was founded and incorporated as an
+                    Electrical, Mechanical and IT Infrastructure
+                    engineering services company.
                 </p>
+
+            </div>
+
+
+            <!-- ITEM 2 -->
+
+            <div class="timeline-item">
+
+                <div class="timeline-dot"></div>
+
+                <div class="timeline-year">
+                    GROWTH
+                </div>
+
+                <h3>
+                    Expansion of Technical Capabilities
+                </h3>
+
+                <p>
+                    The company developed its service portfolio
+                    across power systems, electrical installations,
+                    cooling infrastructure, IT networks and
+                    safety services.
+                </p>
+
+            </div>
+
+
+            <!-- ITEM 3 -->
+
+            <div class="timeline-item">
+
+                <div class="timeline-dot"></div>
+
+                <div class="timeline-year">
+                    TODAY
+                </div>
+
+                <h3>
+                    Integrated Infrastructure Engineering
+                </h3>
+
+                <p>
+                    EES continues to provide integrated technical
+                    engineering covering electrical, mechanical,
+                    infrastructure and OHSE requirements.
+                </p>
+
+            </div>
+
+
+            <!-- ITEM 4 -->
+
+            <div class="timeline-item">
+
+                <div class="timeline-dot"></div>
+
+                <div class="timeline-year">
+                    2035
+                </div>
+
+                <h3>
+                    West African Leadership
+                </h3>
+
+                <p>
+                    The long-term vision is to establish EES as
+                    a leading service provider across West Africa.
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ==========================================================
+     LEADERSHIP
+=========================================================== -->
+
+<section class="section">
+
+    <div class="container">
+
+
+        <div class="leadership-grid">
+
+
+            <!-- LEADER IMAGE -->
+
+            <div class="leader-photo"
+                 role="img"
+                 aria-label="Engineering company leadership">
+
+            </div>
+
+
+            <!-- LEADER INFORMATION -->
+
+            <div class="leader-content">
+
+                <div class="eyebrow">
+                    Leadership
+                </div>
+
+                <h2>
+                    Technical leadership
+                    <span>with experience.</span>
+                </h2>
+
+                <div class="leader-name">
+                    Ing. Kwame Ahiadzi
+                </div>
+
+                <div class="leader-role">
+                    Founder & Chief Executive Officer
+                </div>
+
+                <p>
+                    Ing. Kwame Ahiadzi founded Elitech Engineering
+                    Services and leads the company's technical
+                    direction, drawing on years of hands-on
+                    engineering experience in critical power and
+                    facility infrastructure.
+                </p>
+
+                <p>
+                    Elitech Engineering Services is guided by
+                    experienced technical leadership with a
+                    background in critical power infrastructure,
+                    engineering operations and facility
+                    environments.
+                </p>
+
+                <p>
+                    The company's leadership approach combines
+                    engineering knowledge with practical experience
+                    in designing, constructing and operating
+                    critical infrastructure.
+                </p>
+
+                <p>
+                    This experience informs EES's commitment to
+                    reliability, operational efficiency, safety
+                    and professional service delivery.
+                </p>
+
+
+                <div class="credentials">
+
+                    <div class="credential">
+
+                        <strong>
+                            Critical Infrastructure
+                        </strong>
+
+                        <span>
+                            Power and facility environments
+                        </span>
+
+                    </div>
+
+                    <div class="credential">
+
+                        <strong>
+                            Engineering
+                        </strong>
+
+                        <span>
+                            Electrical & infrastructure systems
+                        </span>
+
+                    </div>
+
+                    <div class="credential">
+
+                        <strong>
+                            Operations
+                        </strong>
+
+                        <span>
+                            Facility and technical operations
+                        </span>
+
+                    </div>
+
+                    <div class="credential">
+
+                        <strong>
+                            Professional Development
+                        </strong>
+
+                        <span>
+                            Continuous technical improvement
+                        </span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- LEADERSHIP TEAM -->
+
+        <div class="team-grid">
+
+
+
+            <!-- TEAM MEMBER 1 -->
+
+            <article class="team-card">
+
+                <img src="pictures/robert-dzogah.png"
+                     alt="Robert Dzogah"
+                     class="team-photo">
+
+                <div class="team-info">
+
+                    <h3>
+                        Robert Dzogah
+                    </h3>
+
+                    <div class="team-role">
+                        Head Of Business Development 
+                    </div>
+
+                    <p>
+                        Drives client relationships and growth
+                        opportunities, connecting EES's engineering
+                        capabilities with market needs.
+                    </p>
+
+                </div>
 
             </article>
 
-            <article class="why-card">
 
-                <div class="why-number">
-                    02
+            <!-- TEAM MEMBER 2 -->
+
+            <article class="team-card">
+
+                <img src="pictures/gati-dzidula1.png"
+                     alt="Dzudula Gati"
+                     class="team-photo">
+
+                <div class="team-info">
+
+                    <h3>
+                        Dzudula Gati
+                    </h3>
+
+                    <div class="team-role">
+                        IT & Systems Architect
+                    </div>
+
+                    <p>
+                        Designs and maintains the IT and systems
+                        architecture that supports EES's engineering
+                        and client-facing solutions.
+                    </p>
+
                 </div>
-
-                <h3>
-                    Operational Continuity
-                </h3>
-
-                <p>
-                    Stable electrical infrastructure engineering ensures
-                    dependable day-to-day operations.
-                </p>
-
-            </article>
-
-            <article class="why-card">
-
-                <div class="why-number">
-                    03
-                </div>
-
-                <h3>
-                    Energy Performance
-                </h3>
-
-                <p>
-                    Understanding electrical performance can help
-                    identify opportunities for improved efficiency.
-                </p>
-
-            </article>
-
-            <article class="why-card">
-
-                <div class="why-number">
-                    04
-                </div>
-
-                <h3>
-                    Asset Protection
-                </h3>
-
-                <p>
-                    Appropriate power-quality measures can help reduce
-                    exposure to damaging electrical disturbances.
-                </p>
-
-            </article>
-
-            <article class="why-card">
-
-                <div class="why-number">
-                    05
-                </div>
-
-                <h3>
-                    Better Decisions
-                </h3>
-
-                <p>
-                    Technical measurements and analysis provide useful
-                    information for infrastructure planning.
-                </p>
-
-            </article>
-
-            <article class="why-card">
-
-                <div class="why-number">
-                    06
-                </div>
-
-                <h3>
-                    Long-Term Value
-                </h3>
-
-                <p>
-                    Well-managed electrical infrastructure contributes
-                    to sustainable operational performance.
-                </p>
 
             </article>
 
@@ -2727,61 +3019,147 @@ footer h4 {
 
 </section>
 
-<section class="cta">
 
-    <div class="cta-container">
+<!-- ==========================================================
+     QUALITY STATEMENT
+=========================================================== -->
 
-        <div>
+<section class="quality">
 
-            <h2>
-                Is your electrical system performing as it should?
-            </h2>
+    <div class="container">
 
-            <p>
-                Talk to Elitech Engineering Services about power
-                quality assessment, electrical infrastructure,
-                voltage regulation, UPS, AVR, and related engineering
-                requirements.
-            </p>
+        <div class="quality-inner">
+
+            <div>
+
+                <h2>
+                    Quality. Safety.
+                    Reliability.
+                </h2>
+
+                <p>
+                    We believe engineering services should not
+                    simply solve today's problem. They should
+                    contribute to the long-term reliability,
+                    efficiency, and safety of the infrastructure
+                    they engineer.
+                </p>
+
+            </div>
+
+
+            <div class="quality-badge">
+
+                <strong>
+                    EES
+                </strong>
+
+                <span>
+                    Engineering Excellence
+                </span>
+
+            </div>
 
         </div>
-
-        <a href="contact.html"
-           class="btn btn-primary">
-
-            Request a Consultation
-
-        </a>
 
     </div>
 
 </section>
+
+
+<!-- ==========================================================
+     CALL TO ACTION
+=========================================================== -->
+
+<section class="cta-section">
+
+    <div class="container">
+
+        <div class="cta-box">
+
+            <div class="cta-content">
+
+                <h2>
+                    Have an engineering
+                    challenge?
+                </h2>
+
+                <p>
+                    Speak with Elitech Engineering Services about
+                    your infrastructure, power, mechanical,
+                    IT, or OHSE requirements.
+                </p>
+
+            </div>
+
+            <a href="contact.html"
+               class="btn btn-primary">
+
+                Contact EES
+                →
+
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
 
 </main>
 
+
+<!-- ==========================================================
+     FOOTER
+=========================================================== -->
+
 <footer>
 
-    <div class="footer-grid">
+    <div class="container footer-main">
+
+
+        <!-- BRAND -->
 
         <div class="footer-brand">
 
-            <h3>
-                Elitech Engineering Services
-            </h3>
+            <a href="index.html"
+               class="logo">
+
+                <div class="logo-mark">
+                    E
+                </div>
+
+                <div class="logo-text">
+
+                    <strong style="color:white;">
+                        ELITECH
+                    </strong>
+
+                    <span style="color:#00b8d4;">
+                        Engineering Services
+                    </span>
+
+                </div>
+
+            </a>
 
             <p>
-                Professional electrical, mechanical, and IT
-                infrastructure engineering services focused on
-                quality, safety, reliability and customer value.
+                Electrical, Mechanical and IT Infrastructure
+                Engineering services committed to quality, safety,
+                efficiency and customer value.
             </p>
 
         </div>
 
+
+        <!-- COMPANY -->
+
         <div>
 
-            <h4>
+            <h3 class="footer-heading">
                 Company
-            </h4>
+            </h3>
 
             <ul class="footer-links">
 
@@ -2831,23 +3209,32 @@ footer h4 {
 
         </div>
 
+
+        <!-- SERVICES -->
+
         <div>
 
-            <h4>
+            <h3 class="footer-heading">
                 Services
-            </h4>
+            </h3>
 
             <ul class="footer-links">
 
                 <li>
                     <a href="engineering.html">
-                        Engineering
+                        Power Systems
                     </a>
                 </li>
 
                 <li>
-                    <a href="ohse.html">
-                        OHSE
+                    <a href="engineering.html">
+                        Generators & UPS
+                    </a>
+                </li>
+
+                <li>
+                    <a href="engineering.html">
+                        Solar PV
                     </a>
                 </li>
 
@@ -2861,45 +3248,42 @@ footer h4 {
 
         </div>
 
-        <div>
 
-            <h4>
+        <!-- CONTACT -->
+
+        <div class="footer-contact">
+
+            <h3 class="footer-heading">
                 Contact
-            </h4>
+            </h3>
 
-            <ul class="footer-links">
+            <p>
+                📍 Opeikuma, Kasoa,<br>
+                Central Region, Ghana
+            </p>
 
-                <li>
-                    Opeikuma, Kasoa
-                </li>
+            <p>
+                ☎ 0243 608 533
+            </p>
 
-                <li>
-                    Central Region, Ghana
-                </li>
+            <p>
+                ☎ 0508 406 048
+            </p>
 
-                <li>
-                    0243 608 533
-                </li>
+            <p>
+                ☎ 0207 588 996
+            </p>
 
-                <li>
-                    0508 406 048
-                </li>
-
-                <li>
-                    0207 588 996
-                </li>
-
-                <li>
-                    elitecengineers@gmail.com
-                </li>
-
-            </ul>
+            <p>
+                ✉ elitecengineers@gmail.com
+            </p>
 
         </div>
 
     </div>
 
-    <div class="footer-bottom">
+
+    <div class="container footer-bottom">
 
         <span>
             © 2026 Elitech Engineering Services.
@@ -2907,71 +3291,82 @@ footer h4 {
         </span>
 
         <span>
-            Power • Quality • Reliability
+            Engineering • Safety • Reliability
         </span>
 
     </div>
 
 </footer>
 
+
+<!-- ==========================================================
+     MOBILE NAVIGATION JAVASCRIPT
+=========================================================== -->
+
 <script>
 
-const menuBtn =
-    document.getElementById("menuBtn");
+    const menuToggle =
+        document.getElementById("menuToggle");
 
-const navLinks =
-    document.getElementById("navLinks");
+    const navLinks =
+        document.getElementById("navLinks");
 
-menuBtn.addEventListener("click", function () {
 
-    navLinks.classList.toggle("open");
+    menuToggle.addEventListener(
+        "click",
+        function () {
 
-    const isOpen =
-        navLinks.classList.contains("open");
+            const isOpen =
+                navLinks.classList.toggle("active");
 
-    menuBtn.setAttribute(
-        "aria-expanded",
-        isOpen
+            menuToggle.setAttribute(
+                "aria-expanded",
+                isOpen
+            );
+
+            menuToggle.setAttribute(
+                "aria-label",
+                isOpen
+                    ? "Close navigation menu"
+                    : "Open navigation menu"
+            );
+
+            menuToggle.textContent =
+                isOpen ? "✕" : "☰";
+
+        }
     );
 
-    menuBtn.setAttribute(
-        "aria-label",
-        isOpen
-            ? "Close navigation menu"
-            : "Open navigation menu"
-    );
 
-    menuBtn.textContent =
-        isOpen ? "✕" : "☰";
+    /* CLOSE MENU WHEN LINK IS SELECTED */
 
-});
+    document
+        .querySelectorAll(".nav-links a")
+        .forEach(function(link) {
 
-/* Close mobile menu when link is clicked */
+            link.addEventListener(
+                "click",
+                function() {
 
-document.querySelectorAll(".nav-links a")
-.forEach(function(link) {
+                    navLinks.classList.remove(
+                        "active"
+                    );
 
-    link.addEventListener("click", function() {
+                    menuToggle.setAttribute(
+                        "aria-expanded",
+                        "false"
+                    );
 
-        navLinks.classList.remove("open");
+                    menuToggle.textContent =
+                        "☰";
 
-        menuBtn.setAttribute(
-            "aria-expanded",
-            "false"
-        );
+                }
+            );
 
-        menuBtn.setAttribute(
-            "aria-label",
-            "Open navigation menu"
-        );
-
-        menuBtn.textContent = "☰";
-
-    });
-
-});
+        });
 
 </script>
+
 
     <script>
 
@@ -3004,6 +3399,5 @@ document.querySelectorAll(".nav-links a")
     </script>
 
 </body>
-
 
 </html>
